@@ -24,9 +24,11 @@
     "jquery": "^3.5.1",
     "jquery-form-styler": "^2.0.2",
     "rateyo": "^2.3.2",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "slick-slider": "^1.8.2"
   },
   "dependencies": {
+    "swiper": "^6.5.0",
     "urix": "^0.1.0"
   }
 }

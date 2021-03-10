@@ -1,31 +1,8 @@
-// %poppins-400 {
-//   font-family: 'Poppins-Regular', sans-serif;
-//   font-weight: 400;
-// }
-// %poppins-500 {
-//   font-family: 'Poppins-Medium', sans-serif;
-//   font-weight: 500;
-// }
-// %poppins-600 {
-//   font-family: 'Poppins-SemiBold', sans-serif;
-//   font-weight: 600;
-// }
-// %poppins-700 {
-//   font-family: 'Poppins-Bold', sans-serif;
-//   font-weight: 700;
-// }
+$main: #6d6d6d;
+$secondary: #ffffff;
+$highlight: #262626;
 
 
-
-/// Clamps, aka truncates, multi-line text. Note that non-webkit browsers will
-/// not see the ellipsis ¯\_(ツ)_/¯
-/// @param {Value}          $font-size     - Font size of the text
-/// @param {Unitless Value} $line-height   - Line height of the text; **must be a unitless value**
-/// @param {Number}         $lines-to-show - Number of lines to show
-/// @example scss
-/// p {
-///   @include line-clamp($font-size: 16px, $line-height: 1.5, $lines-to-show: 3);
-/// }
 @mixin line-clamp(
   $font-size,
   $line-height,
@@ -45,3 +22,4 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: $lines-to-show;
 }
+
