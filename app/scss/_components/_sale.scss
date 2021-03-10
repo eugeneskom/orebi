@@ -1,0 +1,22 @@
+.sale{
+  padding: 140px 0 128px;
+  &__col{
+    max-width: 780px;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__big{
+    padding: 271px 50px;
+    background-image: url(../../images/slider/1.jpg);
+  }
+  &__small{
+    padding: 66px 50px;
+    background-image: url(../../images/slider/1.jpg);
+    &:not(:last-child){
+      margin-bottom: 40px;
+    }
+  }
+}
