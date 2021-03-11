@@ -1,5 +1,6 @@
 .sale{
   padding: 140px 0 128px;
+  color: $secondary;
   &__col{
     max-width: 780px;
     width: 100%;
@@ -15,8 +16,12 @@
   &__small{
     padding: 66px 50px;
     background-image: url(../../images/slider/1.jpg);
-    &:not(:last-child){
-      margin-bottom: 40px;
+    
+  }
+  .unit{
+    &__text{
+      color: rgba(255, 255, 255, 0.7048);
     }
   }
 }
+

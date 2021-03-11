@@ -1,13 +1,17 @@
+@import 'reset';
 @import 'vars';
 @import 'libs';
 @import 'mixins';
-@import 'reset';
 @import 'fonts';
 @import 'global';
 @import '_components/header';
 @import '_components/intro';
 @import '_components/sale';
 @import '_components/new';
+@import '_components/best';
+@import '_components/best-seller';
+
+
 
 
 

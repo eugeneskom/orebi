@@ -1,0 +1,31 @@
+.new {
+  .slick-arrow {
+    border: none;
+    outline: transparent;
+    font-size: 0;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #979797;
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+  }
+
+  .slick-prev.slick-arrow {
+    top: 45%;
+    transform: translateY(-50%);
+    z-index: 1;
+    background-image: url(../../images/icons/arrow-prev.svg);
+    left: 0;
+  }
+
+  .slick-next.slick-arrow {
+    top: 45%;
+    transform: translateY(-50%);
+    background-image: url(../../images/icons/arrow-next.svg);
+    right: 30px;
+  }
+}
+
