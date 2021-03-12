@@ -1,0 +1,13 @@
+.brands{
+  padding-bottom: 128px;
+  &__desc{
+    max-width: 643px;
+    margin-bottom: 50px;
+  }
+  &__img{
+    max-width: 320px;
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+  }
+}
