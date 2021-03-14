@@ -1,4 +1,6 @@
 .header {
+  position: relative;
+  z-index: 10;
   &__nav {
     padding: 31px 0;
   }
@@ -192,6 +194,8 @@
     position: absolute;
   }
 
+  
+
   &__list {
     position: absolute;
     top: 20px;
@@ -261,6 +265,7 @@
 
   &__bottom {
     padding: 14px 22px 20px 21px;
+    background-color: #ffffff;
   }
 
   &__subtotal {

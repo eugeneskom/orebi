@@ -41,6 +41,22 @@ body {
   color: $highlight;
 }
 
+.link{
+  transition: color 0.3s, font-weight 0.3s, border-bottom 0.3s;
+  &:hover{
+    color: $highlight;
+    transition: color 0.3s;
+  }
+  &:active{
+    font-weight: 700;
+    transition: font-weight 0.3s;
+  }
+  &:focus{
+    border-bottom: 1px solid $highlight;
+    transition: border-bottom 0.3s;
+  }
+}
+
 .title-main {
   margin-bottom: 48px;
   // на главной странице у всех title один отступ, поэтому создал этот класс,
@@ -66,7 +82,15 @@ body {
     color: $highlight;
     border: 1px solid $highlight;
     transition: color 0.3, background-color 0.3, border 0.3;
+  }
 
+  &:active {
+    background-color: rgb(155, 15, 15);
+  }
+
+  &:focus {
+    background-color: #000000;
+    color: $secondary;
   }
 }
 
@@ -75,6 +99,11 @@ body {
   color: $highlight;
   padding: 16px 59px;
   border: 1px solid transparent;
+
+  &:hover {
+    background-color: $highlight;
+    color: $secondary;
+  }
 }
 
 .btn-shop {
@@ -170,6 +199,13 @@ body {
   &__link {
     position: relative;
     padding-right: 30px;
+    transition: color 0.3s, font-weight 0.3s;
+
+    &:hover {
+      color: $highlight;
+      font-weight: 700;
+      transition: color 0.3s, font-weight 0.3s;
+    }
 
     &::after {
       content: "";
@@ -216,4 +252,8 @@ body {
     color: $highlight;
   }
 
+}
+
+.show{
+  display: block;
 }

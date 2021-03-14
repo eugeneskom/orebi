@@ -17,14 +17,14 @@ $(function () {
     arrows: true,
   });
   $('.user').on('click', function () {
-    $('.user__list').toggleClass('user__list--active')
+    $('.user__list').toggleClass('show')
   });
   $('.cart').on("click", function () {
-    $('.cart__inner').toggleClass('cart__inner--active');
+    $('.cart__inner').toggleClass('show');
   });
 
   $('.filter').on("click", function () {
-    $('.filter__list').toggleClass('filter__list--active');
+    $('.filter__list').toggleClass('show');
   });
 
   $(document).on("click", function (event) {
