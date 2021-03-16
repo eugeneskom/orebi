@@ -41,17 +41,20 @@ body {
   color: $highlight;
 }
 
-.link{
+.link {
   transition: color 0.3s, font-weight 0.3s, border-bottom 0.3s;
-  &:hover{
+
+  &:hover {
     color: $highlight;
     transition: color 0.3s;
   }
-  &:active{
+
+  &:active {
     font-weight: 700;
     transition: font-weight 0.3s;
   }
-  &:focus{
+
+  &:focus {
     border-bottom: 1px solid $highlight;
     transition: border-bottom 0.3s;
   }
@@ -161,6 +164,22 @@ body {
 .product {
   max-width: 370px;
 
+  &.product--list {
+    max-width: 100%;
+    width: 100%;
+    .product__top {
+      max-height: 250px;
+      width: 200px;
+    }
+    .product__link--compare{
+      display: none;
+    }
+    .product__popup{
+      padding: 10px;
+      opacity: 0.9;
+    }
+  }
+
   &:hover {
     .product__popup {
       transform: translateY(0);
@@ -171,6 +190,7 @@ body {
   &__top {
     position: relative;
     overflow: hidden;
+    max-height: 370px;
   }
 
   &__new {
@@ -254,6 +274,6 @@ body {
 
 }
 
-.show{
+.show {
   display: block;
 }

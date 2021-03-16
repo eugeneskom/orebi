@@ -1,57 +1,213 @@
-.products{
-  &__title{
+.products {
+  &__title {
     margin-bottom: 11px;
   }
+  &__inner{
+    .product{
+      margin-bottom: 40px;
+    }
+  }
+
 }
-.breadcrumbs{
-  &__item{
-    &:not(:last-child) .breadcrumbs__link{
+
+.breadcrumbs {
+  &__item {
+    &:not(:last-child) .breadcrumbs__link {
       padding-right: 12px;
       position: relative;
-      &::after{
+
+      &::after {
         content: ">";
         position: absolute;
         color: $main;
         right: 0;
       }
     }
-    &:not(:first-child) .breadcrumbs__link{
+
+    &:not(:first-child) .breadcrumbs__link {
       margin-left: 8px;
     }
   }
 }
 
-.filters{
- max-width: 372px;
- width: 100%;
-}
-.filters-category{
-  &__label{
-    padding-bottom: 19px;
-    border-bottom: 1px solid #d8d8d8;
-    cursor: pointer;
-    &:not(:first-child){
-      padding-top: 19px;
+.filters {
+  max-width: 372px;
+  width: 100%;
+  margin-right: 39px;
+  &__item {
+    &:not(:last-child) {
+      padding-bottom: 53px;
     }
-  }
-  &__input{
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip:rect(0 0 0 0);
-    position: absolute;
-    &:checked + .filters-category__checkbox{
-    background-image: url(../../images/icons/plus.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
+
+    label {
+      padding-bottom: 19px;
+      border-bottom: 1px solid #d8d8d8;
+      cursor: pointer;
+
+      &:not(:first-child) {
+        padding-top: 19px;
+      }
 
     }
   }
-  &__checkbox{
+
+  &__input {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    position: absolute;
+
+    &:checked+.filters__checkbox {
+      background-image: url(../../images/icons/plus.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &__checkbox {
     width: 10px;
     height: 10px;
     position: absolute;
     margin-left: -15px;
     margin-top: 10px;
   }
+}
+
+.filters-color {
+  &__text {
+    position: relative;
+    padding-left: 21px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      left: 0;
+      top: 9px;
+    }
+
+    &--black::before {
+      background-color: #000000;
+    }
+
+    &--pink::before {
+      background-color: #FF8686;
+    }
+
+    &--green::before {
+      background-color: #7ED321;
+    }
+
+    &--gray::before {
+      background-color: #B6B6B6;
+    }
+
+    &--turquoise::before {
+      background-color: #15CBA5;
+    }
+  }
+}
+
+.shop-content {
+  width: 100%;
+  &__filter{
+    margin-bottom: 60px;
+  }
+  &__btn {
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    border: none;
+    outline: transparent;
+    fill: #767676;
+    background-color: transparent;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    &--active {
+      fill: #ffffff;
+      background-color: #000000;
+    }
+  }
+
+  &__svg {
+    width: 15px;
+    height: 13px;
+  }
+  &__select-by{
+    width: 240px;
+    margin-right: 40px;
+  }
+  &__select-show{
+   width: 140px;
+  }
+}
+
+.jq-selectbox {
+  border: 1px solid #F0F0F0;
+
+  &__select {
+    background: none; //when I use bgc it does not work
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 21px;
+    &:hover{
+      opacity: 0.7;
+    }
+  }
+
+  &__trigger-arrow {
+    background-image: url('../../images/icons/trigger-arrow.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 11px;
+    height: 6px;
+  }
+
+  &__dropdown {
+    margin-top: 5px;
+    height: auto;
+    bottom: auto;
+    top: 32px;
+    width: 100%;
+    box-shadow: 0 2px 10px rgb(119, 119, 136);
+
+    ul {
+      padding: 0;
+    }
+
+    li {
+      background-color: #fff;
+
+      &:hover {
+        background-color: rgb(208, 203, 203);
+        color: #fff;
+
+      }
+    }
+
+    .selected {
+      background-color: rgb(170, 169, 169);
+      color: #fff;
+    }
+  }
+}
+
+.jq-selectbox__select-text {
+  background-color: none;
+  width: 100px;
+  margin-right: 30px;
+}
+
+.product{
+  &.product--list{
+    max-width: 100%;
+    width: 100%;
+     }
 }
