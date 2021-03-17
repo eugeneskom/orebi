@@ -1,4 +1,5 @@
 .products {
+  padding: 125px 0 140px;
   &__title {
     margin-bottom: 11px;
   }
@@ -205,9 +206,3 @@
   margin-right: 30px;
 }
 
-.product{
-  &.product--list{
-    max-width: 100%;
-    width: 100%;
-     }
-}
