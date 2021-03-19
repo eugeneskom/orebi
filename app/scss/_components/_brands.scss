@@ -1,13 +1,27 @@
-.brands{
+.brands {
   padding-bottom: 128px;
-  &__desc{
+
+  &__item {
+    &:hover {
+      .brands__img {
+        transform: rotateY(180deg);
+        transition: transform 0.9s;
+      }
+    }
+  }
+
+  &__desc {
     max-width: 643px;
     margin-bottom: 50px;
   }
-  &__img{
-    max-width: 320px;
+
+  &__img {
+    max-width: 319px;
     width: 100%;
     height: 320px;
     object-fit: cover;
+    transition: transform 0.9s;
+    backface-visibility: visible;
+
   }
 }
