@@ -1,38 +1,50 @@
-.journal{
+.journal {
   padding-bottom: 130px;
-  &__item{
+
+  &__item {
     max-width: 510px;
     width: 100%;
-    
-    &:hover{
-      .journal__img{
+
+    &:hover {
+      .article__img {
         transform: scale(1.2);
         transition: transform 0.3s;
       }
     }
   }
-  &__image-box{
+
+}
+
+.article {
+  &__image-box {
     overflow: hidden;
     height: 400px;
 
   }
-  &__img{
+
+  &__img {
     width: 100%;
     height: 400px;
     margin-bottom: 26px;
     transition: transform 0.3s;
   }
-  &__name{
+
+  &__category {
     font-size: 14px;
     line-height: 1.3;
-    color:$highlight;
+    color: $highlight;
     margin-bottom: 18px;
   }
-  &__link{
+
+  &__heading {
     font-size: 25px;
     line-height: 1.4;
     font-weight: 700;
     color: $highlight;
     margin-bottom: 7px;
+    @include text-clamp(2);
+  }
+  &__desc{
+    @include text-clamp(3);
   }
 }

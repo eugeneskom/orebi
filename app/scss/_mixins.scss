@@ -1,11 +1,24 @@
-@mixin r($width){
-  @media only screen and (max-width: $width+ "px"){
+@mixin text-clamp($lines: 2, $line-height: false) {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $lines;
+
+  // Fallback for non-Webkit browsers
+  // (won't show `…` at the end of the block)
+  @if $line-height {
+    max-height: $line-height * $lines * 1px;
+  }
+}
+
+@mixin r($width) {
+  @media only screen and (max-width: $width+ "px") {
     @content;
   }
 }
 
-@mixin rmin($width){
-  @media only screen and (min-width: $width+ "px"){
+@mixin rmin($width) {
+  @media only screen and (min-width: $width+ "px") {
     @content;
   }
 }

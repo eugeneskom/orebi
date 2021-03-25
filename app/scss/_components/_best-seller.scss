@@ -1,17 +1,19 @@
-.best-seller{
+.best-seller {
   padding: 61px 407px 60px 0;
-  background-image: url("../../images/slider/1.jpg");
-  
-  &__content{
+
+  &__content {
     margin-left: auto;
     max-width: 511px;
   }
-  &__name{
+
+  &__name {
     color: #fff;
     margin-bottom: 38px;
   }
-  &__desc{
+
+  &__desc {
     color: rgba(255, 255, 255, 0.7048);
     margin-bottom: 50px;
+    @include text-clamp(2);
   }
 }

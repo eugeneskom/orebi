@@ -1,14 +1,43 @@
 $(function () {
   $('.select-style').styler();
 
-  $('.intro__list').slick({
-    dots: true,
-    vertical: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    verticalSwiping: true,
-    arrows: false,
+
+
+ 
+
+let $slider = $('.intro__list');
+
+if ($slider.length) {
+  var currentSlide;
+  var sliderCounter = document.createElement('div');
+  sliderCounter.classList.add('slider__counter');
+  
+  var updateSliderCounter = function(slick, currentIndex) {
+    currentSlide = slick.slickCurrentSlide() + 1;
+    $(sliderCounter).text( '0' + currentSlide)
+  };
+
+  $slider.on('init', function(event, slick) {
+    $slider.append(sliderCounter);
+    updateSliderCounter(slick);
   });
+
+  $slider.on('afterChange', function(event, slick, currentSlide) {
+    updateSliderCounter(slick, currentSlide);
+  });
+
+}
+$('.intro__list').slick({
+  dots: true,
+  vertical: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  verticalSwiping: true,
+  arrows: false,
+});
+  
+
+
 
   $('.new__slider').slick({
     dots: false,
@@ -17,30 +46,19 @@ $(function () {
     arrows: true,
   });
 
-  ///drop down menu, user, cart
-  $('.user').on('click', function () {
-    $('.user__list').toggleClass('active')
-  });
-  $('.cart').on("click", function () {
-    $('.cart__inner').toggleClass('active');
-  });
 
-  $('.dropdown-menu').on("click", function () {
-    $('.dropdown-menu').toggleClass('dropdown-menu--active');
-    $('.dropdown-menu__list').toggleClass('active');
+$('.js_drop').on('click', function() {
+  $(this).toggleClass('active');
+  $(this).children().toggleClass('active');
+});
 
-  });
+$(document).on("click", function(event) {
+  if (!$(event.target).closest(".js_drop").length) {
+    $(event.target).find('.dropdown').removeClass('active');
+    $(event.target).find('.js_drop').removeClass('active');// for animating X
 
-  $(document).on("click", function (event) {
-    //if you click on anything except the modal itself or the "open modal" link, close the modal
-    if (!$(event.target).closest(".dropdown-menu").length) {
-      $("body").find(".dropdown-menu").removeClass("dropdown-menu--active");
-      $("body").find(".dropdown-menu__list").removeClass("active");
-    }
-  });
-
-
-/// end of drop down menu, user, cart
+  }
+});
 
 
   $('.shop-content__btn').on('click', function () {
@@ -55,16 +73,5 @@ $(function () {
     $('.product').removeClass('product--list');
   });
 
-  const menuBtn = document.querySelector('.menu-btn');
-  let menuOpen = false;
-  menuBtn.addEventListener('click', () => {
-    if (!menuOpen) {
-      menuBtn.classList.add('open');
-      menuOpen = true;
-    } else {
-      menuBtn.classList.remove('open');
-      menuOpen = false;
-    }
-  });
 });
 

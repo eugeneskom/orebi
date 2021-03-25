@@ -3,12 +3,10 @@ $secondary: #ffffff;
 $highlight: #262626;
 
 
-@mixin line-clamp(
-  $font-size,
+@mixin line-clamp($font-size,
   $line-height,
-  $lines-to-show
-) {
-  @if unitless($line-height) == false {
+  $lines-to-show) {
+  @if unitless($line-height)==false {
     $line-height: create-unitless-line-height($font-size, $line-height);
   }
 
@@ -22,4 +20,3 @@ $highlight: #262626;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: $lines-to-show;
 }
-

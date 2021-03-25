@@ -13,6 +13,7 @@
   &__desc {
     max-width: 643px;
     margin-bottom: 50px;
+    @include text-clamp(3);
   }
 
   &__img {

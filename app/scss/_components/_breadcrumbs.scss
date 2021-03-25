@@ -1,0 +1,19 @@
+.breadcrumbs {
+  &__item {
+    &:not(:last-child) .breadcrumbs__link {
+      padding-right: 12px;
+      position: relative;
+
+      &::after {
+        content: ">";
+        position: absolute;
+        color: $main;
+        right: 0;
+      }
+    }
+
+    &:not(:first-child) .breadcrumbs__link {
+      margin-left: 8px;
+    }
+  }
+}
