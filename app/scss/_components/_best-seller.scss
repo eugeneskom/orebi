@@ -1,9 +1,22 @@
 .best-seller {
   padding: 61px 407px 60px 0;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.6;
+  }
 
   &__content {
     margin-left: auto;
     max-width: 511px;
+    z-index: 1;
   }
 
   &__name {
