@@ -3,11 +3,10 @@
   background-color: #F5F5F3;
 
   &__top {
-    padding: 0 270px 65px 0;
-  }
+    margin-bottom: 65px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 
-  &__list {
-    width: 33%;
   }
 
   &__heading {
@@ -17,6 +16,9 @@
     margin-bottom: 17px;
     color: $highlight;
   }
+  &__logo{
+    margin: 0 auto;
+  }
 }
 
 .category {
@@ -25,11 +27,23 @@
       margin-bottom: 6px;
     }
   }
+  &__link{
+    outline: transparent;
+    &:focus{
+      color: rgb(21, 15, 15);
+    }
+    &:hover{
+      border-bottom: 1px solid $highlight;
+    }
+    &:active{
+      text-shadow: 1px 0 0 $highlight;
+    }
+  }
 }
 
 .contacts {
   font-style: normal;
-
+  padding-left:145px;
   &__link {
     display: block;
     font-weight: 700;

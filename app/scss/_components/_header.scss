@@ -47,7 +47,7 @@
     padding: 0;
     width: 50px;
     height: 50px;
-    background-image: url('../../images/icons/search.svg');
+    background-image: url('../images/icons/search.svg');
     background-repeat: no-repeat;
     background-position: center center;
     border: none;
@@ -57,10 +57,10 @@
   }
 
   .nav-lang {
-    &__radio{
+    &__radio {
       display: none;
     }
-    
+
     span {
       border: none;
       background-color: transparent;
@@ -70,9 +70,10 @@
       line-height: 1.3;
       transition: transform 0.3s;
     }
-    
+
   }
-  .nav-lang__radio:checked + span{
+
+  .nav-lang__radio:checked+span {
     text-shadow: 1px 0 0 $highlight;
     transition: transform 0.3s;
 
@@ -167,7 +168,7 @@
 
   &__item {
     position: relative;
-    
+
     &:hover {
       .dropdown-menu__submenu {
         display: flex;
@@ -229,7 +230,7 @@
       right: 21px;
       width: 3px;
       height: 5px;
-      background-image: url("../../images/icons/angle-right.svg");
+      background-image: url("../images/icons/angle-right.svg");
     }
   }
 
@@ -269,7 +270,7 @@
   height: 15px;
   padding-right: 29px;
   margin-right: 60px;
-  background-image: url('../../images/icons/user.svg');
+  background-image: url('../images/icons/user.svg');
   background-repeat: no-repeat;
   position: relative;
   cursor: pointer;
@@ -277,7 +278,7 @@
   &::before {
     content: "";
     position: absolute;
-    background-image: url('../../images/icons/path.svg');
+    background-image: url('../images/icons/path.svg');
     width: 9px;
     height: 5px;
     top: 5px;
@@ -319,7 +320,7 @@
 
 
 .cart {
-  background-image: url(../../images/icons/cart.svg);
+  background-image: url(../images/icons/cart.svg);
   background-repeat: no-repeat;
   width: 17px;
   height: 15px;
@@ -353,7 +354,7 @@
     &::after {
       content: "";
       position: absolute;
-      background-image: url("../../images/icons/close-icon.svg");
+      background-image: url("../images/icons/close-icon.svg");
       width: 10px;
       height: 10px;
       right: 10px;

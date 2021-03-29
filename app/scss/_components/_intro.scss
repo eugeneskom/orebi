@@ -5,7 +5,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    &::after{
+
+    &::after {
       content: "";
       position: absolute;
       top: 0;
@@ -15,16 +16,17 @@
       background-color: rgb(255, 255, 255);
       opacity: 0.2;
     }
-    
   }
 
   &__content {
+    position: relative;
+    z-index: 1;
     height: 598px;
     max-width: 600px;
     margin-left: 180px;
     display: flex;
     flex-direction: column;
-    align-items:flex-start;
+    align-items: flex-start;
     justify-content: center;
   }
 
@@ -35,6 +37,7 @@
 
   &__text {
     @include text-clamp(2);
+
     span {
       font-size: 40px;
       line-height: 1.3;
@@ -77,6 +80,7 @@
       }
     }
   }
+
   .slider__counter {
     position: absolute;
     top: 42%;
@@ -107,20 +111,20 @@
     }
 
     &--warranty::before {
-      background-image: url("../../images/icons/warranty.svg");
+      background-image: url("../images/icons/warranty.svg");
       width: 14px;
       height: 20px;
       left: 7px;
     }
 
     &--van::before {
-      background-image: url("../../images/icons/van.svg");
+      background-image: url("../images/icons/van.svg");
       width: 25px;
       height: 20px;
     }
 
     &--return::before {
-      background-image: url("../../images/icons/return.svg");
+      background-image: url("../images/icons/return.svg");
       width: 20px;
       height: 20px;
     }

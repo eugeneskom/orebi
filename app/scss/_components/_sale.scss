@@ -13,16 +13,18 @@
 
   &__big {
     padding: 271px 50px;
-    
+
   }
 
   &__small {
     padding: 66px 50px;
   }
+
   &__big,
-  &__small{
+  &__small {
     position: relative;
-    &::after{
+
+    &::after {
       content: "";
       position: absolute;
       top: 0;

@@ -45,7 +45,7 @@
     position: absolute;
 
     &:checked+.filters__checkbox {
-      background-image: url(../../images/icons/plus.svg);
+      background-image: url(../images/icons/plus.svg);
       background-repeat: no-repeat;
       background-size: cover;
     }
@@ -154,7 +154,7 @@
   }
 
   &__trigger-arrow {
-    background-image: url('../../images/icons/trigger-arrow.svg');
+    background-image: url('../images/icons/trigger-arrow.svg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 11px;

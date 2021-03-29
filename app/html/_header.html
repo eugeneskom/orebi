@@ -1,0 +1,484 @@
+
+@@include('../../partials/header.html', {
+  "headerClass": "header--small"
+  })
+
+<header class="header">
+  <div class="container">
+    <nav class="header__nav d-flex jc-sb ai-c">
+      <a class="logo" href="#">
+        <img src="images/logo.svg" alt="logo of the webpage" width="65" height="15">
+      </a>
+      <ul class="menu d-flex">
+        <li class="menu__item">
+          <a href="#" class="menu__link">Home</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Shop</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">About</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Contacts</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Journal</a>
+        </li>
+      </ul>
+      <form class="nav-lang">
+
+        <label class="nav-lang__label" for="lang-en">
+          <input class="nav-lang__radio" name="language" type="radio" id="lang-en" checked>
+          <span>en</span>
+        </label>
+        <label class="nav-lang__label" for="lang-ru">
+          <input class="nav-lang__radio" name="language" type="radio" id="lang-ru">
+          <span>ru</span>
+        </label>
+
+      </form>
+    </nav>
+  </div>
+
+  <div class="header__bottom">
+    <div class="container">
+      <div class="header__inner d-flex jc-sb ai-c">
+        <div class="dropdown-menu js_drop">
+          Shop by Category
+          <ul class="dropdown-menu__list dropdown">
+            <li class="dropdown-menu__item">
+              <p href="#" class="dropdown-menu__group">Accesories</p>
+              <div class="dropdown-menu__submenu">
+                <div class="dropdown-menu__categories">
+                  <p class="dropdown-menu__heading">Phones</p>
+                  <ul>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Phone 1</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Phone 2</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Phone 3</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Phone 4</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Phone 5</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Phone 6</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Phone 7</a></li>
+                  </ul>
+                </div>
+                <div class="dropdown-menu__categories">
+                  <p class="dropdown-menu__heading">Computers</p>
+                  <ul>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Computer 1</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Computer 2</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Computer 3</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Computer 4</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Computer 5</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Computer 6</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Computer 7</a></li>
+                  </ul>
+                </div>
+                <div class="dropdown-menu__categories">
+                  <p class="dropdown-menu__heading">Smart watches</p>
+                  <ul>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Smart watches 1</a>
+                    </li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Smart watches 2</a>
+                    </li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Smart watches 3</a>
+                    </li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Smart watches 4</a>
+                    </li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Smart watches 5</a>
+                    </li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Smart watches 6</a>
+                    </li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Smart watches 7</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="dropdown-menu__categories">
+                  <p class="dropdown-menu__heading">Cameras</p>
+                  <ul>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Camera 1</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Camera 2</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Camera 3</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Camera 4</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Camera 5</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Camera 6</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Camera 7</a></li>
+                  </ul>
+                </div>
+
+              </div>
+            </li>
+            <li class="dropdown-menu__item">
+              <p href="#" class="dropdown-menu__group">Furniture</p>
+              <div class="dropdown-menu__submenu">
+                <div class="dropdown-menu__categories">
+                  <p class="dropdown-menu__heading">Phones</p>
+                  <ul>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Phone 1</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Phone 2</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Phone 3</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Phone 4</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Phone 5</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Phone 6</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Phone 7</a></li>
+                  </ul>
+                </div>
+                <div class="dropdown-menu__categories">
+                  <p class="dropdown-menu__heading">Computers</p>
+                  <ul>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Computer 1</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Computer 2</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Computer 3</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Computer 4</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Computer 5</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Computer 6</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Computer 7</a></li>
+                  </ul>
+                </div>
+                <div class="dropdown-menu__categories">
+                  <p class="dropdown-menu__heading">Smart watches</p>
+                  <ul>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Smart watches 1</a>
+                    </li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Smart watches 2</a>
+                    </li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Smart watches 3</a>
+                    </li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Smart watches 4</a>
+                    </li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Smart watches 5</a>
+                    </li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Smart watches 6</a>
+                    </li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Smart watches 7</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="dropdown-menu__categories">
+                  <p class="dropdown-menu__heading">Cameras</p>
+                  <ul>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Camera 1</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Camera 2</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Camera 3</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Camera 4</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Camera 5</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Camera 6</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Camera 7</a></li>
+                  </ul>
+                </div>
+
+              </div>
+            </li>
+            <li class="dropdown-menu__item">
+              <p href="#" class="dropdown-menu__group">Electronics</p>
+              <div class="dropdown-menu__submenu">
+                <div class="dropdown-menu__categories">
+                  <p class="dropdown-menu__heading">Phones</p>
+                  <ul>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Phone 1</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Phone 2</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Phone 3</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Phone 4</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Phone 5</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Phone 6</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Phone 7</a></li>
+                  </ul>
+                </div>
+                <div class="dropdown-menu__categories">
+                  <p class="dropdown-menu__heading">Computers</p>
+                  <ul>
+                    <li><a href="#">Computer 1</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Computer 2</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Computer 3</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Computer 4</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Computer 5</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Computer 6</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Computer 7</a></li>
+                  </ul>
+                </div>
+                <div class="dropdown-menu__categories">
+                  <p class="dropdown-menu__heading">Smart watches</p>
+                  <ul>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Smart watches 1</a>
+                    </li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Smart watches 2</a>
+                    </li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Smart watches 3</a>
+                    </li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Smart watches 4</a>
+                    </li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Smart watches 5</a>
+                    </li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Smart watches 6</a>
+                    </li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Smart watches 7</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="dropdown-menu__categories">
+                  <p class="dropdown-menu__heading">Cameras</p>
+                  <ul>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Camera 1</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Camera 2</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Camera 3</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Camera 4</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Camera 5</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Camera 6</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Camera 7</a></li>
+                  </ul>
+                </div>
+
+              </div>
+            </li>
+            <li class="dropdown-menu__item">
+              <p href="#" class="dropdown-menu__group">Clothes</p>
+              <div class="dropdown-menu__submenu">
+                <div class="dropdown-menu__categories">
+                  <p class="dropdown-menu__heading">Phones</p>
+                  <ul>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Phone 1</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Phone 2</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Phone 3</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Phone 4</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Phone 5</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Phone 6</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Phone 7</a></li>
+                  </ul>
+                </div>
+                <div class="dropdown-menu__categories">
+                  <p class="dropdown-menu__heading">Computers</p>
+                  <ul>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Computer 1</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Computer 2</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Computer 3</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Computer 4</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Computer 5</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Computer 6</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Computer 7</a></li>
+                  </ul>
+                </div>
+                <div class="dropdown-menu__categories">
+                  <p class="dropdown-menu__heading">Smart watches</p>
+                  <ul>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Smart watches 1</a>
+                    </li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Smart watches 2</a>
+                    </li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Smart watches 3</a>
+                    </li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Smart watches 4</a>
+                    </li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Smart watches 5</a>
+                    </li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Smart watches 6</a>
+                    </li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Smart watches 7</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="dropdown-menu__categories">
+                  <p class="dropdown-menu__heading">Cameras</p>
+                  <ul>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Camera 1</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Camera 2</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Camera 3</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Camera 4</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Camera 5</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Camera 6</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Camera 7</a></li>
+                  </ul>
+                </div>
+
+              </div>
+            </li>
+            <li class="dropdown-menu__item">
+              <p href="#" class="dropdown-menu__group">Bags</p>
+              <div class="dropdown-menu__submenu">
+                <div class="dropdown-menu__categories">
+                  <p class="dropdown-menu__heading">Phones</p>
+                  <ul>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Phone 1</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Phone 2</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Phone 3</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Phone 4</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Phone 5</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Phone 6</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Phone 7</a></li>
+                  </ul>
+                </div>
+                <div class="dropdown-menu__categories">
+                  <p class="dropdown-menu__heading">Computers</p>
+                  <ul>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Computer 1</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Computer 2</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Computer 3</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Computer 4</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Computer 5</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Computer 6</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Computer 7</a></li>
+                  </ul>
+                </div>
+                <div class="dropdown-menu__categories">
+                  <p class="dropdown-menu__heading">Smart watches</p>
+                  <ul>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Smart watches 1</a>
+                    </li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Smart watches 2</a>
+                    </li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Smart watches 3</a>
+                    </li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Smart watches 4</a>
+                    </li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Smart watches 5</a>
+                    </li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Smart watches 6</a>
+                    </li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Smart watches 7</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="dropdown-menu__categories">
+                  <p class="dropdown-menu__heading">Cameras</p>
+                  <ul>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Camera 1</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Camera 2</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Camera 3</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Camera 4</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Camera 5</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Camera 6</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Camera 7</a></li>
+                  </ul>
+                </div>
+
+              </div>
+            </li>
+            <li class="dropdown-menu__item">
+              <p href="#" class="dropdown-menu__group">Home appliances</p>
+              <div class="dropdown-menu__submenu">
+                <div class="dropdown-menu__categories">
+                  <p class="dropdown-menu__heading">Phones</p>
+                  <ul>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Phone 1</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Phone 2</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Phone 3</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Phone 4</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Phone 5</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Phone 6</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Phone 7</a></li>
+                  </ul>
+                </div>
+                <div class="dropdown-menu__categories">
+                  <p class="dropdown-menu__heading">Computers</p>
+                  <ul>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Computer 1</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Computer 2</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Computer 3</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Computer 4</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Computer 5</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Computer 6</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Computer 7</a></li>
+                  </ul>
+                </div>
+                <div class="dropdown-menu__categories">
+                  <p class="dropdown-menu__heading">Smart watches</p>
+                  <ul>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Smart watches 1</a>
+                    </li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Smart watches 2</a>
+                    </li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Smart watches 3</a>
+                    </li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Smart watches 4</a>
+                    </li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Smart watches 5</a>
+                    </li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Smart watches 6</a>
+                    </li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Smart watches 7</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="dropdown-menu__categories">
+                  <p class="dropdown-menu__heading">Cameras</p>
+                  <ul>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Camera 1</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Camera 2</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Camera 3</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Camera 4</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Camera 5</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Camera 6</a></li>
+                    <li class="dropdown-menu__sublist"><a class="dropdown-menu__link" href="#">Camera 7</a></li>
+                  </ul>
+                </div>
+
+              </div>
+            </li>
+          </ul>
+        </div>
+        <form class="header__form d-flex">
+          <input class="header__search" type="search" placeholder="Search Products">
+          <button class="header__search-btn" type="submit"></button>
+        </form>
+        <ul class="header__user-cart d-flex jc-sb">
+          <li class="user js_drop">
+            <ul class="user__list dropdown">
+              <li class="user__item">
+                <a class="user__link btn-200" href="#">My Account</a>
+              </li>
+              <li class="user__item">
+                <a class="user__link btn-200" href="#">Log Out</a>
+              </li>
+            </ul>
+          </li>
+          <li class="cart js_drop">
+            <div class="cart__inner dropdown">
+              <div class="cart__top d-flex">
+                <div class="cart__photo">
+                  <img class="cart__img" width="80" height="80" src="images/content/black-smart-w.jpg"
+                    alt="Black Smart Watch">
+                </div>
+                <div class="cart__desc">
+                  <p class="cart__title">Black Smart Watch</p>
+                  <p class="cart__price">$44.00</p>
+                </div>
+              </div>
+              <div class="cart__top d-flex">
+                <div class="cart__photo">
+                  <img class="cart__img" width="80" height="80" src="images/content/black-smart-w.jpg"
+                    alt="Black Smart Watch">
+                </div>
+                <div class="cart__desc">
+                  <p class="cart__title">Black Smart Watch</p>
+                  <p class="cart__price">$44.00</p>
+                </div>
+              </div>
+              <div class="cart__top d-flex">
+                <div class="cart__photo">
+                  <img class="cart__img" width="80" height="80" src="images/content/black-smart-w.jpg"
+                    alt="Black Smart Watch">
+                </div>
+                <div class="cart__desc">
+                  <p class="cart__title">Black Smart Watch</p>
+                  <p class="cart__price">$44.00</p>
+                </div>
+              </div>
+
+
+
+
+              <div class="cart__bottom">
+                <p class="cart__subtotal">Subtotal: <span>$44.00</span></p>
+                <div class="cart__buttons d-flex jc-sb">
+                  <button class="btn btn--white btn--cart" type="button">View Cart</button>
+                  <button class="btn btn--white btn--cart" type="button">Checkout</button>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+</header>

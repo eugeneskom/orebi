@@ -8,6 +8,7 @@ const imagemin = require('gulp-imagemin');
 const rename = require('gulp-rename');
 const del = require('del');
 const browserSync = require('browser-sync').create();
+const fileinclude = require('gulp-file-include');
 
 function browsersync() {
   browserSync.init({
@@ -17,6 +18,16 @@ function browsersync() {
     notify: false
   })
 }
+
+
+gulp.task('include', function() {
+   gulp.src(['app/html/**/*'])
+   .pipe(fileinclude({
+   prefix: '@@',
+   basepath: '@file'
+   }))
+   .pipe(gulp.dest('dist'));
+  });
 
 
 function styles() {
@@ -33,6 +44,7 @@ function styles() {
     .pipe(dest('app/css'))
     .pipe(browserSync.stream())
 }
+
 
 function images() {
   return src('app/images/**/*.*')
@@ -59,6 +71,8 @@ function scripts() {
     'node_modules/ion-rangeslider/js/ion.rangeSlider.js',
     'node_modules/jquery-form-styler/dist/jquery.formstyler.js',
     'node_modules/swiper/swiper-bundle.js',
+    'node_modules/gulp-file-include/lib/indent.js',
+
     'app/js/main.js'
 
   ])
