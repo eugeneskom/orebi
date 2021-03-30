@@ -8,7 +8,7 @@ body {
   font-size: 16px;
   line-height: 1.9;
   color: $main;
-  background-color: $secondary;
+  background-color: $light-900;
 }
 
 .container {
@@ -41,18 +41,18 @@ body {
   border: 1px solid transparent;
   outline: transparent;
   cursor: pointer;
-  color: $secondary;
+  color: $light-900;
   font-weight: 700;
   text-transform: capitalize;
   transition: color 0.3, background-color 0.3, border 0.3;
 
   &:focus {
     background-color: rgb(79, 76, 76);
-    color: $secondary;
+    color: $light-900;
   }
 
   &:hover {
-    background-color: $secondary;
+    background-color: $light-900;
     color: $highlight;
     border: 1px solid $highlight;
     transition: color 0.3, background-color 0.3, border 0.3;
@@ -60,25 +60,25 @@ body {
 
   &:active {
     background-color: rgb(72, 41, 41);
-    color: $secondary;
+    color: $light-900;
   }
 
 
 
   &--white {
-    background-color: $secondary;
+    background-color: $light-900;
     color: $highlight;
     border: 1px solid transparent;
 
 
     &:hover {
       background-color: $highlight;
-      color: $secondary;
+      color: $light-900;
     }
 
     &:active {
       background-color: rgb(72, 41, 41);
-      color: $secondary;
+      color: $light-900;
     }
   }
 
@@ -123,14 +123,14 @@ body {
 
     span {
       font-size: 40px;
-      color: $secondary;
+      color: $light-900;
       vertical-align: middle;
     }
   }
 }
 
 .t-white {
-  color: $secondary;
+  color: $light-900;
 }
 
 .product {
@@ -197,7 +197,7 @@ body {
   &__new {
     position: absolute;
     background-color: $highlight;
-    color: #fff;
+    color: $light-900;
     top: 20px;
     left: 20px;
     padding: 9px 30px;
@@ -216,7 +216,7 @@ body {
     bottom: 0;
     width: 100%;
     text-align: right;
-    background-color: #ffffff;
+    background-color: $light-900;
     transform: translateY(100%);
     transition: transform 0.3s;
 
@@ -267,7 +267,7 @@ body {
   }
 
   &__bottom {
-    background-color: #ffffff;
+    background-color: $light-900;
     padding-top: 20px;
   }
 
@@ -308,7 +308,7 @@ body {
     border: 1px solid #F0F0F0;
 
     &--active {
-      color: #ffffff;
+      color: $light-900;
       background-color: $highlight;
     }
   }

@@ -118,7 +118,7 @@
     }
 
     &--active {
-      fill: #ffffff;
+      fill: $light-900;
       background-color: #000000;
     }
   }
@@ -174,18 +174,18 @@
     }
 
     li {
-      background-color: #fff;
+      background-color: $light-900;
 
       &:hover {
         background-color: rgb(208, 203, 203);
-        color: #fff;
+        color: $light-900;
 
       }
     }
 
     .selected {
       background-color: rgb(170, 169, 169);
-      color: #fff;
+      color: $light-900;
     }
   }
 }

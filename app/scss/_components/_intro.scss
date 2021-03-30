@@ -70,7 +70,7 @@
       font-size: 0;
       height: 30px;
       width: 2px;
-      background-color: $secondary;
+      background-color: $light-900;
       padding: 0;
     }
 
@@ -97,7 +97,7 @@
 
 .commitments {
   padding: 28px 0;
-  border: 1px solid #F0F0F0;
+  border: 1px solid $light-700;
 
   &__item {
     position: relative;

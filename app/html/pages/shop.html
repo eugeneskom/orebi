@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" script-src='unsafe-inline' ;>
+  <title>Gulp start</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="header__nav d-flex jc-sb ai-c">
+        <a class="logo" href="#">
+          <img src="images/logo.svg" alt="logo of the webpage" width="65px" height="15px">
+        </a>
+        <ul class="menu d-flex">
+          <li class="menu__item">
+            <a href="#" class="link menu__link">Home</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="link menu__link">Shop</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="link menu__link">About</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="link menu__link">Contacts</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="link menu__link">Journal</a>
+          </li>
+        </ul>
+        <ul class="nav-lang">
+          <li class="nal-lang__item nal-lang__item--active">en</li>
+          <li class="nal-lang__item">ru</li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="header__bottom">
+      <div class="container">
+        <div class="header__inner d-flex jc-sb ai-c">
+          <div class="filter">
+            Shop by Category
+            <ul class="filter__list">
+              <li class="filter__item">
+                <p href="#" class="filter__group">Accesories</p>
+                <div class="filter__submenu">
+                  <div class="filter__categories">
+                    <p class="filter__heading">Phones</p>
+                    <ul>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Phone 1</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Phone 2</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Phone 3</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Phone 4</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Phone 5</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Phone 6</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Phone 7</a></li>
+                    </ul>
+                  </div>
+                  <div class="filter__categories">
+                    <p class="filter__heading">Computers</p>
+                    <ul>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Computer 1</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Computer 2</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Computer 3</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Computer 4</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Computer 5</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Computer 6</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Computer 7</a></li>
+                    </ul>
+                  </div>
+                  <div class="filter__categories">
+                    <p class="filter__heading">Smart watches</p>
+                    <ul>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Smart watches 1</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Smart watches 2</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Smart watches 3</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Smart watches 4</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Smart watches 5</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Smart watches 6</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Smart watches 7</a></li>
+                    </ul>
+                  </div>
+                  <div class="filter__categories">
+                    <p class="filter__heading">Cameras</p>
+                    <ul>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Camera 1</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Camera 2</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Camera 3</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Camera 4</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Camera 5</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Camera 6</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Camera 7</a></li>
+                    </ul>
+                  </div>
+
+                </div>
+              </li>
+              <li class="filter__item">
+                <p href="#" class="filter__group">Furniture</p>
+                <div class="filter__submenu">
+                  <div class="filter__categories">
+                    <p class="filter__heading">Phones</p>
+                    <ul>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Phone 1</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Phone 2</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Phone 3</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Phone 4</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Phone 5</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Phone 6</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Phone 7</a></li>
+                    </ul>
+                  </div>
+                  <div class="filter__categories">
+                    <p class="filter__heading">Computers</p>
+                    <ul>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Computer 1</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Computer 2</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Computer 3</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Computer 4</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Computer 5</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Computer 6</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Computer 7</a></li>
+                    </ul>
+                  </div>
+                  <div class="filter__categories">
+                    <p class="filter__heading">Smart watches</p>
+                    <ul>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Smart watches 1</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Smart watches 2</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Smart watches 3</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Smart watches 4</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Smart watches 5</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Smart watches 6</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Smart watches 7</a></li>
+                    </ul>
+                  </div>
+                  <div class="filter__categories">
+                    <p class="filter__heading">Cameras</p>
+                    <ul>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Camera 1</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Camera 2</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Camera 3</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Camera 4</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Camera 5</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Camera 6</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Camera 7</a></li>
+                    </ul>
+                  </div>
+
+                </div>
+              </li>
+              <li class="filter__item">
+                <p href="#" class="filter__group">Electronics</p>
+                <div class="filter__submenu">
+                  <div class="filter__categories">
+                    <p class="filter__heading">Phones</p>
+                    <ul>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Phone 1</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Phone 2</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Phone 3</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Phone 4</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Phone 5</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Phone 6</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Phone 7</a></li>
+                    </ul>
+                  </div>
+                  <div class="filter__categories">
+                    <p class="filter__heading">Computers</p>
+                    <ul>
+                      <li><a href="#">Computer 1</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Computer 2</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Computer 3</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Computer 4</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Computer 5</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Computer 6</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Computer 7</a></li>
+                    </ul>
+                  </div>
+                  <div class="filter__categories">
+                    <p class="filter__heading">Smart watches</p>
+                    <ul>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Smart watches 1</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Smart watches 2</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Smart watches 3</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Smart watches 4</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Smart watches 5</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Smart watches 6</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Smart watches 7</a></li>
+                    </ul>
+                  </div>
+                  <div class="filter__categories">
+                    <p class="filter__heading">Cameras</p>
+                    <ul>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Camera 1</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Camera 2</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Camera 3</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Camera 4</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Camera 5</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Camera 6</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Camera 7</a></li>
+                    </ul>
+                  </div>
+
+                </div>
+              </li>
+              <li class="filter__item">
+                <p href="#" class="filter__group">Clothes</p>
+                <div class="filter__submenu">
+                  <div class="filter__categories">
+                    <p class="filter__heading">Phones</p>
+                    <ul>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Phone 1</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Phone 2</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Phone 3</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Phone 4</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Phone 5</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Phone 6</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Phone 7</a></li>
+                    </ul>
+                  </div>
+                  <div class="filter__categories">
+                    <p class="filter__heading">Computers</p>
+                    <ul>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Computer 1</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Computer 2</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Computer 3</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Computer 4</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Computer 5</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Computer 6</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Computer 7</a></li>
+                    </ul>
+                  </div>
+                  <div class="filter__categories">
+                    <p class="filter__heading">Smart watches</p>
+                    <ul>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Smart watches 1</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Smart watches 2</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Smart watches 3</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Smart watches 4</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Smart watches 5</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Smart watches 6</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Smart watches 7</a></li>
+                    </ul>
+                  </div>
+                  <div class="filter__categories">
+                    <p class="filter__heading">Cameras</p>
+                    <ul>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Camera 1</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Camera 2</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Camera 3</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Camera 4</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Camera 5</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Camera 6</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Camera 7</a></li>
+                    </ul>
+                  </div>
+
+                </div>
+              </li>
+              <li class="filter__item">
+                <p href="#" class="filter__group">Bags</p>
+                <div class="filter__submenu">
+                  <div class="filter__categories">
+                    <p class="filter__heading">Phones</p>
+                    <ul>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Phone 1</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Phone 2</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Phone 3</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Phone 4</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Phone 5</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Phone 6</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Phone 7</a></li>
+                    </ul>
+                  </div>
+                  <div class="filter__categories">
+                    <p class="filter__heading">Computers</p>
+                    <ul>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Computer 1</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Computer 2</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Computer 3</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Computer 4</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Computer 5</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Computer 6</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Computer 7</a></li>
+                    </ul>
+                  </div>
+                  <div class="filter__categories">
+                    <p class="filter__heading">Smart watches</p>
+                    <ul>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Smart watches 1</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Smart watches 2</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Smart watches 3</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Smart watches 4</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Smart watches 5</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Smart watches 6</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Smart watches 7</a></li>
+                    </ul>
+                  </div>
+                  <div class="filter__categories">
+                    <p class="filter__heading">Cameras</p>
+                    <ul>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Camera 1</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Camera 2</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Camera 3</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Camera 4</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Camera 5</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Camera 6</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Camera 7</a></li>
+                    </ul>
+                  </div>
+
+                </div>
+              </li>
+              <li class="filter__item">
+                <p href="#" class="filter__group">Home appliances</p>
+                <div class="filter__submenu">
+                  <div class="filter__categories">
+                    <p class="filter__heading">Phones</p>
+                    <ul>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Phone 1</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Phone 2</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Phone 3</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Phone 4</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Phone 5</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Phone 6</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Phone 7</a></li>
+                    </ul>
+                  </div>
+                  <div class="filter__categories">
+                    <p class="filter__heading">Computers</p>
+                    <ul>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Computer 1</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Computer 2</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Computer 3</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Computer 4</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Computer 5</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Computer 6</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Computer 7</a></li>
+                    </ul>
+                  </div>
+                  <div class="filter__categories">
+                    <p class="filter__heading">Smart watches</p>
+                    <ul>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Smart watches 1</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Smart watches 2</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Smart watches 3</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Smart watches 4</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Smart watches 5</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Smart watches 6</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Smart watches 7</a></li>
+                    </ul>
+                  </div>
+                  <div class="filter__categories">
+                    <p class="filter__heading">Cameras</p>
+                    <ul>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Camera 1</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Camera 2</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Camera 3</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Camera 4</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Camera 5</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Camera 6</a></li>
+                      <li class="filter__sublist"><a class="filter__link" href="#">Camera 7</a></li>
+                    </ul>
+                  </div>
+
+                </div>
+              </li>
+            </ul>
+          </div>
+          <input class="header__search" type="search" placeholder="Search Products">
+          <ul class="header__user-cart d-flex jc-sb">
+            <li class="user">
+              <ul class="user__list">
+                <li class="user__item">
+                  <a class="user__link btn-200" href="#">My Account</a>
+                </li>
+                <li class="user__item">
+                  <a class="user__link btn-200" href="#">Log Out</a>
+                </li>
+              </ul>
+            </li>
+            <li class="cart">
+              <div class="cart__inner">
+                <div class="cart__top d-flex jc-sb">
+                  <div class="cart__photo">
+                    <img class="cart__img" width="80px" height="80px" src="images/content/black-smart-w.jpg"
+                      alt="Black Smart Watch">
+                  </div>
+                  <div class="cart__desc">
+                    <p class="cart__title">Black Smart Watch</p>
+                    <p class="cart__price">$44.00</p>
+                  </div>
+
+                </div>
+                <div class="cart__bottom">
+                  <p class="cart__subtotal">Subtotal: <span>$44.00</span></p>
+                  <div class="cart__buttons d-flex jc-sb">
+                    <button class="btn btn-148" type="button">View Cart</button>
+                    <button class="btn btn-148" type="button">Checkout</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+  </header>
+
+  <main class="main">
+    <div class="container">
+
+
+      <section class="products">
+        <h1 class="title products__title">Products</h1>
+        <ul class="breadcrumbs d-flex">
+          <li class="breadcrumbs__item">
+            <a href="" class="breadcrumbs__link">Home</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a href="" class="breadcrumbs__link">Products</a>
+          </li>
+        </ul>
+        <div class="products__inner d-flex jc-sb">
+          <ul class="filters">
+            <li class="filters__item filters-category">
+              <h2 class="filters__title">Shop by Categor</h2>
+              <form class="filters-category__form" action="#">
+                <label class="filters__label d-flex jc-sb">
+                  <span class="filters__text">TV & Video</span>
+                  <div class="filters__box">
+                    <input class="filters__input filters-category__input" type="checkbox">
+                    <span class="filters__checkbox filters-category__checkbox"></span>
+                  </div>
+                </label>
+                <label class="filters__label d-flex jc-sb">
+                  <span class="filters__text">Computers</span>
+                  <div class="filters__box">
+                    <input class="filters__input filters-category__input" type="checkbox">
+                    <span class="filters__checkbox filters-category__checkbox"></span>
+                  </div>
+                </label>
+                <label class="filters__label d-flex jc-sb">
+                  <span class="filters__text">Camera & Photo</span>
+                  <div class="filters__box">
+                    <input class="filters__input filters-category__input" type="checkbox">
+                    <span class="filters__checkbox filters-category__checkbox"></span>
+                  </div>
+                </label>
+                <label class="filters__label d-flex jc-sb">
+                  <span class="filters__text">Wearable Technology</span>
+                  <div class="filters__box">
+                    <input class="filters__input filters-category__input" type="checkbox">
+                    <span class="filters__checkbox filters-category__checkbox"></span>
+                  </div>
+                </label>
+                <label class="filters__label d-flex jc-sb">
+                  <span class="filters__text">Cell Phones</span>
+                  <div class="filters__box">
+                    <input class="filters__input filters-category__input" type="checkbox">
+                    <span class="filters__checkbox filters-category__checkbox"></span>
+                  </div>
+                </label>
+              </form>
+
+            </li>
+            <li class="filters__item filters-color">
+              <h2 class="filters__title">Shop by Color</h2>
+              <form class="filters-color__form" action="#">
+                <label class="filters__label filters-color__label d-flex jc-sb">
+                  <span class="filters-color__text filters-color__text--black">Black</span>
+                  <div class="filters-color__box">
+                    <input class="filters__input filters-color__input" type="checkbox">
+                    <span class="filters__checkbox filters-color__checkbox"></span>
+                  </div>
+                </label>
+                <label class="filters-color__label d-flex jc-sb">
+                  <span class="filters-color__text  filters-color__text--pink">Pink</span>
+                  <div class="filters-color__box">
+                    <input class="filters__input filters-color__input" type="checkbox">
+                    <span class="filters__checkbox filters-color__checkbox"></span>
+                  </div>
+                </label>
+                <label class="filters-color__label d-flex jc-sb">
+                  <span class="filters-color__text filters-color__text--green">Green</span>
+                  <div class="filters-color__box">
+                    <input class="filters__input filters-color__input" type="checkbox">
+                    <span class="filters__checkbox filters-color__checkbox"></span>
+                  </div>
+                </label>
+                <label class="filters-color__label d-flex jc-sb">
+                  <span class="filters-color__text filters-color__text--gray">Gray</span>
+                  <div class="filters-color__box">
+                    <input class="filters__input filters-color__input" type="checkbox">
+                    <span class="filters__checkbox filters-color__checkbox"></span>
+                  </div>
+                </label>
+                <label class="filters-color__label d-flex jc-sb">
+                  <span class="filters-color__text filters-color__text--turquoise">Еurquoise</span>
+                  <div class="filters-color__box">
+                    <input class="filters__input filters-color__input" type="checkbox">
+                    <span class="filters__checkbox filters-color__checkbox"></span>
+                  </div>
+                </label>
+
+              </form>
+
+            </li>
+
+            <li class="filters__item filters-brand">
+              <h2 class="filters__title">Shop by Brand</h2>
+              <form class="filters__form" action="#">
+                <label class="filters__label d-flex jc-sb">
+                  <span class="filters__text">Apple</span>
+                  <div class="filters__box">
+                    <input class="filters__input" type="checkbox">
+                    <span class="filters__checkbox "></span>
+                  </div>
+                </label>
+                <label class="filters__label d-flex jc-sb">
+                  <span class="filters__text">Huawei</span>
+                  <div class="filters__box">
+                    <input class="filters__input" type="checkbox">
+                    <span class="filters__checkbox "></span>
+                  </div>
+                </label>
+                <label class="filters__label d-flex jc-sb">
+                  <span class="filters__text">Samsung</span>
+                  <div class="filters__box">
+                    <input class="filters__input" type="checkbox">
+                    <span class="filters__checkbox "></span>
+                  </div>
+                </label>
+                <label class="filters__label d-flex jc-sb">
+                  <span class="filters__text">Lenovo</span>
+                  <div class="filters__box">
+                    <input class="filters__input" type="checkbox">
+                    <span class="filters__checkbox "></span>
+                  </div>
+                </label>
+                <label class="filters__label d-flex jc-sb">
+                  <span class="filters__text">Sony</span>
+                  <div class="filters__box">
+                    <input class="filters__input" type="checkbox">
+                    <span class="filters__checkbox "></span>
+                  </div>
+                </label>
+              </form>
+            </li>
+
+            <li class="filters__item filters-brand">
+              <h2 class="filters__title">Shop by Price</h2>
+              <form class="filters__form" action="#">
+                <label class="filters__label d-flex jc-sb">
+                  <span class="filters__text">$0.00 - $9.99</span>
+                  <div class="filters__box">
+                    <input class="filters__input" type="checkbox">
+                    <span class="filters__checkbox "></span>
+                  </div>
+                </label>
+                <label class="filters__label d-flex jc-sb">
+                  <span class="filters__text">$10.00 - $19.99</span>
+                  <div class="filters__box">
+                    <input class="filters__input" type="checkbox">
+                    <span class="filters__checkbox "></span>
+                  </div>
+                </label>
+                <label class="filters__label d-flex jc-sb">
+                  <span class="filters__text">$20.00 - $29.99</span>
+                  <div class="filters__box">
+                    <input class="filters__input" type="checkbox">
+                    <span class="filters__checkbox "></span>
+                  </div>
+                </label>
+                <label class="filters__label d-flex jc-sb">
+                  <span class="filters__text">$30.00 - $39.99</span>
+                  <div class="filters__box">
+                    <input class="filters__input" type="checkbox">
+                    <span class="filters__checkbox "></span>
+                  </div>
+                </label>
+                <label class="filters__label d-flex jc-sb">
+                  <span class="filters__text">$40.00 - $69.99</span>
+                  <div class="filters__box">
+                    <input class="filters__input" type="checkbox">
+                    <span class="filters__checkbox "></span>
+                  </div>
+                </label>
+
+              </form>
+            </li>
+
+
+          </ul>
+          <div class="shop-content">
+            <div class="shop-content__filter  d-flex jc-sb">
+              <div class="shop-condiv__buttons d-flex">
+                <button class="shop-content__btn button-grid shop-content__btn--active">
+                  <svg class="shop-content__svg">
+                    <use xlink:href="sprite.svg#grid-filter-btn"></use>
+                  </svg>
+                </button>
+                <button class="shop-content__btn button-list d-flex jc-c ai-c">
+                  <svg class="shop-content__svg">
+                    <use xlink:href="sprite.svg#grid-list-btn"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="shop-content__form">
+                <span>Sort by:</span>
+                <select name="" id="" class="shop-content__select-by select-style">
+                  <option value="1">Featured</option>
+                  <option value="1">2</option>
+                  <option value="1">3</option>
+                  <option value="1">4</option>
+                </select>
+                <span>Show:</span>
+                <select name="" id="" class="shop-content__select-show select-style">
+                  <option value="1">36</option>
+                  <option value="1">48</option>
+                  <option value="1">60</option>
+                  <option value="1">72</option>
+                </select>
+              </div>
+            </div>
+            <ul class="shop-products d-flex jc-sb fw-w">
+              <li class="product">
+                <div class="product__top">
+                  <div class="product__new">New</div>
+                  <img class="product__img" src="images/content/1.jpg" alt="product">
+                  <div class="product__popup">
+                    <ul class="product__list">
+                      <li class="product__item">
+                        <a class="product__link product__link--wish" href="#">Add to Wish List</a>
+                      </li>
+                      <li class="product__item">
+                        <a class="product__link product__link--compare" href="#">Compare</a>
+                      </li>
+                      <li class="product__item">
+                        <a class="product__link product__link--cart" href="#">Add to Cart</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="product__bottom d-flex jc-sb">
+                  <div class="product__desc">
+                    <p class="product__name">Basic Crew Neck Tee</p>
+                    <p class="product__color">Black</p>
+                  </div>
+
+                  <p class="product__price">$44.00</p>
+                  <div class="product__content">
+                    <div class="product__text">
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci eos perspiciatis iure ullam
+                        exercitationem quasi nulla reprehenderit earum saepe? Id! Lorem, ipsum dolor sit amet
+                        consectetur adipisicing elit. At, quis!</p>
+                    </div>
+                    <button class="product__btn btn btn-200">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+              <li class="product">
+                <div class="product__top">
+                  <div class="product__new">New</div>
+                  <img class="product__img" src="images/content/1.jpg" alt="product">
+                  <div class="product__popup">
+                    <ul class="product__list">
+                      <li class="product__item">
+                        <a class="product__link product__link--wish" href="#">Add to Wish List</a>
+                      </li>
+                      <li class="product__item">
+                        <a class="product__link product__link--compare" href="#">Compare</a>
+                      </li>
+                      <li class="product__item">
+                        <a class="product__link product__link--cart" href="#">Add to Cart</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="product__bottom d-flex jc-sb">
+                  <div class="product__desc">
+                    <p class="product__name">Basic Crew Neck Tee</p>
+                    <p class="product__color">Black</p>
+                  </div>
+
+                  <p class="product__price">$44.00</p>
+                  <div class="product__content">
+                    <div class="product__text">
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci eos perspiciatis iure ullam
+                        exercitationem quasi nulla reprehenderit earum saepe? Id! Lorem, ipsum dolor sit amet
+                        consectetur adipisicing elit. At, quis!</p>
+                    </div>
+                    <button class="product__btn btn btn-200">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+              <li class="product">
+                <div class="product__top">
+                  <div class="product__new">New</div>
+                  <img class="product__img" src="images/content/1.jpg" alt="product">
+                  <div class="product__popup">
+                    <ul class="product__list">
+                      <li class="product__item">
+                        <a class="product__link product__link--wish" href="#">Add to Wish List</a>
+                      </li>
+                      <li class="product__item">
+                        <a class="product__link product__link--compare" href="#">Compare</a>
+                      </li>
+                      <li class="product__item">
+                        <a class="product__link product__link--cart" href="#">Add to Cart</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="product__bottom d-flex jc-sb">
+                  <div class="product__desc">
+                    <p class="product__name">Basic Crew Neck Tee</p>
+                    <p class="product__color">Black</p>
+                  </div>
+
+                  <p class="product__price">$44.00</p>
+                  <div class="product__content">
+                    <div class="product__text">
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci eos perspiciatis iure ullam
+                        exercitationem quasi nulla reprehenderit earum saepe? Id! Lorem, ipsum dolor sit amet
+                        consectetur adipisicing elit. At, quis!</p>
+                    </div>
+                    <button class="product__btn btn btn-200">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+              <li class="product">
+                <div class="product__top">
+                  <div class="product__new">New</div>
+                  <img class="product__img" src="images/content/1.jpg" alt="product">
+                  <div class="product__popup">
+                    <ul class="product__list">
+                      <li class="product__item">
+                        <a class="product__link product__link--wish" href="#">Add to Wish List</a>
+                      </li>
+                      <li class="product__item">
+                        <a class="product__link product__link--compare" href="#">Compare</a>
+                      </li>
+                      <li class="product__item">
+                        <a class="product__link product__link--cart" href="#">Add to Cart</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="product__bottom d-flex jc-sb">
+                  <div class="product__desc">
+                    <p class="product__name">Basic Crew Neck Tee</p>
+                    <p class="product__color">Black</p>
+                  </div>
+
+                  <p class="product__price">$44.00</p>
+                  <div class="product__content">
+                    <div class="product__text">
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci eos perspiciatis iure ullam
+                        exercitationem quasi nulla reprehenderit earum saepe? Id! Lorem, ipsum dolor sit amet
+                        consectetur adipisicing elit. At, quis!</p>
+                    </div>
+                    <button class="product__btn btn btn-200">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+              <li class="product">
+                <div class="product__top">
+                  <div class="product__new">New</div>
+                  <img class="product__img" src="images/content/1.jpg" alt="product">
+                  <div class="product__popup">
+                    <ul class="product__list">
+                      <li class="product__item">
+                        <a class="product__link product__link--wish" href="#">Add to Wish List</a>
+                      </li>
+                      <li class="product__item">
+                        <a class="product__link product__link--compare" href="#">Compare</a>
+                      </li>
+                      <li class="product__item">
+                        <a class="product__link product__link--cart" href="#">Add to Cart</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="product__bottom d-flex jc-sb">
+                  <div class="product__desc">
+                    <p class="product__name">Basic Crew Neck Tee</p>
+                    <p class="product__color">Black</p>
+                  </div>
+
+                  <p class="product__price">$44.00</p>
+                  <div class="product__content">
+                    <div class="product__text">
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci eos perspiciatis iure ullam
+                        exercitationem quasi nulla reprehenderit earum saepe? Id! Lorem, ipsum dolor sit amet
+                        consectetur adipisicing elit. At, quis!</p>
+                    </div>
+                    <button class="product__btn btn btn-200">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+              <li class="product">
+                <div class="product__top">
+                  <div class="product__new">New</div>
+                  <img class="product__img" src="images/content/1.jpg" alt="product">
+                  <div class="product__popup">
+                    <ul class="product__list">
+                      <li class="product__item">
+                        <a class="product__link product__link--wish" href="#">Add to Wish List</a>
+                      </li>
+                      <li class="product__item">
+                        <a class="product__link product__link--compare" href="#">Compare</a>
+                      </li>
+                      <li class="product__item">
+                        <a class="product__link product__link--cart" href="#">Add to Cart</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="product__bottom d-flex jc-sb">
+                  <div class="product__desc">
+                    <p class="product__name">Basic Crew Neck Tee</p>
+                    <p class="product__color">Black</p>
+                  </div>
+
+                  <p class="product__price">$44.00</p>
+                  <div class="product__content">
+                    <div class="product__text">
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci eos perspiciatis iure ullam
+                        exercitationem quasi nulla reprehenderit earum saepe? Id! Lorem, ipsum dolor sit amet
+                        consectetur adipisicing elit. At, quis!</p>
+                    </div>
+                    <button class="product__btn btn btn-200">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+              <li class="product">
+                <div class="product__top">
+                  <div class="product__new">New</div>
+                  <img class="product__img" src="images/content/1.jpg" alt="product">
+                  <div class="product__popup">
+                    <ul class="product__list">
+                      <li class="product__item">
+                        <a class="product__link product__link--wish" href="#">Add to Wish List</a>
+                      </li>
+                      <li class="product__item">
+                        <a class="product__link product__link--compare" href="#">Compare</a>
+                      </li>
+                      <li class="product__item">
+                        <a class="product__link product__link--cart" href="#">Add to Cart</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="product__bottom d-flex jc-sb">
+                  <div class="product__desc">
+                    <p class="product__name">Basic Crew Neck Tee</p>
+                    <p class="product__color">Black</p>
+                  </div>
+
+                  <p class="product__price">$44.00</p>
+                  <div class="product__content">
+                    <div class="product__text">
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci eos perspiciatis iure ullam
+                        exercitationem quasi nulla reprehenderit earum saepe? Id! Lorem, ipsum dolor sit amet
+                        consectetur adipisicing elit. At, quis!</p>
+                    </div>
+                    <button class="product__btn btn btn-200">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+              <li class="product">
+                <div class="product__top">
+                  <div class="product__new">New</div>
+                  <img class="product__img" src="images/content/1.jpg" alt="product">
+                  <div class="product__popup">
+                    <ul class="product__list">
+                      <li class="product__item">
+                        <a class="product__link product__link--wish" href="#">Add to Wish List</a>
+                      </li>
+                      <li class="product__item">
+                        <a class="product__link product__link--compare" href="#">Compare</a>
+                      </li>
+                      <li class="product__item">
+                        <a class="product__link product__link--cart" href="#">Add to Cart</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="product__bottom d-flex jc-sb">
+                  <div class="product__desc">
+                    <p class="product__name">Basic Crew Neck Tee</p>
+                    <p class="product__color">Black</p>
+                  </div>
+
+                  <p class="product__price">$44.00</p>
+                  <div class="product__content">
+                    <div class="product__text">
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci eos perspiciatis iure ullam
+                        exercitationem quasi nulla reprehenderit earum saepe? Id! Lorem, ipsum dolor sit amet
+                        consectetur adipisicing elit. At, quis!</p>
+                    </div>
+                    <button class="product__btn btn btn-200">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+              <li class="product">
+                <div class="product__top">
+                  <div class="product__new">New</div>
+                  <img class="product__img" src="images/content/1.jpg" alt="product">
+                  <div class="product__popup">
+                    <ul class="product__list">
+                      <li class="product__item">
+                        <a class="product__link product__link--wish" href="#">Add to Wish List</a>
+                      </li>
+                      <li class="product__item">
+                        <a class="product__link product__link--compare" href="#">Compare</a>
+                      </li>
+                      <li class="product__item">
+                        <a class="product__link product__link--cart" href="#">Add to Cart</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="product__bottom d-flex jc-sb">
+                  <div class="product__desc">
+                    <p class="product__name">Basic Crew Neck Tee</p>
+                    <p class="product__color">Black</p>
+                  </div>
+
+                  <p class="product__price">$44.00</p>
+                  <div class="product__content">
+                    <div class="product__text">
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci eos perspiciatis iure ullam
+                        exercitationem quasi nulla reprehenderit earum saepe? Id! Lorem, ipsum dolor sit amet
+                        consectetur adipisicing elit. At, quis!</p>
+                    </div>
+                    <button class="product__btn btn btn-200">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+              <li class="product">
+                <div class="product__top">
+                  <div class="product__new">New</div>
+                  <img class="product__img" src="images/content/1.jpg" alt="product">
+                  <div class="product__popup">
+                    <ul class="product__list">
+                      <li class="product__item">
+                        <a class="product__link product__link--wish" href="#">Add to Wish List</a>
+                      </li>
+                      <li class="product__item">
+                        <a class="product__link product__link--compare" href="#">Compare</a>
+                      </li>
+                      <li class="product__item">
+                        <a class="product__link product__link--cart" href="#">Add to Cart</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="product__bottom d-flex jc-sb">
+                  <div class="product__desc">
+                    <p class="product__name">Basic Crew Neck Tee</p>
+                    <p class="product__color">Black</p>
+                  </div>
+
+                  <p class="product__price">$44.00</p>
+                  <div class="product__content">
+                    <div class="product__text">
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci eos perspiciatis iure ullam
+                        exercitationem quasi nulla reprehenderit earum saepe? Id! Lorem, ipsum dolor sit amet
+                        consectetur adipisicing elit. At, quis!</p>
+                    </div>
+                    <button class="product__btn btn btn-200">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+              <li class="product">
+                <div class="product__top">
+                  <div class="product__new">New</div>
+                  <img class="product__img" src="images/content/1.jpg" alt="product">
+                  <div class="product__popup">
+                    <ul class="product__list">
+                      <li class="product__item">
+                        <a class="product__link product__link--wish" href="#">Add to Wish List</a>
+                      </li>
+                      <li class="product__item">
+                        <a class="product__link product__link--compare" href="#">Compare</a>
+                      </li>
+                      <li class="product__item">
+                        <a class="product__link product__link--cart" href="#">Add to Cart</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="product__bottom d-flex jc-sb">
+                  <div class="product__desc">
+                    <p class="product__name">Basic Crew Neck Tee</p>
+                    <p class="product__color">Black</p>
+                  </div>
+
+                  <p class="product__price">$44.00</p>
+                  <div class="product__content">
+                    <div class="product__text">
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci eos perspiciatis iure ullam
+                        exercitationem quasi nulla reprehenderit earum saepe? Id! Lorem, ipsum dolor sit amet
+                        consectetur adipisicing elit. At, quis!</p>
+                    </div>
+                    <button class="product__btn btn btn-200">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+              <li class="product">
+                <div class="product__top">
+                  <div class="product__new">New</div>
+                  <img class="product__img" src="images/content/1.jpg" alt="product">
+                  <div class="product__popup">
+                    <ul class="product__list">
+                      <li class="product__item">
+                        <a class="product__link product__link--wish" href="#">Add to Wish List</a>
+                      </li>
+                      <li class="product__item">
+                        <a class="product__link product__link--compare" href="#">Compare</a>
+                      </li>
+                      <li class="product__item">
+                        <a class="product__link product__link--cart" href="#">Add to Cart</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="product__bottom d-flex jc-sb">
+                  <div class="product__desc">
+                    <p class="product__name">Basic Crew Neck Tee</p>
+                    <p class="product__color">Black</p>
+                  </div>
+
+                  <p class="product__price">$44.00</p>
+                  <div class="product__content">
+                    <div class="product__text">
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci eos perspiciatis iure ullam
+                        exercitationem quasi nulla reprehenderit earum saepe? Id! Lorem, ipsum dolor sit amet
+                        consectetur adipisicing elit. At, quis!</p>
+                    </div>
+                    <button class="product__btn btn btn-200">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+            <div class="pagination d-flex jc-c">
+              <ul class="pagination__list d-flex">
+                <li class="pagination__item">
+                  <span class="pagination__link pagination__link--active">1</span>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">2</a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">3</a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">4</a>
+                </li>
+                <li class="pagination__item">
+                  <span class="pagination__link">...</span>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">10</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top d-flex jc-sb">
+        <ul class="footer__list d-flex jc-sb">
+          <li class="footer__item">
+            <p class="footer__heading">MENU</p>
+            <ul class="category">
+              <li class="category__item">
+                <a href="#" class="link category__link">
+                  Home
+                </a>
+              </li>
+              <li class="category__item">
+                <a href="#" class="link category__link">
+                  Shop
+                </a>
+              </li>
+              <li class="category__item">
+                <a href="#" class="link category__link">
+                  About
+                </a>
+              </li>
+              <li class="category__item">
+                <a href="#" class="link category__link">
+                  Contact
+                </a>
+              </li>
+              <li class="category__item">
+                <a href="#" class="link category__link">
+                  Journal
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="footer__item">
+            <p class="footer__heading">SHOP</p>
+            <ul class="category">
+              <li class="footer__item">
+                <a href="#" class="link category__link">
+                  Category 1
+                </a>
+              </li>
+              <li class="category__item">
+                <a href="#" class="link category__link">
+                  Category 2
+                </a>
+              </li>
+              <li class="category__item">
+                <a href="#" class="link category__link">
+                  Category 3
+                </a>
+              </li>
+              <li class="category__item">
+                <a href="#" class="link category__link">
+                  Category 4
+                </a>
+              </li>
+              <li class="category__item">
+                <a href="#" class="link category__link">
+                  Category 5
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="footer__item">
+            <p class="footer__heading">HELP</p>
+            <ul class="category">
+              <li class="category__item">
+                <a href="#" class="link category__link">
+                  Privacy Policy
+                </a>
+              </li>
+              <li class="category__item">
+                <a href="#" class="link category__link">
+                  Terms & Conditions
+                </a>
+              </li>
+              <li class="category__item">
+                <a href="#" class="link category__link">
+                  Special E-shop
+                </a>
+              </li>
+              <li class="category__item">
+                <a href="#" class="link category__link">
+                  Shipping
+                </a>
+              </li>
+              <li class="category__item">
+                <a href="#" class="link category__link">
+                  Secure Payments
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <address class="contacts">
+          <a href="tel:+0526115711" class="contacts__link">(052) 611-5711</a>
+          <a href="mailto:company@domain.com" class="contacts__link">company@domain.com</a>
+          <p class="contacts__address">575 Crescent Ave. Quakertown, PA 18951</p>
+        </address>
+        <a href="#" class="logo">
+          <img src="images/logo.svg" alt="">
+        </a>
+      </div>
+      <div class="footer__bottom d-flex jc-sb ai-c">
+        <ul class="social d-flex ai-c">
+          <li class="social__item">
+            <a href="" class="social__link">
+              <svg class="social__svg">
+                <use xlink:href="sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="" class="social__link">
+              <svg class="social__svg">
+                <use xlink:href="sprite.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="" class="social__link">
+              <svg class="social__svg">
+                <use xlink:href="sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <p class="footer__copy">2020 Orebi Minimal eCommerce Sketch Template by Adveits</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

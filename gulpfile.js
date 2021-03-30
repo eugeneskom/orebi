@@ -20,14 +20,15 @@ function browsersync() {
 }
 
 
-gulp.task('include', function() {
-   gulp.src(['app/html/**/*'])
-   .pipe(fileinclude({
-   prefix: '@@',
-   basepath: '@file'
-   }))
-   .pipe(gulp.dest('dist'));
-  });
+function fileInclude() {
+  return src(['app/html/pages/*'])
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: '@file'
+    }))
+    .pipe(dest('app'))
+    .pipe(browserSync.stream());
+}
 
 
 function styles() {
@@ -71,7 +72,7 @@ function scripts() {
     'node_modules/ion-rangeslider/js/ion.rangeSlider.js',
     'node_modules/jquery-form-styler/dist/jquery.formstyler.js',
     'node_modules/swiper/swiper-bundle.js',
-    'node_modules/gulp-file-include/lib/indent.js',
+    // 'node_modules/gulp-file-include/lib/indent.js',
 
     'app/js/main.js'
 
@@ -103,7 +104,7 @@ function watching() {
 }
 
 
-
+exports.fileInclude = fileInclude;
 exports.styles = styles;
 exports.scripts = scripts;
 exports.browsersync = browsersync;
@@ -111,4 +112,4 @@ exports.watching = watching;
 exports.images = images;
 exports.cleanDist = cleanDist;
 exports.build = series(cleanDist, images, build);
-exports.default = parallel(styles, scripts, browsersync, watching);
+exports.default = parallel(styles, fileInclude, scripts, browsersync, watching);

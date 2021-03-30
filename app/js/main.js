@@ -1,10 +1,6 @@
 $(function () {
   $('.select-style').styler();
 
-
-
- 
-
 let $slider = $('.intro__list');
 
 if ($slider.length) {

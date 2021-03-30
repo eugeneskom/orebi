@@ -7,7 +7,7 @@
   }
 
   &__bottom {
-    background-color: #F5F5F3;
+    background-color: $light-500;
     padding: 25px 0;
   }
 
@@ -31,7 +31,7 @@
     padding-left: 15px;
 
     &:focus {
-      background-color: #e8e8e8;
+      background-color: $light-400;
     }
 
     &::placeholder {
@@ -52,13 +52,18 @@
     background-position: center center;
     border: none;
     outline: transparent;
-    background-color: $secondary;
+    background-color: $light-900;
     cursor: pointer;
   }
 
   .nav-lang {
     &__radio {
       display: none;
+    }
+    &__label{
+      &:not(:last-child){
+        margin-right: 10px;
+      }
     }
 
     span {
@@ -69,6 +74,7 @@
       font-size: 14px;
       line-height: 1.3;
       transition: transform 0.3s;
+      padding: 0;
     }
 
   }
@@ -76,7 +82,6 @@
   .nav-lang__radio:checked+span {
     text-shadow: 1px 0 0 $highlight;
     transition: transform 0.3s;
-
   }
 
 
@@ -180,7 +185,7 @@
     position: absolute;
     right: -584px;
     top: 0;
-    background-color: #ffffff;
+    background-color: $light-900;
     padding: 28px 47px 32px 40px;
     display: none;
 
@@ -218,7 +223,7 @@
 
     &:hover {
       padding-left: 31px;
-      color: #ffffff;
+      color: $light-900;
       transition: padding 0.3s, color 0.3s;
     }
 
@@ -304,15 +309,15 @@
   }
 
   &__link {
-    background-color: $secondary;
+    background-color: $light-900;
     color: $highlight;
     font-weight: 700;
-    border: 1px solid #F0F0F0;
+    border: 1px solid $light-700;
     transition: background-color 0.3s, color 0.3s, border 0.3s;
 
     &:hover {
       background-color: $highlight;
-      color: $secondary;
+      color: $light-900;
       border: none;
     }
   }
@@ -336,7 +341,7 @@
     top: 30px;
     right: 0;
     width: 358px;
-    border: 1px solid #F0F0F0;
+    border: 1px solid $light-700;
     display: none;
     max-height: 600px;
     overflow-y: auto;
@@ -348,7 +353,7 @@
 
   &__top {
     padding: 20px;
-    background-color: #F5F5F3;
+    background-color: $light-500;
     position: relative;
 
     &::after {
@@ -363,13 +368,13 @@
     }
 
     &:not(:first-child) {
-      border-top: 1px solid $secondary;
+      border-top: 1px solid $light-900;
     }
   }
 
   &__bottom {
     padding: 14px 22px 20px 21px;
-    background-color: #ffffff;
+    background-color: $light-900;
   }
 
   &__subtotal {
