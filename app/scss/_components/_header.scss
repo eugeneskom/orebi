@@ -17,7 +17,7 @@
 
       .header__search,
       .header__search-btn {
-        background-color: rgb(245, 241, 241);
+        background-color: $main;
       }
     }
 
@@ -35,7 +35,7 @@
     }
 
     &::placeholder {
-      color: #c4c4c4;
+      color: $light-500;
       font-size: 14px;
       line-height: 1.3;
     }

@@ -72,8 +72,6 @@ function scripts() {
     'node_modules/ion-rangeslider/js/ion.rangeSlider.js',
     'node_modules/jquery-form-styler/dist/jquery.formstyler.js',
     'node_modules/swiper/swiper-bundle.js',
-    // 'node_modules/gulp-file-include/lib/indent.js',
-
     'app/js/main.js'
 
   ])
@@ -86,7 +84,7 @@ function scripts() {
 
 function build() {
   return src([
-    'app/**/*.html',
+    'app/html/**/*.html',
     'app/css/style.min.css',
     'app/js/main.min.js'
   ], { base: 'app' })
@@ -100,7 +98,7 @@ function cleanDist() {
 function watching() {
   watch(['app/**/*.scss'], styles);
   watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
-  watch(['app/**/*.html']).on('change', browserSync.reload);
+  watch(['app/html/**/*.html'], fileInclude);
 }
 
 
