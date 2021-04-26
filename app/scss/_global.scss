@@ -242,7 +242,7 @@ body {
       content: "";
       position: absolute;
       right: 0;
-      top: 10px;
+      top: 8px;
       background-repeat: no-repeat;
       background-size: contain;
     }
@@ -334,4 +334,8 @@ body {
 
 .fw-w {
   flex-wrap: wrap;
+}
+
+.grid{
+  display: grid;
 }

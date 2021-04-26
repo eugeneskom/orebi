@@ -1,4 +1,5 @@
 .breadcrumbs {
+  padding: 125px 0 126px;
   &__item {
     &:not(:last-child) .breadcrumbs__link {
       padding-right: 12px;
@@ -15,5 +16,8 @@
     &:not(:first-child) .breadcrumbs__link {
       margin-left: 8px;
     }
+  }
+  &__title {
+    margin-bottom: 11px;
   }
 }

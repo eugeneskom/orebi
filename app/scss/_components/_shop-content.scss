@@ -1,0 +1,110 @@
+.shop-content {
+  width: 100%;
+
+  &__filter {
+    margin-bottom: 60px;
+  }
+
+  &__btn {
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    border: none;
+    outline: transparent;
+    fill: #767676;
+    background-color: transparent;
+    cursor: pointer;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    &--active {
+      fill: $light-900;
+      background-color: #000000;
+    }
+  }
+
+  &__svg {
+    width: 15px;
+    height: 13px;
+  }
+
+  &__select-by {
+    width: 240px;
+    margin-right: 40px;
+  }
+
+  &__select-show {
+    width: 140px;
+  }
+}
+
+.jq-selectbox {
+  border: 1px solid #F0F0F0;
+  &__select {
+    background: none; //when I use bgc it does not work
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 21px;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__trigger-arrow {
+    background-image: url('../images/icons/trigger-arrow.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 11px;
+    height: 6px;
+  }
+
+  &__dropdown {
+    margin-top: 5px;
+    height: auto;
+    bottom: auto;
+    top: 32px;
+    width: 100%;
+    box-shadow: 0 2px 10px rgb(119, 119, 136);
+
+    ul {
+      padding: 0;
+    }
+
+    li {
+      background-color: $light-900;
+      padding-left: 5px;
+      &:hover {
+        background-color: rgb(208, 203, 203);
+        color: $light-900;
+
+      }
+    }
+
+    .selected {
+      background-color: rgb(170, 169, 169);
+      color: $light-900;
+    }
+  }
+}
+
+.jq-selectbox__select-text {
+  background-color: none;
+  width: 100px;
+  margin-right: 30px;
+}
+
+
+
+.test-input{
+  display: none;
+  &:checked+span{
+    display: block;
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+  }
+}

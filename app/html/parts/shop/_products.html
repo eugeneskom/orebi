@@ -1,17 +1,14 @@
+
+
+
 <section class="products">
-  <h1 class="title products__title">Products</h1>
-  <ul class="breadcrumbs d-flex">
-    <li class="breadcrumbs__item">
-      <a href="" class="breadcrumbs__link">Home</a>
-    </li>
-    <li class="breadcrumbs__item">
-      <a href="" class="breadcrumbs__link">Products</a>
-    </li>
-  </ul>
+
   <div class="products__inner d-flex jc-sb">
     <ul class="filters">
       <li class="filters__item filters-category">
-        <h2 class="filters__title">Shop by Categor</h2>
+        <div class="filters__top d-flex jc-sb">
+          <h2 class="filters__title">Shop by Categor</h2>
+        </div>
         <form class="filters-category__form" action="#">
           <label class="filters__label d-flex jc-sb">
             <span class="filters__text">TV & Video</span>
@@ -52,8 +49,11 @@
 
       </li>
       <li class="filters__item filters-color">
-        <h2 class="filters__title">Shop by Color</h2>
-        <form class="filters-color__form" action="#">
+        <div class="filters__top d-flex jc-sb">
+          <h2 class="filters__title">Shop by Color</h2>
+          <img class="filters__toggle" src="images/icons/triangle.svg" alt="">
+        </div>
+        <form class="filters-color__form filters__form--dropdown" action="#">
           <label class="filters__label filters-color__label d-flex jc-sb">
             <span class="filters-color__text filters-color__text--black">Black</span>
             <div class="filters-color__box">
@@ -95,8 +95,11 @@
       </li>
 
       <li class="filters__item filters-brand">
-        <h2 class="filters__title">Shop by Brand</h2>
-        <form class="filters__form" action="#">
+        <div class="filters__top d-flex jc-sb">
+          <h2 class="filters__title">Shop by Brand</h2>
+          <img class="filters__toggle" src="images/icons/triangle.svg" alt="">
+        </div>
+        <form class="filters__form filters__form--dropdown" action="#">
           <label class="filters__label d-flex jc-sb">
             <span class="filters__text">Apple</span>
             <div class="filters__box">
@@ -136,7 +139,9 @@
       </li>
 
       <li class="filters__item filters-brand">
-        <h2 class="filters__title">Shop by Price</h2>
+        <div class="filters__top d-flex jc-sb">
+          <h2 class="filters__title">Shop by Price</h2>
+        </div>
         <form class="filters__form" action="#">
           <label class="filters__label d-flex jc-sb">
             <span class="filters__text">$0.00 - $9.99</span>
@@ -248,7 +253,75 @@
         </li>
         <li class="product">
           <div class="product__top">
-            <div class="product__new">New</div>
+            <div class="product__new">-10%</div>
+            <img class="product__img" src="images/content/1.jpg" alt="product">
+            <div class="product__popup">
+              <ul class="product__list">
+                <li class="product__item">
+                  <a class="product__link product__link--wish" href="#">Add to Wish List</a>
+                </li>
+                <li class="product__item">
+                  <a class="product__link product__link--compare" href="#">Compare</a>
+                </li>
+                <li class="product__item">
+                  <a class="product__link product__link--cart" href="#">Add to Cart</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="product__bottom d-flex jc-sb">
+            <div class="product__desc">
+              <p class="product__name">Basic Crew Neck Tee</p>
+              <p class="product__color">Black</p>
+            </div>
+
+            <p class="product__price">$44.00</p>
+            <div class="product__content">
+              <div class="product__text">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci eos perspiciatis iure ullam
+                  exercitationem quasi nulla reprehenderit earum saepe? Id! Lorem, ipsum dolor sit amet
+                  consectetur adipisicing elit. At, quis!</p>
+              </div>
+              <button class="product__btn btn btn-200">Add to Cart</button>
+            </div>
+          </div>
+        </li>
+        <li class="product">
+          <div class="product__top">
+            <img class="product__img" src="images/content/1.jpg" alt="product">
+            <div class="product__popup">
+              <ul class="product__list">
+                <li class="product__item">
+                  <a class="product__link product__link--wish" href="#">Add to Wish List</a>
+                </li>
+                <li class="product__item">
+                  <a class="product__link product__link--compare" href="#">Compare</a>
+                </li>
+                <li class="product__item">
+                  <a class="product__link product__link--cart" href="#">Add to Cart</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="product__bottom d-flex jc-sb">
+            <div class="product__desc">
+              <p class="product__name">Basic Crew Neck Tee</p>
+              <p class="product__color">Black</p>
+            </div>
+
+            <p class="product__price">$44.00</p>
+            <div class="product__content">
+              <div class="product__text">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci eos perspiciatis iure ullam
+                  exercitationem quasi nulla reprehenderit earum saepe? Id! Lorem, ipsum dolor sit amet
+                  consectetur adipisicing elit. At, quis!</p>
+              </div>
+              <button class="product__btn btn btn-200">Add to Cart</button>
+            </div>
+          </div>
+        </li>
+        <li class="product">
+          <div class="product__top">
             <img class="product__img" src="images/content/1.jpg" alt="product">
             <div class="product__popup">
               <ul class="product__list">
@@ -318,7 +391,6 @@
         </li>
         <li class="product">
           <div class="product__top">
-            <div class="product__new">New</div>
             <img class="product__img" src="images/content/1.jpg" alt="product">
             <div class="product__popup">
               <ul class="product__list">
@@ -353,7 +425,7 @@
         </li>
         <li class="product">
           <div class="product__top">
-            <div class="product__new">New</div>
+            <div class="product__new">-10%</div>
             <img class="product__img" src="images/content/1.jpg" alt="product">
             <div class="product__popup">
               <ul class="product__list">
@@ -388,7 +460,7 @@
         </li>
         <li class="product">
           <div class="product__top">
-            <div class="product__new">New</div>
+            <div class="product__new">-15%</div>
             <img class="product__img" src="images/content/1.jpg" alt="product">
             <div class="product__popup">
               <ul class="product__list">
@@ -423,7 +495,7 @@
         </li>
         <li class="product">
           <div class="product__top">
-            <div class="product__new">New</div>
+            <div class="product__new">-10%</div>
             <img class="product__img" src="images/content/1.jpg" alt="product">
             <div class="product__popup">
               <ul class="product__list">
@@ -458,7 +530,6 @@
         </li>
         <li class="product">
           <div class="product__top">
-            <div class="product__new">New</div>
             <img class="product__img" src="images/content/1.jpg" alt="product">
             <div class="product__popup">
               <ul class="product__list">
@@ -493,7 +564,6 @@
         </li>
         <li class="product">
           <div class="product__top">
-            <div class="product__new">New</div>
             <img class="product__img" src="images/content/1.jpg" alt="product">
             <div class="product__popup">
               <ul class="product__list">
@@ -528,77 +598,6 @@
         </li>
         <li class="product">
           <div class="product__top">
-            <div class="product__new">New</div>
-            <img class="product__img" src="images/content/1.jpg" alt="product">
-            <div class="product__popup">
-              <ul class="product__list">
-                <li class="product__item">
-                  <a class="product__link product__link--wish" href="#">Add to Wish List</a>
-                </li>
-                <li class="product__item">
-                  <a class="product__link product__link--compare" href="#">Compare</a>
-                </li>
-                <li class="product__item">
-                  <a class="product__link product__link--cart" href="#">Add to Cart</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="product__bottom d-flex jc-sb">
-            <div class="product__desc">
-              <p class="product__name">Basic Crew Neck Tee</p>
-              <p class="product__color">Black</p>
-            </div>
-
-            <p class="product__price">$44.00</p>
-            <div class="product__content">
-              <div class="product__text">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci eos perspiciatis iure ullam
-                  exercitationem quasi nulla reprehenderit earum saepe? Id! Lorem, ipsum dolor sit amet
-                  consectetur adipisicing elit. At, quis!</p>
-              </div>
-              <button class="product__btn btn btn-200">Add to Cart</button>
-            </div>
-          </div>
-        </li>
-        <li class="product">
-          <div class="product__top">
-            <div class="product__new">New</div>
-            <img class="product__img" src="images/content/1.jpg" alt="product">
-            <div class="product__popup">
-              <ul class="product__list">
-                <li class="product__item">
-                  <a class="product__link product__link--wish" href="#">Add to Wish List</a>
-                </li>
-                <li class="product__item">
-                  <a class="product__link product__link--compare" href="#">Compare</a>
-                </li>
-                <li class="product__item">
-                  <a class="product__link product__link--cart" href="#">Add to Cart</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="product__bottom d-flex jc-sb">
-            <div class="product__desc">
-              <p class="product__name">Basic Crew Neck Tee</p>
-              <p class="product__color">Black</p>
-            </div>
-
-            <p class="product__price">$44.00</p>
-            <div class="product__content">
-              <div class="product__text">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci eos perspiciatis iure ullam
-                  exercitationem quasi nulla reprehenderit earum saepe? Id! Lorem, ipsum dolor sit amet
-                  consectetur adipisicing elit. At, quis!</p>
-              </div>
-              <button class="product__btn btn btn-200">Add to Cart</button>
-            </div>
-          </div>
-        </li>
-        <li class="product">
-          <div class="product__top">
-            <div class="product__new">New</div>
             <img class="product__img" src="images/content/1.jpg" alt="product">
             <div class="product__popup">
               <ul class="product__list">
@@ -633,7 +632,7 @@
         </li>
 
       </ul>
-      <div class="pagination d-flex jc-c">
+      <div class="pagination d-flex jc-sb">
         <ul class="pagination__list d-flex">
           <li class="pagination__item">
             <span class="pagination__link pagination__link--active">1</span>
@@ -654,6 +653,7 @@
             <a class="pagination__link" href="#">10</a>
           </li>
         </ul>
+        <p>Products from <span>1</span> to <span>12</span> of <span>80</span></p>
       </div>
     </div>
   </div>

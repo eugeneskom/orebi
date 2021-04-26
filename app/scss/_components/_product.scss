@@ -1,0 +1,107 @@
+.product-gallery {
+  &__list {
+    grid-row-gap: 40px;
+    grid-column-gap: 40px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    margin-bottom: 49px;
+  }
+
+  &__img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+
+.product-description {
+  font-size: 14px;
+  margin-bottom: 21px;
+  max-width: 780px;
+  
+
+  .rate.jq-ry-container {
+    padding: 0;
+    margin-right: 25px;
+  }
+  &__price{
+    border-bottom: 1px solid $light-700;
+    padding-bottom: 24px;
+    &--old{
+      margin-right: 22px;
+    }
+    &--new{
+      font-size: 20px;
+      line-height: 1.3;
+      font-weight: bold;
+      color: $highlight;
+    }
+  }
+
+  &__color{
+    padding: 31px 0 30px;
+  }
+
+  &__name{
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.4;
+    color: $highlight;
+    margin-right: 53px;
+    font-size: 16px;
+  }
+
+  &__form{
+    margin: 0;
+    padding: 0;
+  }
+  &__label{
+    margin:0 15px 0 0;
+    padding: 0;
+  }
+  &__checkbox{
+    cursor: pointer;
+    display: inline-block;
+    z-index: 2;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    &--gray{
+      background-color: $dark-400;
+    }
+    &--lightred{
+      background-color: #FF8686;
+    }
+    &--lightgreen{
+      background-color: #7ED321;
+    }
+    &--lightgray{
+      background-color: #B6B6B6;
+    }
+    &--lightblue{
+      background-color: #15CBA5;
+    }
+  }
+  &__input{
+    opacity: 0;
+    position: absolute;
+    margin: 0;
+    &:checked+.product-description__checkbox{
+      width:28px;
+      height: 28px;
+    }
+  }
+
+  
+  .jq-selectbox{
+    &__select{
+      width:140px;
+      height: 36px;
+    }
+    &__select-text{
+      font-size: 16px;
+      line-height: 1.9;
+    }
+  }
+
+}

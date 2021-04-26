@@ -1,5 +1,5 @@
 $(function () {
-  $('.select-style').styler();
+  $('.select-style, .product-description__select, product-description__input').styler();
 
 let $slider = $('.intro__list');
 
@@ -71,6 +71,30 @@ $(document).on("click", function(event) {
   $('.button-grid').on('click', function () {
     $('.product').removeClass('product--list');
   });
+
+
+  $('.filters__top').on('click', function(){
+    $(this).next('.filters__form--dropdown').toggleClass('filters-color__form--collapsed');
+    $(this).find('.filters__toggle').toggleClass('filters__toggle--collapsed');
+  });
+
+
+  $(".rate").rateYo({
+    starWidth: "12px",
+    rating: 4,
+    halfStar: true,
+  });
+
+
+
+
+
+
+
+
+
+
+
 
 });
 

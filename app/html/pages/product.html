@@ -1,0 +1,78 @@
+@@include('../parts/_body-start.html')
+
+@@include('../parts/_header.html')
+<main class="main">
+  <div class="container">
+    @@include('../parts/_breadcrumbs.html')
+    <section class="product-gallery">
+      <ul class="product-gallery__list grid">
+        <li class="product-gallery__item">
+          <img class="product-gallery__img" src="images/products/phone.jpg" alt="">
+        </li>
+        <li class="product-gallery__item">
+          <img class="product-gallery__img" src="images/products/phone.jpg" alt="">
+        </li>
+        <li class="product-gallery__item">
+          <img class="product-gallery__img" src="images/products/phone.jpg" alt="">
+        </li>
+        <li class="product-gallery__item">
+          <img class="product-gallery__img" src="images/products/phone.jpg" alt="">
+        </li>
+      </ul>
+    </section>
+    <section class="product-description">
+      <h2 class="title">Product</h2>
+      <div class="product-description__rating d-flex ai-c">
+        <div class="rate"></div>
+        <div class="product-description__review">
+          <p>1 Review</p>
+        </div>
+      </div>
+      <div class="product-description__price d-flex">
+        <p class="product-description__price--old"><span>$</span>88.00</p>
+        <p class="product-description__price--new"><span>$</span>44.00</p>
+      </div>
+      <div class="product-description__color d-flex ai-c">
+        <p class="product-description__name">color:</p>
+        <form class="product-description__form d-flex ai-c">
+          <label class="product-description__label" for="">
+            <input class="product-description__input" type="radio" name="color">
+            <span class="product-description__checkbox product-description__checkbox--gray"></span>
+          </label>
+
+          <label class="product-description__label" for="">
+            <input class="product-description__input" type="radio" name="color" checked>
+            <span class="product-description__checkbox product-description__checkbox--lightred"></span>
+          </label>
+          <label class="product-description__label" for="">
+            <input class="product-description__input" type="radio" name="color">
+            <span class="product-description__checkbox product-description__checkbox--lightgreen"></span>
+          </label>
+          <label class="product-description__label" for="">
+            <input class="product-description__input" type="radio" name="color">
+            <span class="product-description__checkbox product-description__checkbox--lightgray"></span>
+          </label>
+          <label class="product-description__label" for="">
+            <input class="product-description__input" type="radio" name="color">
+            <span class="product-description__checkbox product-description__checkbox--lightblue"></span>
+          </label>
+        </form>
+      </div>
+      <div class="product-description__size d-flex ai-c">
+        <p class="product-description__name product-description__name--size">size:</p>
+        <select name="" id="" class="product-description__select">
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+      </div>
+    </section>
+  </div>
+
+
+</main>
+@@include('../parts/_footer.html')
+
+@@include('../parts/_body-end.html')
