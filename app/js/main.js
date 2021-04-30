@@ -1,5 +1,5 @@
 $(function () {
-  $('.select-style, .product-description__select, product-description__input').styler();
+  $('.select-style, .product-filters__select, .product-filters__number').styler();
 
 let $slider = $('.intro__list');
 
@@ -34,10 +34,6 @@ $('.intro__list').slick({
   autoplaySpeed: 1500,
   
 });
-  
-
-
-
   $('.new__slider').slick({
     dots: false,
     slidesToShow: 4,
@@ -79,19 +75,60 @@ $(document).on("click", function(event) {
   });
 
 
-  $(".rate").rateYo({
+  $(".rate, .tab__rate").rateYo({
     starWidth: "12px",
     rating: 4,
     halfStar: true,
+    ratedFill: '#FFD881',
+    normalFill: 'rgba(255, 216, 129, 0.2)',
   });
 
 
+  var acc = document.getElementsByClassName("product-return__accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      /* Toggle between adding and removing the "active" class,
+      to highlight the button that controls the panel */
+      this.classList.toggle("product-return--active");
+  
+      /* Toggle between hiding and showing the active panel */
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
 
 
+  let tab = function() {
+    let tabNav = document.querySelectorAll('.tabs__link'),
+    tabContent = document.querySelectorAll('.tab'),
+    tabName;
 
+    tabNav.forEach(item => {
+      item.addEventListener('click', selectTabNav)
+    });
 
+    function selectTabNav(){
+      tabNav.forEach( item =>{
+        item.classList.remove('is-active')
+      });
+      this.classList.add('is-active');
+      tabName = this.getAttribute('data-tab-name');
+      selectTabContent(tabName);
+    }
+    function selectTabContent(tabName){
+      tabContent.forEach(item => {
+        item.classList.contains(tabName) ? item.classList.add('is-active') : item.classList.remove('is-active');
+      })
+    }
+  };
 
-
+  tab();
 
 
 
