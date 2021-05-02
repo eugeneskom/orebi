@@ -1,0 +1,39 @@
+@@include('../parts/_body-start.html')
+
+@@include('../parts/_header.html')
+<main class="main">
+  <div class="breadcrumbs">
+    <div class="container">
+      <h1 class="title breadcrumbs__title">Contacts</h1>
+      <ul class="breadcrumbs__list d-flex">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="#">Home</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <span class="breadcrumbs__link">Contacts</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <section class="contacts">
+    <h2 class="contacts__heading">Fill up a Form</h2>
+    <form class="contacts__form" action="">
+      <label class="contacts__label">
+        <span class="contacts__description">Name</span>
+        <input class="contacts__input" type="text">
+      </label>
+      <label class="contacts__label">
+        <span class="contacts__description">Email</span>
+        <input class="contacts__input" type="text">
+      </label>
+      <label class="contacts__label">
+        <span class="contacts__description">Message</span>
+        <input class="contacts__input" type="text">
+      </label>
+      <button class="btn contacts__btn" type="submit">Post</button>
+    </form>
+  </section>
+</main>
+@@include('../parts/_footer.html')
+
+@@include('../parts/_body-end.html')

@@ -1,0 +1,11 @@
+.contacts{
+  &__form{
+    max-width: 780px;
+  }
+  &__label{
+    display: block;
+  }
+  &__input{
+    width: 100%;
+  }
+}
