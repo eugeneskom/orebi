@@ -505,22 +505,62 @@
     </div>
   </div>
   <section class="contacts">
-    <h2 class="contacts__heading">Fill up a Form</h2>
-    <form class="contacts__form" action="">
-      <label class="contacts__label">
-        <span class="contacts__description">Name</span>
-        <input class="contacts__input" type="text">
+    <h2 class="title contacts__heading">Fill up a Form</h2>
+    <form class="form">
+      <label class="form__label">
+        <span>Name</span>
+        <input class="form__input" type="text" placeholder="Your name here">
       </label>
-      <label class="contacts__label">
-        <span class="contacts__description">Email</span>
-        <input class="contacts__input" type="text">
+      <label class="form__label">
+        <span>Email</span>
+        <input class="form__input" type="email" placeholder="Your name here">
       </label>
-      <label class="contacts__label">
-        <span class="contacts__description">Message</span>
-        <input class="contacts__input" type="text">
+      <label class="form__label">
+        <span>Review</span>
+        <textarea class="form__textarea" placeholder="Your review here"></textarea>
       </label>
-      <button class="btn contacts__btn" type="submit">Post</button>
+      <button class="btn btn--big" type="submit">Post</button>
     </form>
+
+
+    <div class="map">
+      <div class="map__api"></div>
+      <ul class="map__list">
+        <li class="map__item">
+          <button class="accordion">Germany Office</button>
+          <div class="accordion__panel">
+            <address class="map__address">
+              575 Crescent Ave. Quakertown, PA 18951
+            </address>
+            <a class="map__contacts" href="tel:43253312523">+432 533 12 523</a>
+            <a class="map__contacts" href="mailto:info@domain.com">info@domain.com</a>
+            <p class="map__schedule">Mon - Fri: 9am - 6pm</p>
+          </div>
+        </li>
+        <li class="map__item">
+          <button class="accordion">Slovakia Office</button>
+          <ul class="accordion__panel">
+            <address class="map__address">
+              575 Crescent Ave. Quakertown, PA 18951
+            </address>
+            <a class="map__contacts" href="tel:43253312523">+432 533 12 523</a>
+            <a class="map__contacts" href="mailto:info@domain.com">info@domain.com</a>
+            <p class="map__schedule">Mon - Fri: 9am - 6pm</p>
+          </ul>
+        </li>
+        <li class="map__item">
+          <button class="accordion">Lithuania Office</button>
+          <ul class="accordion__panel">
+            <address class="map__address">
+              575 Crescent Ave. Quakertown, PA 18951
+            </address>
+            <a class="map__contacts" href="tel:43253312523">+432 533 12 523</a>
+            <a class="map__contacts" href="mailto:info@domain.com">info@domain.com</a>
+            <p class="map__schedule">Mon - Fri: 9am - 6pm</p>
+          </ul>
+        </li>
+      </ul>
+    </div>
   </section>
 </main>
 <footer class="footer">
@@ -657,7 +697,23 @@
     </div>
   </div>
 </footer>
+<script>
+  //map
 
+  let map;
+
+
+  function initMap() {
+    map = new google.maps.Map(document.querySelector(".map__api"), {
+      center: { lat: 51.220, lng: 16.2005 },
+      zoom: 4,
+    });
+
+  }
+
+
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly" async></script>
 <script src="js/main.min.js"></script>
 </body>
 

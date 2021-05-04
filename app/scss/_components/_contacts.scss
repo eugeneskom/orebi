@@ -1,11 +1,43 @@
-.contacts{
-  &__form{
-    max-width: 780px;
+.contacts {
+  &__heading {
+    margin-bottom: 42px;
   }
-  &__label{
+}
+
+.map {
+  position: relative;
+
+  &__api {
+    width: 100%;
+    height: 572px;
+    margin-bottom: 140px;
+  }
+
+  &__list {
+    width: 450px;
+    position: absolute;
+    top: 80px;
+    left: 80px;
+  }
+
+  &__address {
+    font-style: normal;
+  }
+  &__address,
+  &__contacts{
+    margin-bottom: 11px;
+  }
+
+  &__contacts {
     display: block;
   }
-  &__input{
-    width: 100%;
+
+  .accordion {
+    text-transform: capitalize;
+    font-weight: 700;
+    min-height: 82px;
+    &__panel{
+      padding-bottom: 25px;
+    }
   }
 }
