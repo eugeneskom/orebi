@@ -84,24 +84,6 @@ $(function () {
   });
 
 
-  var acc = document.getElementsByClassName("accordion");
-  var i;
-
-  for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function () {
-      /* Toggle between adding and removing the "active" class,
-      to highlight the button that controls the panel */
-      this.classList.toggle("accordion--active");
-
-      /* Toggle between hiding and showing the active panel */
-      var panel = this.nextElementSibling;
-      if (panel.style.display === "block") {
-        panel.style.display = "none";
-      } else {
-        panel.style.display = "block";
-      }
-    });
-  }
 
 
 
@@ -132,7 +114,59 @@ $(function () {
   tab();
 
 
+  //accordion opening single panel at a time
 
+  $(function() {
+    var Accordion = function(el, multiple) {
+      this.el = el || {};
+      this.multiple = multiple || false;
+  
+      // Variables privadas
+      var links = this.el.find('.accordion__btn');
+      // Evento
+      links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+    }
+  
+    Accordion.prototype.dropdown = function(e) {
+      var $el = e.data.el;
+        $this = $(this),
+        $next = $this.next();
+  
+      $next.slideToggle();
+      $this.parent().toggleClass('open');
+  
+      if (!e.data.multiple) {
+        $el.find('.accordion__panel').not($next).slideUp().parent().removeClass('open');
+      };
+    }	
+  
+    var accordion = new Accordion($('.accordion'), false);
+  });
+  
+
+  
+  // var acc = document.getElementsByClassName("accordion");
+  // var i;
+
+  // for (i = 0; i < acc.length; i++) {
+    
+  //   acc[i].addEventListener("click", function () {
+  //     /* Toggle between adding and removing the "active" class,
+  //     to highlight the button that controls the panel */
+
+  //     this.classList.toggle("accordion--active");
+
+  //     /* Toggle between hiding and showing the active panel */
+  //     var panel = this.nextElementSibling;
+  //     if (panel.style.display === "block") {
+
+  //       panel.style.display = "none";
+  //     } else {
+
+  //       panel.style.display = "block";
+  //     }
+  //   });
+  // }
 
 
 

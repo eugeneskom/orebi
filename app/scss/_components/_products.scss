@@ -1,7 +1,24 @@
 .products {
   padding: 4px 0 140px;
 
-  
+  .accordion{
+    
+    &__btn{
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      text-transform: capitalize;
+      color: $main;
+      padding: 19px 0;
+      &:after,
+      &:before{
+        background-color: $main;
+      }
+      &:hover{
+        background-color: inherit;
+      }
+    }
+  }
 
   &__inner {
     .product {
