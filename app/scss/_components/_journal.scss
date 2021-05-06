@@ -1,9 +1,10 @@
 .journal {
-  padding-bottom: 130px;
+  padding-bottom: 80px;
 
   &__item {
     max-width: 510px;
     width: 100%;
+    margin-bottom: 50px;
 
     &:hover {
       .article__img {
