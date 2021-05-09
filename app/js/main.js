@@ -75,7 +75,7 @@ $(function () {
   });
 
 
-  $(".rate, .tab__rate").rateYo({
+  $(".rate, .comments__rate").rateYo({
     starWidth: "12px",
     rating: 4,
     halfStar: true,

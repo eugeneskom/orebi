@@ -1,0 +1,24 @@
+.comments {
+  &__name {
+    margin-right: 37px;
+    color: $highlight;
+  }
+  &__date {
+    margin-left: auto;
+  }
+  &__description{
+    margin-bottom: 13px;
+  }
+  &__reply{
+    font-weight: 700;
+    line-height: 1.4;
+    position: relative;
+    &::after{
+      content: "";
+      position: absolute;
+      width:5px;
+      height: 7px;
+      background-image: url("../images/icons/path.svg");
+    }
+  }
+}
