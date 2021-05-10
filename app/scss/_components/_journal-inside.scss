@@ -1,0 +1,53 @@
+.magazine {
+  margin-right: 37px;
+
+  &__picture {
+    margin-bottom: 56px;
+  }
+
+  &__article {
+    margin-bottom: 127px;
+  }
+
+  &__title {
+    margin-bottom: 33px;
+  }
+
+  &__text {
+    margin-bottom: 48px;
+  }
+
+  &__comments {
+    margin-bottom: 122px;
+  }
+
+  &__form-caption {
+    margin-bottom: 39px;
+  }
+
+  &__form-textarea {
+    margin-bottom: 21px;
+  }
+}
+
+.feedback {
+  margin-bottom: 44px;
+
+  &__item {
+    padding-right: 18px;
+    position: relative;
+    color: $highlight;
+    font-size: 16px;
+    line-height: 1.4;
+
+    &:not(:last-child) {
+      margin-right: 13px;
+
+      &::after {
+        content: "-";
+        position: absolute;
+        right: 0;
+      }
+    }
+  }
+}

@@ -9,8 +9,8 @@
       <div class="magazine__picture">
         <img src="images/content/magazine.jpg" alt="" class="magazine__img">
       </div>
-      <div class="feedback">
-        <ul class="feedback__list">
+      <div class="feedback d-flex jc-sb ai-c">
+        <ul class="feedback__list d-flex">
           <li class="feedback__item">
             <a href="#" class="feedback__link">Admin</a>
           </li>
@@ -49,7 +49,7 @@
         </div>
       </article>
 
-      <div class="comments">
+      <div class="comments magazine__comments">
         <div class="comments__top d-flex ai-c">
           <p class="comments__name">John Ford</p>
           <div class="comments__date">
@@ -67,8 +67,10 @@
         <a class="comments__reply" href="#">Reply</a>
       </div>
       <form class="form">
-        <p class="form__caption">Leave a Reply</p>
-        <div class="form__precocious">Your email address will not be published. Required fields are marked</div>
+        <p class="form__caption magazine__form-caption">Leave a Reply</p>
+        <div class="form__precocious">
+          Your email address will not be published. Required fields are marked
+        </div>
         <label class="form__label">
           <span>Name</span>
           <input class="form__input" type="text" placeholder="Your name here">
@@ -83,13 +85,13 @@
         </label>
         <label class="form__label">
           <span>Website</span>
-          <textarea class="form__textarea" placeholder="Your comment here"></textarea>
+          <textarea class="form__textarea magazine__form-textarea" placeholder="Your comment here"></textarea>
         </label>
-        <label class="form__checkbox">
+        <label class="form__box d-flex ai-c">
           <input class="form__checkbox" type="checkbox">
-          <span>Save my name, email, website in this browser for the next time I comment.</span>
+          <span class="form__checktext">Save my name, email, website in this browser for the next time I comment.</span>
         </label>
-        
+
         <button class="btn btn--big" type="submit">Post</button>
       </form>
 

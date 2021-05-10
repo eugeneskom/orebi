@@ -1,24 +1,37 @@
 .comments {
+  &__top {
+    margin-bottom: 15px;
+  }
+
   &__name {
     margin-right: 37px;
     color: $highlight;
   }
+
   &__date {
     margin-left: auto;
   }
-  &__description{
+
+  &__description {
     margin-bottom: 13px;
   }
-  &__reply{
+
+  &__reply {
     font-weight: 700;
     line-height: 1.4;
+    padding-right: 13px;
     position: relative;
-    &::after{
+    color: $highlight;
+
+    &::after {
       content: "";
       position: absolute;
-      width:5px;
+      width: 5px;
       height: 7px;
-      background-image: url("../images/icons/path.svg");
+      background-image: url("../images/icons/more-then.svg");
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
     }
   }
 }

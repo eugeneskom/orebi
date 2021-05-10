@@ -1,0 +1,16 @@
+.tags{
+  &__title{
+    margin-bottom: 44px;
+  }
+  &__item{
+    font-size: 14px;
+    font-weight: 700;
+    color: $light-900;
+    padding: 9px 30px;
+    background-color: $highlight;
+
+    &:not(:last-child){
+      margin-right: 20px;
+    }
+  }
+}

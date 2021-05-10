@@ -1,0 +1,54 @@
+.login {
+  margin-bottom: 70px;
+
+  &__form {
+    font-weight: 700;
+    color: $highlight;
+  }
+
+  &__intro,
+  &__text {
+    max-width: 644px;
+  }
+
+  &__intro {
+    margin-bottom: 62px;
+  }
+
+  &__user {
+    padding: 58px 0 70px;
+    border-top: 1px solid $light-700;
+  }
+
+  &__entries {
+    padding-top: 4px;
+    margin-bottom: 29px;
+  }
+
+  &__label {
+    &:not(:last-child) {
+      margin-right: 39px;
+    }
+  }
+
+  &__input {
+    width: 507px;
+    border: none;
+    outline: transparent;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $light-700;
+
+    &::placeholder {
+      font-weight: 400;
+      color: $dark-500;
+    }
+  }
+
+  &__title {
+    margin-bottom: 38px;
+  }
+
+  &__btn {
+    border: 1px solid $highlight;
+  }
+}
