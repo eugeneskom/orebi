@@ -1,0 +1,125 @@
+@@include('../parts/_body-start.html')
+
+@@include('../parts/_header.html')
+<main class="main">
+  <div class="container">
+    <div class="signup">
+      <div class="signup__intro">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+          industry's standard dummy text ever since the.</p>
+      </div>
+
+      <div class="authentication">
+        <h3 class="title authentication__title">Your Personal Details</h3>
+        <form class="authentication__form" action="">
+          <div class="authentication__entries d-flex fw-w">
+            <label class="authentication__label">
+              <p>First Name</p>
+              <input class="authentication__input" type="text" placeholder="First Name">
+            </label>
+            <label class="authentication__label">
+              <p>Last Name</p>
+              <input class="authentication__input" type="text" placeholder="Last Name">
+            </label>
+            <label class="authentication__label">
+              <p>Email address</p>
+              <input class="authentication__input" type="email" placeholder="company@domain.com">
+            </label>
+            <label class="authentication__label">
+              <p>Telephone</p>
+              <input class="authentication__input" type="text" placeholder="Your phone number">
+            </label>
+
+          </div>
+        </form>
+      </div>
+
+      <div class="authentication">
+        <h3 class="title authentication__title">New Customer</h3>
+        <form class="authentication__form" action="">
+          <div class="authentication__entries d-flex fw-w">
+            <label class="authentication__label">
+              <p>Address 1</p>
+              <input class="authentication__input" type="text" placeholder="4279 Zboncak Port Suite 6212">
+            </label>
+            <label class="authentication__label">
+              <p>Address 2</p>
+              <input class="authentication__input" type="text" placeholder="—">
+            </label>
+            <label class="authentication__label">
+              <p>City</p>
+              <input class="authentication__input" type="text" placeholder="Your city">
+            </label>
+            <label class="authentication__label">
+              <p>Post Code</p>
+              <input class="authentication__input" type="text" placeholder="05228">
+            </label>
+            <div class="authentication__dropdowns d-flex">
+              <label>
+                <p>Country</p>
+                <select name="" id="" class="shop-content__select-by select-style authentication__input">
+                  <option selected="true" disabled="disabled">Please select</option>
+                  <option value="USA">USA</option>
+                  <option value="Canada">Canada</option>
+                  <option value="Mexico">Mexico</option>
+                  <option value="Greenland">Greenland</option>
+                </select>
+              </label>
+              <label>
+                <p>Region/State</p>
+                <select name="" id="" class="authentication__input shop-content__select-show select-style">
+                  <option selected="true" disabled="disabled" hidden>Please select</option>
+                  <option value="Washington DC">Washington DC</option>
+                  <option value="New York">New York</option>
+                  <option value="California">California</option>
+                  <option value="Arkanso">Arkanso</option>
+                </select>
+              </label>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="authentication">
+        <h3 class="title authentication__title">Your Password</h3>
+        <form class="authentication__form" action="">
+          <div class="authentication__entries d-flex fw-w">
+            <label class="authentication__label">
+              <p>Password</p>
+              <input class="authentication__input" type="password" placeholder="Password">
+            </label>
+            <label class="authentication__label">
+              <p>Repeat Password</p>
+              <input class="authentication__input" type="password" placeholder="Repeat Password">
+            </label>
+          </div>
+        </form>
+      </div>
+
+      <div class="authentication">
+        <form class="authentication__form" action="">
+          <label class="authentication__box d-flex ai-c">
+            <input class="authentication__checkbox" type="checkbox">
+            <span class="authentication__checktext">I have read and agree to the Privacy Policy</span>
+          </label>
+          <div class="authentication__radio-btns">
+            <span>Subscribe Newsletter</span>
+            <label>
+              <span>Yes</span>
+              <input class="authentication__radio" type="radio" name="boolean">
+            </label>
+            <label>
+              <span>No</span>
+              <input class="authentication__radio" type="radio" name="boolean">
+            </label>
+          </div>
+          <button class="btn authentication__btn" type="submit">Log in</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</main>
+@@include('../parts/_footer.html')
+
+@@include('../parts/_body-end.html')
