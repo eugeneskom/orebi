@@ -50,6 +50,9 @@
     font-weight: 400;
     cursor: pointer;
     margin-bottom: 20px;
+    &:not(:last-child){
+      margin-right: 41px;
+    }
   }
 
   &__checkbox,
@@ -60,19 +63,34 @@
     clip: rect(0 0 0 0);
     position: absolute;
 
-    &:checked+.authentication__checktext::before {
+    &:checked+.authentication__checktext::before{
       content: "";
       position: absolute;
+      // width: 10px;
+      // // height: 10px;
+      // left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      // background-image: url("../images/icons/checkmark.svg");
+    }
+  }
+  &__checkbox{
+    &:checked+.authentication__checktext::before{
       width: 10px;
       height: 10px;
       left: 0;
-      left: 0;
-      top: 50%;
-      transform: translateY(-50%);
       background-image: url("../images/icons/checkmark.svg");
     }
   }
-  &__checktext {
+  &__radio{
+    &:checked+.authentication__checktext::before{
+      width: 7px;
+      height: 7px;
+      background-color: $dark-500;
+      left: 2px;
+    }
+  }
+  &__checktext{
     padding-left: 26px;
     position: relative;
 
@@ -88,5 +106,8 @@
       z-index: -1;
     }
 
+  }
+  &__radio-title{
+    margin-right: 33px;
   }
 }

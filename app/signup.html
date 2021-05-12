@@ -490,10 +490,23 @@
 
 
 </header>
+<div class="breadcrumbs">
+  <div class="container">
+    <h1 class="title breadcrumbs__title">Products</h1>
+    <ul class="breadcrumbs__list d-flex">
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link" href="#">Home</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <span class="breadcrumbs__link">Products</span>
+      </li>
+    </ul>
+  </div>
+</div>
 <main class="main">
   <div class="container">
     <div class="signup">
-      <div class="signup__intro">
+      <div class="signup__intro text">
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
           industry's standard dummy text ever since the.</p>
       </div>
@@ -591,15 +604,15 @@
             <input class="authentication__checkbox" type="checkbox">
             <span class="authentication__checktext">I have read and agree to the Privacy Policy</span>
           </label>
-          <div class="authentication__radio-btns">
-            <span>Subscribe Newsletter</span>
-            <label>
-              <span>Yes</span>
+          <div class="authentication__radio-btns d-flex">
+            <span class="authentication__radio-title">Subscribe Newsletter</span>
+            <label class="authentication__box d-flex ai-c">
               <input class="authentication__radio" type="radio" name="boolean">
+              <span class="authentication__checktext">Yes</span>
             </label>
-            <label>
-              <span>No</span>
+            <label class="authentication__box d-flex ai-c">
               <input class="authentication__radio" type="radio" name="boolean">
+              <span class="authentication__checktext">No</span>
             </label>
           </div>
           <button class="btn authentication__btn" type="submit">Log in</button>

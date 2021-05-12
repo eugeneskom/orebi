@@ -1,10 +1,11 @@
 @@include('../parts/_body-start.html')
 
 @@include('../parts/_header.html')
+@@include('../parts/_breadcrumbs.html')
 <main class="main">
   <div class="container">
     <div class="signup">
-      <div class="signup__intro">
+      <div class="signup__intro text">
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
           industry's standard dummy text ever since the.</p>
       </div>
@@ -102,15 +103,15 @@
             <input class="authentication__checkbox" type="checkbox">
             <span class="authentication__checktext">I have read and agree to the Privacy Policy</span>
           </label>
-          <div class="authentication__radio-btns">
-            <span>Subscribe Newsletter</span>
-            <label>
-              <span>Yes</span>
+          <div class="authentication__radio-btns d-flex">
+            <span class="authentication__radio-title">Subscribe Newsletter</span>
+            <label class="authentication__box d-flex ai-c">
               <input class="authentication__radio" type="radio" name="boolean">
+              <span class="authentication__checktext">Yes</span>
             </label>
-            <label>
-              <span>No</span>
+            <label class="authentication__box d-flex ai-c">
               <input class="authentication__radio" type="radio" name="boolean">
+              <span class="authentication__checktext">No</span>
             </label>
           </div>
           <button class="btn authentication__btn" type="submit">Log in</button>
