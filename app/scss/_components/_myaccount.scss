@@ -1,0 +1,24 @@
+.myaccount{
+  .tabs{
+    &__nav{
+      margin-right: 39px;
+    }
+    &__link{
+      text-align: left;
+      margin: 0;
+      min-width: 233px;
+      padding-bottom: 21px;
+      border-bottom: 1px solid $light-700;
+      &:not(:last-child){
+        margin-bottom: 20px;
+      }
+    }
+  }
+  
+  .tab{
+    max-width: 918px;
+    &__description{
+      border: none;
+    }
+  }
+}
