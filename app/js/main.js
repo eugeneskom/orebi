@@ -1,5 +1,5 @@
 $(function () {
-  $('.select-style, .product-filters__select, .product-filters__number').styler();
+  $('.select-style, .select, .number').styler();
 
   let $slider = $('.intro__list');
 

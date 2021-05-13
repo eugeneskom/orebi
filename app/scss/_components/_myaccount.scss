@@ -17,8 +17,13 @@
   
   .tab{
     max-width: 918px;
+    border: transparent;
     &__description{
-      border: none;
+    border: transparent;
+
+      a{
+        color: $highlight;
+      }
     }
   }
 }

@@ -1,0 +1,52 @@
+@@include('../parts/_body-start.html')
+
+@@include('../parts/_header.html')
+@@include('../parts/_breadcrumbs.html')
+
+<main class="main">
+  <div class="container">
+    <div class="cart-inside">
+      <ul class="cart-inside__list">
+        <li class="cart-inside__item">Product</li>
+        <li class="cart-inside__item">Price</li>
+        <li class="cart-inside__item">Quantity</li>
+        <li class="cart-inside__item">Total</li>
+      </ul>
+      <div class="cart-inside__inner">
+        <div class="cart-inside__product">
+          <img class="cart-inside__img" src="" alt="picture of the goods">
+          <p class="cart-inside__product-name">Product name</p>
+        </div>
+        <div class="cart-inside__price">
+          <p><span>$</span>44.00</p>
+        </div>
+        <div class="cart-inside__quantity quantity">
+          <input class="number" type="number" value="1" min="1">
+        </div>
+        <div class="cart-inside__total">
+          <p><span>$</span>44.00</p>
+        </div>
+      </div>
+      <div class="cart-inside__bottom">
+        <div class="cart-inside__size">
+          <select name="" id="" class="select">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+        </div>
+        <div class="cart-inside__coupon">
+          <a class="cart-inside__link" href="#">Apply coupon</a>
+        </div>
+        <div class="cart-inside__update">
+          <a class="cart-inside__link" href="">Update cart</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+@@include('../parts/_footer.html')
+
+@@include('../parts/_body-end.html')

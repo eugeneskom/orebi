@@ -490,9 +490,7 @@
 
 
 </header>
-<main class="main">
-  <div class="container">
-    <div class="breadcrumbs">
+<div class="breadcrumbs">
   <div class="container">
     <h1 class="title breadcrumbs__title">Products</h1>
     <ul class="breadcrumbs__list d-flex">
@@ -505,75 +503,33 @@
     </ul>
   </div>
 </div>
-    <section class="product-gallery">
-      <ul class="product-gallery__list grid">
-        <li class="product-gallery__item">
-          <img class="product-gallery__img" src="images/products/phone.jpg" alt="">
-        </li>
-        <li class="product-gallery__item">
-          <img class="product-gallery__img" src="images/products/phone.jpg" alt="">
-        </li>
-        <li class="product-gallery__item">
-          <img class="product-gallery__img" src="images/products/phone.jpg" alt="">
-        </li>
-        <li class="product-gallery__item">
-          <img class="product-gallery__img" src="images/products/phone.jpg" alt="">
-        </li>
+
+<main class="main">
+  <div class="container">
+    <div class="cart-inside">
+      <ul class="cart-inside__list">
+        <li class="cart-inside__item">Product</li>
+        <li class="cart-inside__item">Price</li>
+        <li class="cart-inside__item">Quantity</li>
+        <li class="cart-inside__item">Total</li>
       </ul>
-    </section>
-    <div class="product-description">
-      <h2 class="title">Product</h2>
-      <div class="product-description__rating d-flex ai-c">
-        <div class="rate"></div>
-        <div class="product-description__review">
-          <p>1 Review</p>
+      <div class="cart-inside__inner">
+        <div class="cart-inside__product">
+          <img class="cart-inside__img" src="" alt="picture of the goods">
+          <p class="cart-inside__product-name">Product name</p>
+        </div>
+        <div class="cart-inside__price">
+          <p><span>$</span>44.00</p>
+        </div>
+        <div class="cart-inside__quantity quantity">
+          <input class="number" type="number" value="1" min="1">
+        </div>
+        <div class="cart-inside__total">
+          <p><span>$</span>44.00</p>
         </div>
       </div>
-      <div class="product-description__price d-flex">
-        <p class="product-description__price--old"><span>$</span>88.00</p>
-        <p class="product-description__price--new"><span>$</span>44.00</p>
-      </div>
-
-    </div>
-    <section class="product-filters d-flex ">
-      <ul class="filters-names d-flex fd-col jc-sb">
-        <li class="filters-names__item">
-          <p class="product-filters__name">color:</p>
-        </li>
-        <li class="filters-names__item">
-          <p class="product-filters__name">size:</p>
-        </li>
-        <li class="filters-names__item">
-          <p class="product-filters__name">quantity:</p>
-        </li>
-      </ul>
-      <ul class="product-filters__list">
-        <li class="product-filters__item product-filters__color d-flex ai-c">
-          <form class="product-filters__form d-flex ai-c">
-            <label class="product-filters__label" for="">
-              <input class="product-filters__input" type="radio" name="color">
-              <span class="product-filters__checkbox product-filters__checkbox--gray"></span>
-            </label>
-
-            <label class="product-filters__label" for="">
-              <input class="product-filters__input" type="radio" name="color" checked>
-              <span class="product-filters__checkbox product-filters__checkbox--lightred"></span>
-            </label>
-            <label class="product-filters__label" for="">
-              <input class="product-filters__input" type="radio" name="color">
-              <span class="product-filters__checkbox product-filters__checkbox--lightgreen"></span>
-            </label>
-            <label class="product-filters__label" for="">
-              <input class="product-filters__input" type="radio" name="color">
-              <span class="product-filters__checkbox product-filters__checkbox--lightgray"></span>
-            </label>
-            <label class="product-filters__label" for="">
-              <input class="product-filters__input" type="radio" name="color">
-              <span class="product-filters__checkbox product-filters__checkbox--lightblue"></span>
-            </label>
-          </form>
-        </li>
-        <li class="product-filters__item product-filters__size d-flex ai-c">
+      <div class="cart-inside__bottom">
+        <div class="cart-inside__size">
           <select name="" id="" class="select">
             <option value="S">S</option>
             <option value="M">M</option>
@@ -581,115 +537,16 @@
             <option value="XL">XL</option>
             <option value="XXL">XXL</option>
           </select>
-        </li>
-        <li class="product-filters__item quantity ">
-          <input class="number" type="number" value="1" min="1">
-        </li>
-      </ul>
-    </section>
-    <div class="product-status">
-      <p class="product-status__name">status: <span>In stock</span></p>
-    </div>
-
-
-    <div class="product-buttons">
-      <button class="btn" type="submit">Add to Wish List</button>
-      <button class="btn" type="submit">Add to Cart</button>
-    </div>
-    <ul class="prodduct-return accordion">
-      <li class="product-return__item">
-        <button class="accordion__btn">features & details</button>
-        <div class="accordion__panel">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia impedit cum exercitationem totam
-            suscipit doloribus dolores, ratione porro eligendi, accusamus ad earum non autem quibusdam officia iste
-            enim consectetur esse!
-          </p>
         </div>
-      </li>
-      <li class="product-return__item">
-        <button class="accordion__btn">shipping & returns</button>
-        <div class="accordion__panel">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.
-          </p>
+        <div class="cart-inside__coupon">
+          <a class="cart-inside__link" href="#">Apply coupon</a>
         </div>
-      </li>
-    </ul>
-    <div class="tabs">
-      <div class="tabs__nav d-flex">
-        <button class="tabs__link" data-tab-name="tab-1">
-          Description
-        </button>
-        <button class="tabs__link is-active" data-tab-name="tab-2">
-          Reviews(1)
-        </button>
-      </div>
-      <div class="tabs__content">
-        <div class="tab tab-1">
-          <p class="tab__caption">
-            Description of the product
-          </p>
-          <div class="tab__description">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus provident iste, quisquam
-              veritatis
-              quod sint ipsum nobis sapiente commodi non consectetur ipsa minus, aliquid dolore. Harum reprehenderit
-              rerum
-              accusamus, voluptates dolor, veritatis saepe repellat odit aliquid architecto maxime recusandae minima!
-            </p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A ut eos repudiandae sequi dolorum minus
-              delectus
-              reprehenderit possimus dicta labore?</p>
-          </div>
-        </div>
-
-        <div class="tab  is-active tab-2">
-          <p class="tab__caption">
-            1 review for Product
-          </p>
-          <div class="comments">
-            <div class="comments__top d-flex ai-c">
-              <p class="comments__name">John Ford</p>
-              <div class="comments__rate"></div>
-              <div class="comments__date">
-                <p>6 months ago</p>
-              </div>
-            </div>
-            <div class="tab__description">
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-                into
-                electronic typesetting, remaining essentially unchanged.
-              </p>
-            </div>
-          </div>
-          <form class="form">
-            <p class="form__caption">Add a Review</p>
-            <label class="form__label">
-              <span>Name</span>
-              <input class="form__input" type="text" placeholder="Your name here">
-            </label>
-            <label class="form__label">
-              <span>Email</span>
-              <input class="form__input" type="email" placeholder="Your email here">
-            </label>
-            <label class="form__label">
-              <span>Review</span>
-              <textarea class="form__textarea" placeholder="Your review here"></textarea>
-            </label>
-            <button class="btn btn--big" type="submit">Post</button>
-          </form>
+        <div class="cart-inside__update">
+          <a class="cart-inside__link" href="">Update cart</a>
         </div>
       </div>
-
-
-
-
     </div>
   </div>
-
-
-
 </main>
 <footer class="footer">
   <div class="container">
