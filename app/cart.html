@@ -507,30 +507,31 @@
 <main class="main">
   <div class="container">
     <div class="cart-inside">
-      <ul class="cart-inside__list">
+      <ul class="cart-inside__list d-flex">
         <li class="cart-inside__item">Product</li>
         <li class="cart-inside__item">Price</li>
         <li class="cart-inside__item">Quantity</li>
         <li class="cart-inside__item">Total</li>
       </ul>
-      <div class="cart-inside__inner">
-        <div class="cart-inside__product">
-          <img class="cart-inside__img" src="" alt="picture of the goods">
+      <ul class="cart-inside__inner d-flex ai-c">
+        <li class="cart-inside__item cart-inside__product d-flex ai-c">
+          <img class="cart-inside__img" src="images/content/black-smart-w.jpg" alt="picture of the goods">
           <p class="cart-inside__product-name">Product name</p>
-        </div>
-        <div class="cart-inside__price">
+        </li>
+        <li class="cart-inside__item">
           <p><span>$</span>44.00</p>
-        </div>
-        <div class="cart-inside__quantity quantity">
+        </li>
+        <li class="cart-inside__item quantity">
           <input class="number" type="number" value="1" min="1">
-        </div>
-        <div class="cart-inside__total">
+        </li>
+        <li class="cart-inside__item">
           <p><span>$</span>44.00</p>
-        </div>
-      </div>
-      <div class="cart-inside__bottom">
+        </li>
+      </ul>
+      <div class="cart-inside__bottom d-flex ai-c">
         <div class="cart-inside__size">
           <select name="" id="" class="select">
+            <option selected="true" disabled="disabled">SIZE</option>
             <option value="S">S</option>
             <option value="M">M</option>
             <option value="L">L</option>
@@ -545,6 +546,17 @@
           <a class="cart-inside__link" href="">Update cart</a>
         </div>
       </div>
+    </div>
+
+    <div class="cart-total">
+      <h3 class="cart-total__title">Cart totals</h3>
+      <ul class="cart-total__list d-flex fw-w">
+        <li class="cart-total__item highlight">Subtotal</li>
+        <li class="cart-total__item cart-total__item--gray">389.99 $</li>
+        <li class="cart-total__item highlight">Total</li>
+        <li class="cart-total__item highlight">389.99 $</li>
+      </ul>
+      <button class="btn cart-total__btn d-flex" type="submit">Proceed to Checkout</button>
     </div>
   </div>
 </main>
