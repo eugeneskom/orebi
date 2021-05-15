@@ -2,11 +2,13 @@
   padding: 58px 0 70px;
   border-top: 1px solid $light-700;
 
+  &__fieldset{
+    border: none;
+  }
   &__form {
     font-weight: 700;
     color: $highlight;
   }
-
 
   &__title {
     margin-bottom: 38px;
@@ -35,6 +37,9 @@
       font-weight: 400;
       color: $dark-500;
     }
+    &--wide{
+      width: 100%;
+    }
   }
 
   &__btn {
@@ -50,47 +55,47 @@
     font-weight: 400;
     cursor: pointer;
     margin-bottom: 20px;
-    &:not(:last-child){
+
+    &:not(:last-child) {
       margin-right: 41px;
     }
   }
 
   &__checkbox,
-  &__radio{
+  &__radio {
     width: 1px;
     height: 1px;
     overflow: hidden;
     clip: rect(0 0 0 0);
     position: absolute;
 
-    &:checked+.authentication__checktext::before{
+    &:checked+.authentication__checktext::before {
       content: "";
       position: absolute;
-      // width: 10px;
-      // // height: 10px;
-      // left: 0;
       top: 50%;
       transform: translateY(-50%);
-      // background-image: url("../images/icons/checkmark.svg");
     }
   }
-  &__checkbox{
-    &:checked+.authentication__checktext::before{
+
+  &__checkbox {
+    &:checked+.authentication__checktext::before {
       width: 10px;
       height: 10px;
       left: 0;
       background-image: url("../images/icons/checkmark.svg");
     }
   }
-  &__radio{
-    &:checked+.authentication__checktext::before{
+
+  &__radio {
+    &:checked+.authentication__checktext::before {
       width: 7px;
       height: 7px;
       background-color: $dark-500;
       left: 2px;
     }
   }
-  &__checktext{
+
+  &__checktext {
     padding-left: 26px;
     position: relative;
 
@@ -107,7 +112,8 @@
     }
 
   }
-  &__radio-title{
+
+  &__radio-title {
     margin-right: 33px;
   }
 }

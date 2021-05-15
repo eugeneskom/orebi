@@ -1,0 +1,69 @@
+@@include('../parts/_body-start.html')
+
+@@include('../parts/_header.html')
+@@include('../parts/_breadcrumbs.html')
+
+<main class="main">
+  <div class="container">
+    <section class="checkout">
+      <div class="checkout__coupon">
+        <p>Have a coupon? <a class="checkout__link" href="#">Click here to enter your code</a></p> 
+      </div>
+
+
+      <form action="" class="checkout__form authentication">
+        <fieldset class="authentication__fieldset">
+          <legend class="authentication__legend title checkout__title">Billing Details</legend>
+        <label class="authentication__labek">
+          <span>First Name</span>
+        <input class="authentication__input" type="text" placeholder="First Name">
+        </label>
+        <label class="authentication__labek">
+          <span>Last Name</span>
+        <input class="authentication__input" type="text" placeholder="Last Name">
+        </label>
+        <label class="authentication__label">
+          <span>Country</span>
+          <select name="" id="" class="select">
+            <option selected="true" disabled="disabled">Please select</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+        </label>
+        <label class="authentication__label">
+          <span>Street Address</span>
+          <input class="authentication__input authentication__input--wide" type="text" placeholder="House number and street name">
+          <input class="authentication__input authentication__input--wide" type="text" placeholder="Apartment, suite, unit etc. (optional)">
+        </label>
+        <label class="authentication__label">
+          <span>Town/City</span>
+          <input class="authentication__input authentication__input--wide" type="text" placeholder="Town/City">          
+        </label>
+        <label class="authentication__label">
+          <span>County (optional)</span>
+          <input class="authentication__input authentication__input--wide" type="text" placeholder="County">          
+        </label>
+        <label class="authentication__label">
+          <span>Post Code</span>
+          <input class="authentication__input authentication__input--wide" type="text" placeholder="Post Code">          
+        </label>
+        <label class="authentication__label">
+          <span>Phone</span>
+          <input class="authentication__input authentication__input--wide" type="text" placeholder="Phone">          
+        </label>
+        <label class="authentication__label">
+          <span>Email Address</span>
+          <input class="authentication__input authentication__input--wide" type="text" placeholder="Email">          
+        </label>
+        
+      </fieldset>
+      </form>
+    </section>
+  </div>
+</main>
+@@include('../parts/_footer.html')
+
+@@include('../parts/_body-end.html')
