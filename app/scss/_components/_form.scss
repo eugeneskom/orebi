@@ -1,12 +1,23 @@
 .form {
-  max-width: 780px;
   width: 100%;
-  color: $highlight;
-  font-weight: 700;
-  margin-bottom: 140px;
-  &__fieldset{
-    border: none;
+
+  &--bordered {
+    padding-top: 58px;
+    border-top: 1px solid $light-700;
+
+    &:not(:last-child) {
+      margin-bottom: 69px;
+    }
   }
+
+  &__fieldset {
+    border: none;
+    width: 1055px;
+    padding: 0;
+    color: $highlight;
+    font-weight: 700;
+  }
+
   &__caption {
     font-size: 20px;
     line-height: 1.3;
@@ -29,6 +40,15 @@
     }
   }
 
+  &__title {
+    margin-bottom: 38px;
+  }
+
+  &__entries {
+    padding-top: 4px;
+    margin-bottom: 5px;
+  }
+
   &__label {
     display: block;
   }
@@ -40,13 +60,25 @@
   &__input,
   &__textarea {
     display: block;
-    width: 100%;
     border: none;
+    outline: transparent;
     border-bottom: 1px solid $light-700;
     outline: transparent;
 
     &::placeholder {
       font-weight: 400;
+      color: $dark-500;
+    }
+
+    &--small {
+      width: 508px;
+    }
+
+    &--medium {
+      width: 780px;
+    }
+    &--large{
+      width: 1055px;
     }
   }
 
@@ -61,9 +93,15 @@
     font-weight: 400;
     cursor: pointer;
     margin-bottom: 20px;
+
+    &:not(:last-child) {
+      margin-right: 41px;
+    }
+
   }
 
-  &__checkbox {
+  &__checkbox,
+  &__radio {
     width: 1px;
     height: 1px;
     overflow: hidden;
@@ -73,13 +111,26 @@
     &:checked+.form__checktext::before {
       content: "";
       position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__checkbox {
+    &:checked+.form__checktext::before {
       width: 10px;
       height: 10px;
       left: 0;
-      left: 0;
-      top: 50%;
-      transform: translateY(-50%);
       background-image: url("../images/icons/checkmark.svg");
+    }
+  }
+
+  &__radio {
+    &:checked+.form__checktext::before {
+      width: 7px;
+      height: 7px;
+      background-color: $dark-500;
+      left: 2px;
     }
   }
 
@@ -100,4 +151,30 @@
     }
 
   }
+
+  &__radio-title {
+    margin-right: 33px;
+  }
+
+  &__btn {
+    border: 1px solid $highlight;
+  }
+
+  .jq-selectbox{
+    &__select{
+      padding: 0;
+      width: 100%;
+    }
+    &__select-text{
+      width:100%;
+      margin: 0;
+      color:$dark-500;
+      font-weight: 400;
+    }
+    &__dropdown{
+      font-weight: 400;
+    }
+  }
+  
+
 }

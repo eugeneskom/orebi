@@ -568,25 +568,27 @@
         <a class="comments__reply" href="#">Reply</a>
       </div>
       <form class="form">
-        <p class="form__caption magazine__form-caption">Leave a Reply</p>
+        <fieldset class="form__fieldset">
+          
+        <legend class="title form__title">Leave a Reply</legend>
         <div class="form__precocious">
           Your email address will not be published. Required fields are marked
         </div>
         <label class="form__label">
           <span>Name</span>
-          <input class="form__input" type="text" placeholder="Your name here">
+          <input class="form__input form__input--medium" type="text" placeholder="Your name here">
         </label>
         <label class="form__label">
           <span>Email</span>
-          <input class="form__input" type="email" placeholder="Your email here">
+          <input class="form__input form__input--medium" type="email" placeholder="Your email here">
         </label>
         <label class="form__label">
           <span>Website</span>
-          <input class="form__input" placeholder="Your website here">
+          <input class="form__input form__input--medium" placeholder="Your website here">
         </label>
         <label class="form__label">
           <span>Website</span>
-          <textarea class="form__textarea magazine__form-textarea" placeholder="Your comment here"></textarea>
+          <textarea class="form__textarea form__textarea--medium magazine__form-textarea" placeholder="Your comment here"></textarea>
         </label>
         <label class="form__box d-flex ai-c">
           <input class="form__checkbox" type="checkbox">
@@ -594,6 +596,8 @@
         </label>
 
         <button class="btn btn--big" type="submit">Post</button>
+        
+      </fieldset>
       </form>
 
     </section>

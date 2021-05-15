@@ -511,113 +511,106 @@
           industry's standard dummy text ever since the.</p>
       </div>
 
-      <div class="authentication">
-        <h3 class="title authentication__title">Your Personal Details</h3>
-        <form class="authentication__form" action="">
-          <div class="authentication__entries d-flex fw-w">
-            <label class="authentication__label">
-              <p>First Name</p>
-              <input class="authentication__input" type="text" placeholder="First Name">
-            </label>
-            <label class="authentication__label">
-              <p>Last Name</p>
-              <input class="authentication__input" type="text" placeholder="Last Name">
-            </label>
-            <label class="authentication__label">
-              <p>Email address</p>
-              <input class="authentication__input" type="email" placeholder="company@domain.com">
-            </label>
-            <label class="authentication__label">
-              <p>Telephone</p>
-              <input class="authentication__input" type="text" placeholder="Your phone number">
-            </label>
+      <form class="form form--bordered" action="">
+        <fieldset class="form__fieldset d-flex fw-w jc-sb">
+          <legend class="title form__title">Your Personal Details</legend>
 
-          </div>
-        </form>
-      </div>
-
-      <div class="authentication">
-        <h3 class="title authentication__title">New Customer</h3>
-        <form class="authentication__form" action="">
-          <div class="authentication__entries d-flex fw-w">
-            <label class="authentication__label">
-              <p>Address 1</p>
-              <input class="authentication__input" type="text" placeholder="4279 Zboncak Port Suite 6212">
-            </label>
-            <label class="authentication__label">
-              <p>Address 2</p>
-              <input class="authentication__input" type="text" placeholder="—">
-            </label>
-            <label class="authentication__label">
-              <p>City</p>
-              <input class="authentication__input" type="text" placeholder="Your city">
-            </label>
-            <label class="authentication__label">
-              <p>Post Code</p>
-              <input class="authentication__input" type="text" placeholder="05228">
-            </label>
-            <div class="authentication__dropdowns d-flex">
-              <label>
-                <p>Country</p>
-                <select name="" id="" class="shop-content__select-by select-style authentication__input">
-                  <option selected="true" disabled="disabled">Please select</option>
-                  <option value="USA">USA</option>
-                  <option value="Canada">Canada</option>
-                  <option value="Mexico">Mexico</option>
-                  <option value="Greenland">Greenland</option>
-                </select>
-              </label>
-              <label>
-                <p>Region/State</p>
-                <select name="" id="" class="authentication__input shop-content__select-show select-style">
-                  <option selected="true" disabled="disabled" hidden>Please select</option>
-                  <option value="Washington DC">Washington DC</option>
-                  <option value="New York">New York</option>
-                  <option value="California">California</option>
-                  <option value="Arkanso">Arkanso</option>
-                </select>
-              </label>
-            </div>
-          </div>
-        </form>
-      </div>
-
-      <div class="authentication">
-        <h3 class="title authentication__title">Your Password</h3>
-        <form class="authentication__form" action="">
-          <div class="authentication__entries d-flex fw-w">
-            <label class="authentication__label">
-              <p>Password</p>
-              <input class="authentication__input" type="password" placeholder="Password">
-            </label>
-            <label class="authentication__label">
-              <p>Repeat Password</p>
-              <input class="authentication__input" type="password" placeholder="Repeat Password">
-            </label>
-          </div>
-        </form>
-      </div>
-
-      <div class="authentication">
-        <form class="authentication__form" action="">
-          <label class="authentication__box d-flex ai-c">
-            <input class="authentication__checkbox" type="checkbox">
-            <span class="authentication__checktext">I have read and agree to the Privacy Policy</span>
+          <label class="form__label">
+            <p>First Name</p>
+            <input class="form__input form__input--small" type="text" placeholder="First Name">
           </label>
-          <div class="authentication__radio-btns d-flex">
-            <span class="authentication__radio-title">Subscribe Newsletter</span>
-            <label class="authentication__box d-flex ai-c">
-              <input class="authentication__radio" type="radio" name="boolean">
-              <span class="authentication__checktext">Yes</span>
+          <label class="form__label">
+            <p>Last Name</p>
+            <input class="form__input form__input--small" type="text" placeholder="Last Name">
+          </label>
+          <label class="form__label">
+            <p>Email address</p>
+            <input class="form__input form__input--small" type="email" placeholder="company@domain.com">
+          </label>
+          <label class="form__label">
+            <p>Telephone</p>
+            <input class="form__input form__input--small" type="text" placeholder="Your phone number">
+          </label>
+
+        </fieldset>
+      </form>
+
+      <form class="form form--bordered" action="">
+        <fieldset class="form__fieldset d-flex fw-w jc-sb">
+          <legend class="title form__title">New Customer</legend>
+          <label class="form__label">
+            <p>Address 1</p>
+            <input class="form__input form__input--small" type="text" placeholder="4279 Zboncak Port Suite 6212">
+          </label>
+          <label class="form__label">
+            <p>Address 2</p>
+            <input class="form__input form__input--small" type="text" placeholder="—">
+          </label>
+          <label class="form__label">
+            <p>City</p>
+            <input class="form__input form__input--small" type="text" placeholder="Your city">
+          </label>
+          <label class="form__label">
+            <p>Post Code</p>
+            <input class="form__input form__input--small" type="text" placeholder="05228">
+          </label>
+          <div class="form__dropdowns d-flex">
+            <label>
+              <p>Country</p>
+              <select name="" id="" class="shop-content__select-by select-style form__input form__input--small">
+                <option selected="true" disabled="disabled">Please select</option>
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Greenland">Greenland</option>
+              </select>
             </label>
-            <label class="authentication__box d-flex ai-c">
-              <input class="authentication__radio" type="radio" name="boolean">
-              <span class="authentication__checktext">No</span>
+            <label>
+              <p>Region/State</p>
+              <select name="" id="" class="form__input shop-content__select-show select-style form__input--small">
+                <option selected="true" disabled="disabled" hidden>Please select</option>
+                <option value="Washington DC">Washington DC</option>
+                <option value="New York">New York</option>
+                <option value="California">California</option>
+                <option value="Arkanso">Arkanso</option>
+              </select>
             </label>
           </div>
-          <button class="btn authentication__btn" type="submit">Log in</button>
-        </form>
-      </div>
+        </fieldset>
+      </form>
+
+      <form class="form form--bordered" action="">
+        <fieldset class="form__fieldset d-flex fw-w jc-sb">
+          <legend class="title form__title">Your Password</legend>
+          <label class="form__label">
+            <p>Password</p>
+            <input class="form__input form__input--small" type="password" placeholder="Password">
+          </label>
+          <label class="form__label">
+            <p>Repeat Password</p>
+            <input class="form__input form__input--small" type="password" placeholder="Repeat Password">
+          </label>
+        </fieldset>
+      </form>
+
+      <form class="form form--bordered" action="">
+        <label class="form__box d-flex ai-c">
+          <input class="form__checkbox" type="checkbox">
+          <span class="form__checktext">I have read and agree to the Privacy Policy</span>
+        </label>
+        <div class="form__radio-btns d-flex">
+          <span class="form__radio-title">Subscribe Newsletter</span>
+          <label class="form__box d-flex ai-c">
+            <input class="form__radio" type="radio" name="boolean">
+            <span class="form__checktext">Yes</span>
+          </label>
+          <label class="form__box d-flex ai-c">
+            <input class="form__radio" type="radio" name="boolean">
+            <span class="form__checktext">No</span>
+          </label>
+        </div>
+        <button class="btn form__btn" type="submit">Log in</button>
+      </form>
 
     </div>
   </div>

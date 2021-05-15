@@ -1,5 +1,5 @@
 .login {
-  margin-bottom: 70px;
+  padding-bottom: 140px;
 
   &__intro {
     max-width: 644px;
@@ -7,6 +7,9 @@
 
   &__intro {
     margin-bottom: 62px;
+  }
+  &__text{
+    margin-bottom: 51px;
   }
 
 }

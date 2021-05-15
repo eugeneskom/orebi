@@ -511,28 +511,27 @@
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
           industry's standard dummy text ever since the.</p>
       </div>
-      <div class="authentication">
-        <h3 class="title authentication__title">Returning Customer</h3>
-        <form class="authentication__form" action="">
-          <div class="authentication__entries d-flex fw-w">
-            <label class="authentication__label">
-              <p>Email address</p>
-              <input class="authentication__input" type="email" placeholder="company@domain.com">
-            </label>
-            <label class="authentication__label">
-              <p>Password</p>
-              <input class="authentication__input" type="password" placeholder="">
-            </label>
-          </div>
-          <button class="btn btn--white authentication__btn">Log in</button>
-        </form>
-      </div>
-      <div class="authentication">
-        <h3 class="title authentication__title">New Customer</h3>
-        <div class="authentication__text">
+      <form class="form form--bordered" action="">
+        <fieldset class="form__fieldset d-flex fw-w jc-sb">
+          <legend class="title form__title">Returning Customer</legend>
+          <label class="form__label">
+            <p>Email address</p>
+            <input class="form__input form__input--small" type="email" placeholder="company@domain.com">
+          </label>
+          <label class="form__label">
+            <p>Password</p>
+            <input class="form__input form__input--small" type="password" placeholder="">
+          </label>
+        </fieldset>
+        <button class="btn btn--white form__btn">Log in</button>
+      </form>
+      <div class="form form--bordered">
+        <h3 class="title form__title">New Customer</h3>
+        <div class="text login__text">
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
             industry's standard dummy text ever since the.</p>
         </div>
+        <button class="btn">Continue</button>
       </div>
     </section>
   </div>
