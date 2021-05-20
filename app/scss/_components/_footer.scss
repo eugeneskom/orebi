@@ -16,7 +16,8 @@
     margin-bottom: 17px;
     color: $highlight;
   }
-  &__logo{
+
+  &__logo {
     margin: 0 auto;
   }
 }
@@ -27,15 +28,19 @@
       margin-bottom: 6px;
     }
   }
-  &__link{
+
+  &__link {
     outline: transparent;
-    &:focus{
+
+    &:focus {
       color: rgb(21, 15, 15);
     }
-    &:hover{
+
+    &:hover {
       border-bottom: 1px solid $highlight;
     }
-    &:active{
+
+    &:active {
       text-shadow: 1px 0 0 $highlight;
     }
   }
@@ -43,7 +48,8 @@
 
 .contacts {
   font-style: normal;
-  padding-left:145px;
+  padding-left: 145px;
+
   &__link {
     display: block;
     font-weight: 700;

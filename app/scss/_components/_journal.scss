@@ -1,5 +1,5 @@
 .journal {
-  padding-bottom: 80px;
+  padding-bottom: 140px;
 
   &__item {
     max-width: 510px;
@@ -45,7 +45,8 @@
     margin-bottom: 7px;
     @include text-clamp(2);
   }
-  &__desc{
+
+  &__desc {
     @include text-clamp(3);
   }
 }

@@ -423,9 +423,9 @@
             </li>
           </ul>
         </div>
-        <form class="header__form d-flex">
-          <input class="header__search" type="search" placeholder="Search Products">
-          <button class="header__search-btn" type="submit"></button>
+        <form class="search__form d-flex">
+          <input class="search__input" type="search" placeholder="Search Products">
+          <button class="search__btn" type="submit"></button>
         </form>
         <ul class="header__user-cart d-flex jc-sb">
           <li class="user js_drop">
@@ -508,59 +508,111 @@
   <div class="container">
     <section class="checkout">
       <div class="checkout__coupon">
-        <p>Have a coupon? <a class="checkout__link" href="#">Click here to enter your code</a></p> 
+        <p>Have a coupon? <a class="link" href="#">Click here to enter your code</a></p>
       </div>
 
 
       <form action="" class="checkout__form form">
         <fieldset class="form__fieldset d-flex fw-w jc-sb">
-          <legend class="form__legend title checkout__title">Billing Details</legend>
-        <label class="form__label">
-          <p>First Name</p>
-        <input class="form__input form__input--small" type="text" placeholder="First Name">
+          <legend class="form__title title checkout__title">Billing Details</legend>
+          <label class="form__label">
+            <p>First Name</p>
+            <input class="form__input form__input--small" type="text" placeholder="First Name">
+          </label>
+          <label class="form__label">
+            <p>Last Name</p>
+            <input class="form__input form__input--small" type="text" placeholder="Last Name">
+          </label>
+          <label class="form__label">
+            <p>Country</p>
+            <select name="" id="" class="select form__input form__input--large">
+              <option selected="true" disabled="disabled">Please select</option>
+              <option value="S">USA</option>
+              <option value="M">Canada</option>
+              <option value="L">Mexico</option>
+              <option value="XL">Argentina</option>
+              <option value="XXL">Greenland</option>
+            </select>
+          </label>
+          <label class="form__label">
+            <span>Street Address</span>
+            <input class="form__input form__input--large" type="text" placeholder="House number and street name">
+            <input class="form__input form__input--large" type="text"
+              placeholder="Apartment, suite, unit etc. (optional)">
+          </label>
+          <label class="form__label">
+            <p>Town/City</p>
+            <input class="form__input form__input--large" type="text" placeholder="Town/City">
+          </label>
+          <label class="form__label">
+            <p>County (optional)</p>
+            <input class="form__input form__input--large" type="text" placeholder="County">
+          </label>
+          <label class="form__label">
+            <p>Post Code</p>
+            <input class="form__input form__input--large" type="text" placeholder="Post Code">
+          </label>
+          <label class="form__label">
+            <p>Phone</p>
+            <input class="form__input form__input--large" type="text" placeholder="Phone">
+          </label>
+          <label class="form__label">
+            <p>Email Address</p>
+            <input class="form__input form__input--large" type="text" placeholder="Email">
+          </label>
+
+        </fieldset>
+      </form>
+      <div class="checkout__additional">
+        <h3 class="title checkout__title">Additional Information</h3>
+        <p class="checkout__notes">Other Notes (optional)</p>
+        <p>Notes about your order, e.g. special notes for delivery.</p>
+      </div>
+      <div class="checkout__order order">
+        <ul class="order__list">
+          <li class="order__item">
+            <ul class="order__sublist">
+              <li class="order__subitem">Product</li>
+              <li class="order__subitem">Total</li>
+            </ul>
+          </li>
+          <li class="order__item">
+            <ul class="order__sublist">
+              <li class="order__subitem">Product name x 1</li>
+              <li class="order__subitem">389.99 <span>$</span> </li>
+            </ul>
+          </li>
+          <li class="order__item">
+            <ul class="order__sublist">
+              <li class="order__subitem">Subtotal</li>
+              <li class="order__subitem highlight">389.99 <span>$</span></li>
+            </ul>
+          </li>
+          <li class="order__item">
+            <ul class="order__sublist">
+              <li class="order__subitem">Total</li>
+              <li class="order__subitem highlight">389.99 <span>$</span></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <form class="form checkout__radio" action="">
+        <label class="form__box d-flex ai-c checkout__box">
+          <input class="form__radio form__radio--circle" type="radio" name="bank" checked>
+          <span class="form__checktext form__checktext--circle">Bank</span>
         </label>
-        <label class="form__label">
-          <p>Last Name</p>
-        <input class="form__input form__input--small" type="text" placeholder="Last Name">
+        <p class="form__checkbox-desc form__checkbox-desc--active">Pay via Bank; you can pay with your credit card if
+          you don’t have a Bank account.
+        </p>
+        <label class="form__box d-flex ai-c checkout__box">
+          <input class="form__radio form__radio--circle" type="radio" name="bank">
+          <span class="form__checktext form__checktext--circle">Bank 2</span>
         </label>
-        <label class="form__label">
-          <p>Country</p>
-          <select name="" id="" class="select form__input form__input--large">
-            <option selected="true" disabled="disabled">Please select</option>
-            <option value="S">USA</option>
-            <option value="M">Canada</option>
-            <option value="L">Mexico</option>
-            <option value="XL">Argentina</option>
-            <option value="XXL">Greenland</option>
-          </select>
-        </label>
-        <label class="form__label">
-          <span>Street Address</span>
-          <input class="form__input form__input--large" type="text" placeholder="House number and street name">
-          <input class="form__input form__input--large" type="text" placeholder="Apartment, suite, unit etc. (optional)">
-        </label>
-        <label class="form__label">
-          <p>Town/City</p>
-          <input class="form__input form__input--large" type="text" placeholder="Town/City">          
-        </label>
-        <label class="form__label">
-          <p>County (optional)</p>
-          <input class="form__input form__input--large" type="text" placeholder="County">          
-        </label>
-        <label class="form__label">
-          <p>Post Code</p>
-          <input class="form__input form__input--large" type="text" placeholder="Post Code">          
-        </label>
-        <label class="form__label">
-          <p>Phone</p>
-          <input class="form__input form__input--large" type="text" placeholder="Phone">          
-        </label>
-        <label class="form__label">
-          <p>Email Address</p>
-          <input class="form__input form__input--large" type="text" placeholder="Email">          
-        </label>
-        
-      </fieldset>
+        <p class="form__checkbox-desc">Your personal data will be used to process your order, support your experience
+          throughout this website,
+          and for other purposes described in our <a class="link" href="#">privacy policy.</a></p>
+        <button class="btn btn--big">Proceed to Bank</button>
       </form>
     </section>
   </div>

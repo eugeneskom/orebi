@@ -5,6 +5,7 @@
 @import 'fonts';
 @import 'global';
 @import '_components/header';
+@import '_components/search';
 @import '_components/intro';
 @import '_components/sale';
 @import '_components/new';
@@ -32,11 +33,4 @@
 @import '_components/myaccount';
 @import '_components/cart';
 @import '_components/checkout';
-
-
-
-
-
-
-
-
+@import '_components/error';

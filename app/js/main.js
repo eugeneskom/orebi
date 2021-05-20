@@ -116,32 +116,59 @@ $(function () {
 
   //accordion opening single panel at a time
 
-  $(function() {
-    var Accordion = function(el, multiple) {
+  $(function () {
+    var Accordion = function (el, multiple) {
       this.el = el || {};
       this.multiple = multiple || false;
-  
+
       // Variables privadas
       var links = this.el.find('.accordion__btn');
       // Evento
-      links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+      links.on('click', { el: this.el, multiple: this.multiple }, this.dropdown)
     }
-  
-    Accordion.prototype.dropdown = function(e) {
+
+    Accordion.prototype.dropdown = function (e) {
       var $el = e.data.el;
-        $this = $(this),
+      $this = $(this),
         $next = $this.next();
-  
+
       $next.slideToggle();
       $this.parent().toggleClass('open');
-  
+
       if (!e.data.multiple) {
         $el.find('.accordion__panel').not($next).slideUp().parent().removeClass('open');
       };
-    }	
-  
+    }
+
     var accordion = new Accordion($('.accordion'), false);
   });
 
+
+$('.form__radio').click(function(){
+  let radioValue = $('.form__radio:checked').val();
+  if(radioValue){
+    $('.form__checkbox-desc').removeClass('form__checkbox-desc--active')
+    $(this).parent().next('.form__checkbox-desc').addClass('form__checkbox-desc--active');
+  }
 });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+});

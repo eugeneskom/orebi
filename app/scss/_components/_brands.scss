@@ -1,13 +1,16 @@
 .brands {
-  padding-bottom: 128px;
+  padding-bottom: 127px;
 
   &__item {
+    margin-bottom: 1px;
+
     &:hover {
       .brands__img {
         transform: rotateY(180deg);
         transition: transform 0.9s;
       }
     }
+
   }
 
   &__desc {

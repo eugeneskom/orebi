@@ -2,6 +2,10 @@
   &__heading {
     margin-bottom: 42px;
   }
+
+  &__form {
+    margin-bottom: 140px;
+  }
 }
 
 .map {
@@ -23,8 +27,9 @@
   &__address {
     font-style: normal;
   }
+
   &__address,
-  &__contacts{
+  &__contacts {
     margin-bottom: 11px;
   }
 
@@ -36,8 +41,10 @@
     text-transform: capitalize;
     font-weight: 700;
     min-height: 82px;
-    &__panel{
+
+    &__panel {
       padding-bottom: 25px;
+      font-weight: 400;
     }
   }
 }

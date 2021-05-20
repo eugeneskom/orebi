@@ -1,0 +1,55 @@
+.checkout {
+  width: 1055px;
+  margin-bottom: 140px;
+
+  &__coupon {
+    margin-bottom: 120px;
+  }
+
+  &__form {
+    margin-bottom: 130px;
+  }
+
+  &__additional {
+    padding-bottom: 87px;
+    margin-bottom: 130px;
+    border-bottom: 1px solid $light-700;
+  }
+
+  &__title {
+    margin-bottom: 42px;
+  }
+
+  &__order {
+    margin-bottom: 60px;
+  }
+
+  &__radio {
+    border: 1px solid $light-700;
+    padding: 24px 34px 30px;
+  }
+
+  &__box {
+    margin-bottom: 14px;
+  }
+}
+
+.order {
+  &__sublist {
+    display: flex;
+  }
+
+  &__subitem {
+    display: flex;
+    align-items: center;
+    min-width: 320px;
+    height: 54px;
+    border: 1px solid $light-700;
+    padding-left: 21px;
+
+    &:first-child {
+      font-weight: 700;
+      color: $highlight;
+    }
+  }
+}

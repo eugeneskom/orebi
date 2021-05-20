@@ -1,27 +1,31 @@
-.myaccount{
-  .tabs{
-    &__nav{
-      margin-right: 39px;
+.myaccount {
+  margin-bottom: 140px;
+  .tabs {
+    &__nav {
+      margin:0 39px 0;
     }
-    &__link{
+
+    &__link {
       text-align: left;
       margin: 0;
       min-width: 233px;
       padding-bottom: 21px;
       border-bottom: 1px solid $light-700;
-      &:not(:last-child){
+
+      &:not(:last-child) {
         margin-bottom: 20px;
       }
     }
   }
-  
-  .tab{
+
+  .tab {
     max-width: 918px;
     border: transparent;
-    &__description{
-    border: transparent;
 
-      a{
+    &__description {
+      border: transparent;
+
+      a {
         color: $highlight;
       }
     }

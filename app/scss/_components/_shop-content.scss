@@ -14,6 +14,7 @@
     fill: #767676;
     background-color: transparent;
     cursor: pointer;
+
     &:not(:last-child) {
       margin-right: 20px;
     }
@@ -41,6 +42,7 @@
 
 .jq-selectbox {
   border: 1px solid #F0F0F0;
+
   &__select {
     background: none; //when I use bgc it does not work
     display: flex;
@@ -76,6 +78,7 @@
     li {
       background-color: $light-900;
       padding-left: 5px;
+
       &:hover {
         background-color: rgb(208, 203, 203);
         color: $light-900;
@@ -98,9 +101,10 @@
 
 
 
-.test-input{
+.test-input {
   display: none;
-  &:checked+span{
+
+  &:checked+span {
     display: block;
     background-color: #000;
     color: #fff;

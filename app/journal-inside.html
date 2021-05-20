@@ -423,9 +423,9 @@
             </li>
           </ul>
         </div>
-        <form class="header__form d-flex">
-          <input class="header__search" type="search" placeholder="Search Products">
-          <button class="header__search-btn" type="submit"></button>
+        <form class="search__form d-flex">
+          <input class="search__input" type="search" placeholder="Search Products">
+          <button class="search__btn" type="submit"></button>
         </form>
         <ul class="header__user-cart d-flex jc-sb">
           <li class="user js_drop">
@@ -505,103 +505,111 @@
 </div>
 
 <main class="main">
-  <div class="container d-flex">
-    <section class="magazine">
-      <div class="magazine__picture">
-        <img src="images/content/magazine.jpg" alt="" class="magazine__img">
-      </div>
-      <div class="feedback d-flex jc-sb ai-c">
-        <ul class="feedback__list d-flex">
-          <li class="feedback__item">
-            <a href="#" class="feedback__link">Admin</a>
-          </li>
-          <li class="feedback__item">
-            <a href="#" class="feedback__link">Comments (1)</a>
-          </li>
-          <li class="feedback__item">
-            <a href="#" class="feedback__link">Category</a>
-          </li>
-        </ul>
-        <div class="feedback__time">
-          <p>6 months ago</p>
-        </div>
-      </div>
-      <article class="magazine__article">
-        <h2 class="title magazine__title">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-        </h2>
-        <div class="magazine__text">
-          <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and
-            demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain
-            and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through
-            weakness of will, which is the same as saying through shrinking from toil and pain. These cases are
-            perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when
-            nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain
-            avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will
-            frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always
-            holds in these matters to this principle of selection: he rejects pleasures to secure other greater
-            pleasures.</p>
-        </div>
-        <div class="tags">
-          <ul class="tags__list d-flex">
-            <li class="tags__item">Tag 1</li>
-            <li class="tags__item">Tag 2</li>
-            <li class="tags__item">Tag 3</li>
-          </ul>
-        </div>
-      </article>
+  <div class="container">
+    <div class="journal-inside  d-flex">
 
-      <div class="comments magazine__comments">
-        <div class="comments__top d-flex ai-c">
-          <p class="comments__name">John Ford</p>
-          <div class="comments__date">
+      <section class="magazine">
+        <div class="magazine__picture">
+          <img src="images/content/magazine.jpg" alt="" class="magazine__img">
+        </div>
+        <div class="feedback d-flex jc-sb ai-c">
+          <ul class="feedback__list d-flex">
+            <li class="feedback__item">
+              <a href="#" class="feedback__link">Admin</a>
+            </li>
+            <li class="feedback__item">
+              <a href="#" class="feedback__link">Comments (1)</a>
+            </li>
+            <li class="feedback__item">
+              <a href="#" class="feedback__link">Category</a>
+            </li>
+          </ul>
+          <div class="feedback__time">
             <p>6 months ago</p>
           </div>
         </div>
-        <div class="comments__description">
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-            into
-            electronic typesetting, remaining essentially unchanged.
-          </p>
-        </div>
-        <a class="comments__reply" href="#">Reply</a>
-      </div>
-      <form class="form">
-        <fieldset class="form__fieldset">
-          
-        <legend class="title form__title">Leave a Reply</legend>
-        <div class="form__precocious">
-          Your email address will not be published. Required fields are marked
-        </div>
-        <label class="form__label">
-          <span>Name</span>
-          <input class="form__input form__input--medium" type="text" placeholder="Your name here">
-        </label>
-        <label class="form__label">
-          <span>Email</span>
-          <input class="form__input form__input--medium" type="email" placeholder="Your email here">
-        </label>
-        <label class="form__label">
-          <span>Website</span>
-          <input class="form__input form__input--medium" placeholder="Your website here">
-        </label>
-        <label class="form__label">
-          <span>Website</span>
-          <textarea class="form__textarea form__textarea--medium magazine__form-textarea" placeholder="Your comment here"></textarea>
-        </label>
-        <label class="form__box d-flex ai-c">
-          <input class="form__checkbox" type="checkbox">
-          <span class="form__checktext">Save my name, email, website in this browser for the next time I comment.</span>
-        </label>
+        <article class="magazine__article">
+          <h2 class="title magazine__title">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          </h2>
+          <div class="magazine__text">
+            <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and
+              demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the
+              pain
+              and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through
+              weakness of will, which is the same as saying through shrinking from toil and pain. These cases are
+              perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and
+              when
+              nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain
+              avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it
+              will
+              frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore
+              always
+              holds in these matters to this principle of selection: he rejects pleasures to secure other greater
+              pleasures.</p>
+          </div>
+          <div class="tags">
+            <ul class="tags__list d-flex">
+              <li class="tags__item">Tag 1</li>
+              <li class="tags__item">Tag 2</li>
+              <li class="tags__item">Tag 3</li>
+            </ul>
+          </div>
+        </article>
 
-        <button class="btn btn--big" type="submit">Post</button>
-        
-      </fieldset>
-      </form>
+        <div class="comments magazine__comments">
+          <div class="comments__top d-flex ai-c">
+            <p class="comments__name">John Ford</p>
+            <div class="comments__date">
+              <p>6 months ago</p>
+            </div>
+          </div>
+          <div class="comments__description">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+              into
+              electronic typesetting, remaining essentially unchanged.
+            </p>
+          </div>
+          <a class="comments__reply" href="#">Reply</a>
+        </div>
+        <form class="form">
+          <fieldset class="form__fieldset">
 
-    </section>
-    <aside class="aside">
+            <legend class="title form__title">Leave a Reply</legend>
+            <div class="form__precocious">
+              Your email address will not be published. Required fields are marked
+            </div>
+            <label class="form__label">
+              <span>Name</span>
+              <input class="form__input form__input--medium" type="text" placeholder="Your name here">
+            </label>
+            <label class="form__label">
+              <span>Email</span>
+              <input class="form__input form__input--medium" type="email" placeholder="Your email here">
+            </label>
+            <label class="form__label">
+              <span>Website</span>
+              <input class="form__input form__input--medium" placeholder="Your website here">
+            </label>
+            <label class="form__label">
+              <span>Website</span>
+              <textarea class="form__textarea form__textarea--medium magazine__form-textarea"
+                placeholder="Your comment here"></textarea>
+            </label>
+            <label class="form__box d-flex ai-c">
+              <input class="form__checkbox" type="checkbox">
+              <span class="form__checktext">Save my name, email, website in this browser for the next time I
+                comment.</span>
+            </label>
+
+            <button class="btn btn--big" type="submit">Post</button>
+
+          </fieldset>
+        </form>
+
+      </section>
+      <aside class="aside">
   <form class="aside__form d-flex jc-sb" action="">
     <input class="aside__input" type="search" placeholder="Type here to search...">
     <button class="aside__btn" type="submit">
@@ -688,6 +696,7 @@
 
 
 </aside>
+    </div>
 
   </div>
 </main>
