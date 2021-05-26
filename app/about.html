@@ -423,9 +423,15 @@
             </li>
           </ul>
         </div>
-        <form class="search__form d-flex">
-          <input class="search__input" type="search" placeholder="Search Products">
-          <button class="search__btn" type="submit"></button>
+        <form class="search d-flex jc-sb">
+          <label class="search__label">
+            <span class="sr-only">Search input field</span>
+            <input class="search__input" type="search" placeholder="Search Products">
+          </label>
+          <label class="search__label">
+            <span class="sr-only">Search button</span>
+            <button class="search__btn" type="submit"></button>
+          </label>
         </form>
         <ul class="header__user-cart d-flex jc-sb">
           <li class="user js_drop">
@@ -447,7 +453,7 @@
                 </div>
                 <div class="cart__desc">
                   <p class="cart__title">Black Smart Watch</p>
-                  <p class="cart__price">$44.00</p>
+                  <p class="cart__price"> <span>$</span>44.00</p>
                 </div>
               </div>
               <div class="cart__top d-flex">
@@ -457,7 +463,7 @@
                 </div>
                 <div class="cart__desc">
                   <p class="cart__title">Black Smart Watch</p>
-                  <p class="cart__price">$44.00</p>
+                  <p class="cart__price"><span>$</span>44.00</p>
                 </div>
               </div>
               <div class="cart__top d-flex">
@@ -467,7 +473,7 @@
                 </div>
                 <div class="cart__desc">
                   <p class="cart__title">Black Smart Watch</p>
-                  <p class="cart__price">$44.00</p>
+                  <p class="cart__price"><span>$</span>44.00</p>
                 </div>
               </div>
 
@@ -475,10 +481,10 @@
 
 
               <div class="cart__bottom">
-                <p class="cart__subtotal">Subtotal: <span>$44.00</span></p>
+                <p class="cart__subtotal">Subtotal: <span>$</span>44.00</p>
                 <div class="cart__buttons d-flex jc-sb">
-                  <button class="btn btn--white btn--cart" type="button">View Cart</button>
-                  <button class="btn btn--white btn--cart" type="button">Checkout</button>
+                  <a class="btn btn--white btn--cart" href="#">View Cart</a>
+                  <a class="btn btn--white btn--cart" href="#">Checkout</a>
                 </div>
               </div>
             </div>
@@ -491,30 +497,30 @@
 
 </header>
 <main class="main">
-  <div class="breadcrumbs">
-    <div class="container">
-      <h1 class="title breadcrumbs__title">About</h1>
-      <ul class="breadcrumbs__list d-flex">
-        <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link" href="#">Home</a>
-        </li>
-        <li class="breadcrumbs__item">
-          <span href="#" class="breadcrumbs__link">About</span>
-        </li>
-      </ul>
-    </div>
-  </div>
+
+
   <section class="about">
     <div class="container">
+      <h1 class="title about__title">About</h1>
 
+      <div class="breadcrumbs">
+    <ul class="breadcrumbs__list d-flex">
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link" href="#">Home</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <span class="breadcrumbs__link">About</span>
+      </li>
+    </ul>
+</div>
 
       <ul class="about__list d-flex jc-sb">
         <li class="about__item">
-          <img class="about__img" src="images/about/brands.jpg">
+          <img class="about__img" src="images/about/brands.jpg" alt="brands image">
           <a class="btn about__link" href="">our&nbsp;brands</a>
         </li>
         <li class="about__item">
-          <img class="about__img" src="images/about/store.jpg">
+          <img class="about__img" src="images/about/store.jpg" alt="stores image">
           <a class="btn about__link" href="">our&nbsp;stores</a>
         </li>
       </ul>
@@ -654,13 +660,14 @@
         <p class="contacts__address">575 Crescent Ave. Quakertown, PA 18951</p>
       </address>
       <a href="#" class="logo footer__logo">
-        <img src="images/logo.svg" alt="">
+        <img src="images/logo.svg" alt="logo of the website">
       </a>
     </div>
     <div class="footer__bottom d-flex jc-sb ai-c">
       <ul class="social d-flex ai-c">
         <li class="social__item">
           <a href="" class="social__link">
+            <span class="sr-only">Facebook</span>
             <svg class="social__svg">
               <use xlink:href="sprite.svg#facebook"></use>
             </svg>
@@ -668,6 +675,7 @@
         </li>
         <li class="social__item">
           <a href="" class="social__link">
+            <span class="sr-only">Linkedin</span>
             <svg class="social__svg">
               <use xlink:href="sprite.svg#linkedin"></use>
             </svg>
@@ -675,6 +683,7 @@
         </li>
         <li class="social__item">
           <a href="" class="social__link">
+            <span class="sr-only">Instagram</span>
             <svg class="social__svg">
               <use xlink:href="sprite.svg#instagram"></use>
             </svg>
@@ -685,6 +694,7 @@
     </div>
   </div>
 </footer>
+
 
 <script src="js/main.min.js"></script>
 </body>

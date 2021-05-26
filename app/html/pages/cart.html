@@ -1,63 +1,69 @@
 @@include('../parts/_body-start.html')
 
 @@include('../parts/_header.html')
-@@include('../parts/_breadcrumbs.html')
 
 <main class="main">
-  <div class="container">
-    <div class="cart-inside">
-      <ul class="cart-inside__list d-flex">
-        <li class="cart-inside__item">Product</li>
-        <li class="cart-inside__item">Price</li>
-        <li class="cart-inside__item">Quantity</li>
-        <li class="cart-inside__item">Total</li>
-      </ul>
-      <ul class="cart-inside__inner d-flex ai-c">
-        <li class="cart-inside__item cart-inside__product d-flex ai-c">
-          <img class="cart-inside__img" src="images/content/black-smart-w.jpg" alt="picture of the goods">
-          <p class="cart-inside__product-name">Product name</p>
-        </li>
-        <li class="cart-inside__item">
-          <p><span>$</span>44.00</p>
-        </li>
-        <li class="cart-inside__item quantity">
-          <input class="number" type="number" value="1" min="1">
-        </li>
-        <li class="cart-inside__item">
-          <p><span>$</span>44.00</p>
-        </li>
-      </ul>
-      <div class="cart-inside__bottom d-flex ai-c">
-        <div class="cart-inside__size">
-          <select name="" id="" class="select">
-            <option selected="true" disabled="disabled">SIZE</option>
-            <option value="S">S</option>
-            <option value="M">M</option>
-            <option value="L">L</option>
-            <option value="XL">XL</option>
-            <option value="XXL">XXL</option>
-          </select>
-        </div>
-        <div class="cart-inside__coupon">
-          <a class="cart-inside__link" href="#">Apply coupon</a>
-        </div>
-        <div class="cart-inside__update">
-          <a class="cart-inside__link" href="">Update cart</a>
+  <section class="cart-wrapper">
+    <div class="container">
+
+      <h1 class="title">Cart</h1>
+      @@include('../parts/_breadcrumbs.html',{
+      "active-page": "Cart"
+      })
+      <div class="cart-inside">
+        <ul class="cart-inside__list d-flex">
+          <li class="cart-inside__item">Product</li>
+          <li class="cart-inside__item">Price</li>
+          <li class="cart-inside__item">Quantity</li>
+          <li class="cart-inside__item">Total</li>
+        </ul>
+        <ul class="cart-inside__inner d-flex ai-c">
+          <li class="cart-inside__item cart-inside__product d-flex ai-c">
+            <img class="cart-inside__img" src="images/content/black-smart-w.jpg" alt="picture of the goods">
+            <p class="cart-inside__product-name">Product name</p>
+          </li>
+          <li class="cart-inside__item">
+            <p><span>$</span>44.00</p>
+          </li>
+          <li class="cart-inside__item quantity">
+            <input class="number" type="number" value="1" min="1">
+          </li>
+          <li class="cart-inside__item">
+            <p><span>$</span>44.00</p>
+          </li>
+        </ul>
+        <div class="cart-inside__bottom d-flex ai-c">
+          <div class="cart-inside__size">
+            <select name="" id="" class="select">
+              <option selected="true" disabled="disabled">size</option>
+              <option value="S">s</option>
+              <option value="M">m</option>
+              <option value="L">l</option>
+              <option value="XL">xl</option>
+              <option value="XXL">xxl</option>
+            </select>
+          </div>
+          <div class="cart-inside__coupon">
+            <a class="cart-inside__link" href="#">Apply coupon</a>
+          </div>
+          <div class="cart-inside__update">
+            <a class="cart-inside__link" href="">Update cart</a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="cart-total">
-      <h3 class="cart-total__title">Cart totals</h3>
-      <ul class="cart-total__list d-flex fw-w">
-        <li class="cart-total__item highlight">Subtotal</li>
-        <li class="cart-total__item cart-total__item--gray">389.99 $</li>
-        <li class="cart-total__item highlight">Total</li>
-        <li class="cart-total__item highlight">389.99 $</li>
-      </ul>
-      <button class="btn btn--big cart-total__btn d-flex" type="submit">Proceed to Checkout</button>
+      <div class="cart-total">
+        <h3 class="cart-total__title">Cart totals</h3>
+        <ul class="cart-total__list d-flex fw-w">
+          <li class="cart-total__item highlight">Subtotal</li>
+          <li class="cart-total__item cart-total__item--gray"><span>$</span>389.99</li>
+          <li class="cart-total__item highlight">Total</li>
+          <li class="cart-total__item highlight"><span>$</span>389.99 </li>
+        </ul>
+        <button class="btn btn--big cart-total__btn d-flex" type="submit">Proceed to Checkout</button>
+      </div>
     </div>
-  </div>
+  </section>
 </main>
 @@include('../parts/_footer.html')
 

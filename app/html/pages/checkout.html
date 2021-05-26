@@ -1,11 +1,14 @@
 @@include('../parts/_body-start.html')
 
 @@include('../parts/_header.html')
-@@include('../parts/_breadcrumbs.html')
 
 <main class="main">
   <div class="container">
     <section class="checkout">
+      <h1 class="title">Checkout</h1>
+      @@include('../parts/_breadcrumbs.html',{
+      "active-page": "Checkout"
+      })
       <div class="checkout__coupon">
         <p>Have a coupon? <a class="link" href="#">Click here to enter your code</a></p>
       </div>
@@ -15,15 +18,15 @@
         <fieldset class="form__fieldset d-flex fw-w jc-sb">
           <legend class="form__title title checkout__title">Billing Details</legend>
           <label class="form__label">
-            <p>First Name</p>
+            First Name
             <input class="form__input form__input--small" type="text" placeholder="First Name">
           </label>
           <label class="form__label">
-            <p>Last Name</p>
+            Last Name
             <input class="form__input form__input--small" type="text" placeholder="Last Name">
           </label>
           <label class="form__label">
-            <p>Country</p>
+            Country
             <select name="" id="" class="select form__input form__input--large">
               <option selected="true" disabled="disabled">Please select</option>
               <option value="S">USA</option>
@@ -34,29 +37,29 @@
             </select>
           </label>
           <label class="form__label">
-            <span>Street Address</span>
+            Street Address
             <input class="form__input form__input--large" type="text" placeholder="House number and street name">
             <input class="form__input form__input--large" type="text"
               placeholder="Apartment, suite, unit etc. (optional)">
           </label>
           <label class="form__label">
-            <p>Town/City</p>
+            Town/City
             <input class="form__input form__input--large" type="text" placeholder="Town/City">
           </label>
           <label class="form__label">
-            <p>County (optional)</p>
+            County (optional)
             <input class="form__input form__input--large" type="text" placeholder="County">
           </label>
           <label class="form__label">
-            <p>Post Code</p>
+            Post Code
             <input class="form__input form__input--large" type="text" placeholder="Post Code">
           </label>
           <label class="form__label">
-            <p>Phone</p>
+            Phone
             <input class="form__input form__input--large" type="text" placeholder="Phone">
           </label>
           <label class="form__label">
-            <p>Email Address</p>
+            Email Address
             <input class="form__input form__input--large" type="text" placeholder="Email">
           </label>
 
@@ -64,8 +67,12 @@
       </form>
       <div class="checkout__additional">
         <h3 class="title checkout__title">Additional Information</h3>
-        <p class="checkout__notes">Other Notes (optional)</p>
-        <p>Notes about your order, e.g. special notes for delivery.</p>
+        <div class="checkout__notes">
+          <p>Other Notes (optional)</p>
+        </div>
+        <div class="checkout__text">
+          <p>Notes about your order, e.g. special notes for delivery.</p>
+        </div>
       </div>
       <div class="checkout__order order">
         <ul class="order__list">
@@ -78,19 +85,19 @@
           <li class="order__item">
             <ul class="order__sublist">
               <li class="order__subitem">Product name x 1</li>
-              <li class="order__subitem">389.99 <span>$</span> </li>
+              <li class="order__subitem"><span>$</span>389.99</li>
             </ul>
           </li>
           <li class="order__item">
             <ul class="order__sublist">
               <li class="order__subitem">Subtotal</li>
-              <li class="order__subitem highlight">389.99 <span>$</span></li>
+              <li class="order__subitem highlight"><span>$</span>389.99</li>
             </ul>
           </li>
           <li class="order__item">
             <ul class="order__sublist">
               <li class="order__subitem">Total</li>
-              <li class="order__subitem highlight">389.99 <span>$</span></li>
+              <li class="order__subitem highlight"><span>$</span>389.99</li>
             </ul>
           </li>
         </ul>
@@ -117,5 +124,4 @@
   </div>
 </main>
 @@include('../parts/_footer.html')
-
 @@include('../parts/_body-end.html')

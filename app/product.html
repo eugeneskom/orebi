@@ -423,9 +423,15 @@
             </li>
           </ul>
         </div>
-        <form class="search__form d-flex">
-          <input class="search__input" type="search" placeholder="Search Products">
-          <button class="search__btn" type="submit"></button>
+        <form class="search d-flex jc-sb">
+          <label class="search__label">
+            <span class="sr-only">Search input field</span>
+            <input class="search__input" type="search" placeholder="Search Products">
+          </label>
+          <label class="search__label">
+            <span class="sr-only">Search button</span>
+            <button class="search__btn" type="submit"></button>
+          </label>
         </form>
         <ul class="header__user-cart d-flex jc-sb">
           <li class="user js_drop">
@@ -447,7 +453,7 @@
                 </div>
                 <div class="cart__desc">
                   <p class="cart__title">Black Smart Watch</p>
-                  <p class="cart__price">$44.00</p>
+                  <p class="cart__price"> <span>$</span>44.00</p>
                 </div>
               </div>
               <div class="cart__top d-flex">
@@ -457,7 +463,7 @@
                 </div>
                 <div class="cart__desc">
                   <p class="cart__title">Black Smart Watch</p>
-                  <p class="cart__price">$44.00</p>
+                  <p class="cart__price"><span>$</span>44.00</p>
                 </div>
               </div>
               <div class="cart__top d-flex">
@@ -467,7 +473,7 @@
                 </div>
                 <div class="cart__desc">
                   <p class="cart__title">Black Smart Watch</p>
-                  <p class="cart__price">$44.00</p>
+                  <p class="cart__price"><span>$</span>44.00</p>
                 </div>
               </div>
 
@@ -475,10 +481,10 @@
 
 
               <div class="cart__bottom">
-                <p class="cart__subtotal">Subtotal: <span>$44.00</span></p>
+                <p class="cart__subtotal">Subtotal: <span>$</span>44.00</p>
                 <div class="cart__buttons d-flex jc-sb">
-                  <button class="btn btn--white btn--cart" type="button">View Cart</button>
-                  <button class="btn btn--white btn--cart" type="button">Checkout</button>
+                  <a class="btn btn--white btn--cart" href="#">View Cart</a>
+                  <a class="btn btn--white btn--cart" href="#">Checkout</a>
                 </div>
               </div>
             </div>
@@ -492,34 +498,31 @@
 </header>
 <main class="main">
   <div class="container ">
-    <div class="breadcrumbs">
-  <div class="container">
-    <h1 class="title breadcrumbs__title">Products</h1>
+    <section class="product-inside">
+      <h1 class="title">Product</h1>
+      <div class="breadcrumbs">
     <ul class="breadcrumbs__list d-flex">
       <li class="breadcrumbs__item">
         <a class="breadcrumbs__link" href="#">Home</a>
       </li>
       <li class="breadcrumbs__item">
-        <span class="breadcrumbs__link">Products</span>
+        <span class="breadcrumbs__link">Product</span>
       </li>
     </ul>
-  </div>
 </div>
-    <section class="product-inside">
-
       <div class="product-gallery">
         <ul class="product-gallery__list grid">
           <li class="product-gallery__item">
-            <img class="product-gallery__img" src="images/products/phone.jpg" alt="">
+            <img class="product-gallery__img" src="images/products/phone.jpg" alt="product image">
           </li>
           <li class="product-gallery__item">
-            <img class="product-gallery__img" src="images/products/phone.jpg" alt="">
+            <img class="product-gallery__img" src="images/products/phone.jpg" alt="product image">
           </li>
           <li class="product-gallery__item">
-            <img class="product-gallery__img" src="images/products/phone.jpg" alt="">
+            <img class="product-gallery__img" src="images/products/phone.jpg" alt="product image">
           </li>
           <li class="product-gallery__item">
-            <img class="product-gallery__img" src="images/products/phone.jpg" alt="">
+            <img class="product-gallery__img" src="images/products/phone.jpg" alt="product image">
           </li>
         </ul>
       </div>
@@ -576,16 +579,20 @@
             </form>
           </li>
           <li class="product-filters__item product-filters__size d-flex ai-c">
-            <select name="" id="" class="select">
-              <option value="S">S</option>
-              <option value="M">M</option>
-              <option value="L">L</option>
-              <option value="XL">XL</option>
-              <option value="XXL">XXL</option>
-            </select>
+            <form class="product-filters__form" action="">
+              <select name="" id="" class="select">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+              </select>
+            </form>
           </li>
           <li class="product-filters__item quantity ">
-            <input class="number" type="number" value="1" min="1">
+            <form class="product-filters__form" action="">
+              <input class="number" type="number" value="1" min="1">
+            </form>
           </li>
         </ul>
       </section>
@@ -668,15 +675,15 @@
             <form class="form">
               <p class="form__caption">Add a Review</p>
               <label class="form__label">
-                <span>Name</span>
+                Name
                 <input class="form__input form__input--medium" type="text" placeholder="Your name here">
               </label>
               <label class="form__label">
-                <span>Email</span>
+                Email
                 <input class="form__input form__input--medium" type="email" placeholder="Your email here">
               </label>
               <label class="form__label">
-                <span>Review</span>
+                Review
                 <textarea class="form__textarea form__textarea--medium" placeholder="Your review here"></textarea>
               </label>
               <button class="btn btn--big" type="submit">Post</button>
@@ -794,13 +801,14 @@
         <p class="contacts__address">575 Crescent Ave. Quakertown, PA 18951</p>
       </address>
       <a href="#" class="logo footer__logo">
-        <img src="images/logo.svg" alt="">
+        <img src="images/logo.svg" alt="logo of the website">
       </a>
     </div>
     <div class="footer__bottom d-flex jc-sb ai-c">
       <ul class="social d-flex ai-c">
         <li class="social__item">
           <a href="" class="social__link">
+            <span class="sr-only">Facebook</span>
             <svg class="social__svg">
               <use xlink:href="sprite.svg#facebook"></use>
             </svg>
@@ -808,6 +816,7 @@
         </li>
         <li class="social__item">
           <a href="" class="social__link">
+            <span class="sr-only">Linkedin</span>
             <svg class="social__svg">
               <use xlink:href="sprite.svg#linkedin"></use>
             </svg>
@@ -815,6 +824,7 @@
         </li>
         <li class="social__item">
           <a href="" class="social__link">
+            <span class="sr-only">Instagram</span>
             <svg class="social__svg">
               <use xlink:href="sprite.svg#instagram"></use>
             </svg>
@@ -825,6 +835,7 @@
     </div>
   </div>
 </footer>
+
 
 <script src="js/main.min.js"></script>
 </body>

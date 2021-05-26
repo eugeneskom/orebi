@@ -1,11 +1,14 @@
 @@include('../parts/_body-start.html')
 
 @@include('../parts/_header.html')
-@@include('../parts/_breadcrumbs.html')
 
 <main class="main">
 <div class="container">
   <section class="myaccount">
+    <h1 class="title">My Account</h1>
+      @@include('../parts/_breadcrumbs.html',{
+      "active-page": "My Account"
+      })
     <div class="tabs d-flex">
       <div class="tabs__nav d-flex fd-col">
         <button class="tabs__link" data-tab-name="tab-1">

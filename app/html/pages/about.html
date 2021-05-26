@@ -2,30 +2,23 @@
 
 @@include('../parts/_header.html')
 <main class="main">
-  <div class="breadcrumbs">
-    <div class="container">
-      <h1 class="title breadcrumbs__title">About</h1>
-      <ul class="breadcrumbs__list d-flex">
-        <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link" href="#">Home</a>
-        </li>
-        <li class="breadcrumbs__item">
-          <span href="#" class="breadcrumbs__link">About</span>
-        </li>
-      </ul>
-    </div>
-  </div>
+
+
   <section class="about">
     <div class="container">
+      <h1 class="title about__title">About</h1>
 
+      @@include('../parts/_breadcrumbs.html',{
+      "active-page": "About"
+      })
 
       <ul class="about__list d-flex jc-sb">
         <li class="about__item">
-          <img class="about__img" src="images/about/brands.jpg">
+          <img class="about__img" src="images/about/brands.jpg" alt="brands image">
           <a class="btn about__link" href="">our&nbsp;brands</a>
         </li>
         <li class="about__item">
-          <img class="about__img" src="images/about/store.jpg">
+          <img class="about__img" src="images/about/store.jpg" alt="stores image">
           <a class="btn about__link" href="">our&nbsp;stores</a>
         </li>
       </ul>

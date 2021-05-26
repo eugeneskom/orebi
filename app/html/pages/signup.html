@@ -1,10 +1,13 @@
 @@include('../parts/_body-start.html')
 
 @@include('../parts/_header.html')
-@@include('../parts/_breadcrumbs.html')
 <main class="main">
   <div class="container">
     <div class="signup">
+      <h1 class="title">Sign Up</h1>
+      @@include('../parts/_breadcrumbs.html',{
+      "active-page": "Sign Up"
+      })
       <div class="signup__intro text">
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
           industry's standard dummy text ever since the.</p>
@@ -15,19 +18,19 @@
           <legend class="title form__title">Your Personal Details</legend>
 
           <label class="form__label">
-            <p>First Name</p>
+            First Name
             <input class="form__input form__input--small" type="text" placeholder="First Name">
           </label>
           <label class="form__label">
-            <p>Last Name</p>
+            Last Name
             <input class="form__input form__input--small" type="text" placeholder="Last Name">
           </label>
           <label class="form__label">
-            <p>Email address</p>
+            Email address
             <input class="form__input form__input--small" type="email" placeholder="company@domain.com">
           </label>
           <label class="form__label">
-            <p>Telephone</p>
+            Telephone
             <input class="form__input form__input--small" type="text" placeholder="Your phone number">
           </label>
 
@@ -38,24 +41,24 @@
         <fieldset class="form__fieldset d-flex fw-w jc-sb">
           <legend class="title form__title">New Customer</legend>
           <label class="form__label">
-            <p>Address 1</p>
+            Address 1
             <input class="form__input form__input--small" type="text" placeholder="4279 Zboncak Port Suite 6212">
           </label>
           <label class="form__label">
-            <p>Address 2</p>
+            Address 2
             <input class="form__input form__input--small" type="text" placeholder="—">
           </label>
           <label class="form__label">
-            <p>City</p>
+            City
             <input class="form__input form__input--small" type="text" placeholder="Your city">
           </label>
           <label class="form__label">
-            <p>Post Code</p>
+            Post Code
             <input class="form__input form__input--small" type="text" placeholder="05228">
           </label>
           <div class="form__dropdowns d-flex">
             <label>
-              <p>Country</p>
+              <span>Country</span>
               <select name="" id="" class="shop-content__select-by select-style form__input form__input--small">
                 <option selected="true" disabled="disabled">Please select</option>
                 <option value="USA">USA</option>
@@ -65,7 +68,7 @@
               </select>
             </label>
             <label>
-              <p>Region/State</p>
+              Region/State
               <select name="" id="" class="form__input shop-content__select-show select-style form__input--small">
                 <option selected="true" disabled="disabled" hidden>Please select</option>
                 <option value="Washington DC">Washington DC</option>
@@ -82,11 +85,11 @@
         <fieldset class="form__fieldset d-flex fw-w jc-sb">
           <legend class="title form__title">Your Password</legend>
           <label class="form__label">
-            <p>Password</p>
+            Password
             <input class="form__input form__input--small" type="password" placeholder="Password">
           </label>
           <label class="form__label">
-            <p>Repeat Password</p>
+            Repeat Password
             <input class="form__input form__input--small" type="password" placeholder="Repeat Password">
           </label>
         </fieldset>

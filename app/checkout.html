@@ -423,9 +423,15 @@
             </li>
           </ul>
         </div>
-        <form class="search__form d-flex">
-          <input class="search__input" type="search" placeholder="Search Products">
-          <button class="search__btn" type="submit"></button>
+        <form class="search d-flex jc-sb">
+          <label class="search__label">
+            <span class="sr-only">Search input field</span>
+            <input class="search__input" type="search" placeholder="Search Products">
+          </label>
+          <label class="search__label">
+            <span class="sr-only">Search button</span>
+            <button class="search__btn" type="submit"></button>
+          </label>
         </form>
         <ul class="header__user-cart d-flex jc-sb">
           <li class="user js_drop">
@@ -447,7 +453,7 @@
                 </div>
                 <div class="cart__desc">
                   <p class="cart__title">Black Smart Watch</p>
-                  <p class="cart__price">$44.00</p>
+                  <p class="cart__price"> <span>$</span>44.00</p>
                 </div>
               </div>
               <div class="cart__top d-flex">
@@ -457,7 +463,7 @@
                 </div>
                 <div class="cart__desc">
                   <p class="cart__title">Black Smart Watch</p>
-                  <p class="cart__price">$44.00</p>
+                  <p class="cart__price"><span>$</span>44.00</p>
                 </div>
               </div>
               <div class="cart__top d-flex">
@@ -467,7 +473,7 @@
                 </div>
                 <div class="cart__desc">
                   <p class="cart__title">Black Smart Watch</p>
-                  <p class="cart__price">$44.00</p>
+                  <p class="cart__price"><span>$</span>44.00</p>
                 </div>
               </div>
 
@@ -475,10 +481,10 @@
 
 
               <div class="cart__bottom">
-                <p class="cart__subtotal">Subtotal: <span>$44.00</span></p>
+                <p class="cart__subtotal">Subtotal: <span>$</span>44.00</p>
                 <div class="cart__buttons d-flex jc-sb">
-                  <button class="btn btn--white btn--cart" type="button">View Cart</button>
-                  <button class="btn btn--white btn--cart" type="button">Checkout</button>
+                  <a class="btn btn--white btn--cart" href="#">View Cart</a>
+                  <a class="btn btn--white btn--cart" href="#">Checkout</a>
                 </div>
               </div>
             </div>
@@ -490,23 +496,21 @@
 
 
 </header>
-<div class="breadcrumbs">
+
+<main class="main">
   <div class="container">
-    <h1 class="title breadcrumbs__title">Products</h1>
+    <section class="checkout">
+      <h1 class="title">Checkout</h1>
+      <div class="breadcrumbs">
     <ul class="breadcrumbs__list d-flex">
       <li class="breadcrumbs__item">
         <a class="breadcrumbs__link" href="#">Home</a>
       </li>
       <li class="breadcrumbs__item">
-        <span class="breadcrumbs__link">Products</span>
+        <span class="breadcrumbs__link">Checkout</span>
       </li>
     </ul>
-  </div>
 </div>
-
-<main class="main">
-  <div class="container">
-    <section class="checkout">
       <div class="checkout__coupon">
         <p>Have a coupon? <a class="link" href="#">Click here to enter your code</a></p>
       </div>
@@ -516,15 +520,15 @@
         <fieldset class="form__fieldset d-flex fw-w jc-sb">
           <legend class="form__title title checkout__title">Billing Details</legend>
           <label class="form__label">
-            <p>First Name</p>
+            First Name
             <input class="form__input form__input--small" type="text" placeholder="First Name">
           </label>
           <label class="form__label">
-            <p>Last Name</p>
+            Last Name
             <input class="form__input form__input--small" type="text" placeholder="Last Name">
           </label>
           <label class="form__label">
-            <p>Country</p>
+            Country
             <select name="" id="" class="select form__input form__input--large">
               <option selected="true" disabled="disabled">Please select</option>
               <option value="S">USA</option>
@@ -535,29 +539,29 @@
             </select>
           </label>
           <label class="form__label">
-            <span>Street Address</span>
+            Street Address
             <input class="form__input form__input--large" type="text" placeholder="House number and street name">
             <input class="form__input form__input--large" type="text"
               placeholder="Apartment, suite, unit etc. (optional)">
           </label>
           <label class="form__label">
-            <p>Town/City</p>
+            Town/City
             <input class="form__input form__input--large" type="text" placeholder="Town/City">
           </label>
           <label class="form__label">
-            <p>County (optional)</p>
+            County (optional)
             <input class="form__input form__input--large" type="text" placeholder="County">
           </label>
           <label class="form__label">
-            <p>Post Code</p>
+            Post Code
             <input class="form__input form__input--large" type="text" placeholder="Post Code">
           </label>
           <label class="form__label">
-            <p>Phone</p>
+            Phone
             <input class="form__input form__input--large" type="text" placeholder="Phone">
           </label>
           <label class="form__label">
-            <p>Email Address</p>
+            Email Address
             <input class="form__input form__input--large" type="text" placeholder="Email">
           </label>
 
@@ -565,8 +569,12 @@
       </form>
       <div class="checkout__additional">
         <h3 class="title checkout__title">Additional Information</h3>
-        <p class="checkout__notes">Other Notes (optional)</p>
-        <p>Notes about your order, e.g. special notes for delivery.</p>
+        <div class="checkout__notes">
+          <p>Other Notes (optional)</p>
+        </div>
+        <div class="checkout__text">
+          <p>Notes about your order, e.g. special notes for delivery.</p>
+        </div>
       </div>
       <div class="checkout__order order">
         <ul class="order__list">
@@ -579,19 +587,19 @@
           <li class="order__item">
             <ul class="order__sublist">
               <li class="order__subitem">Product name x 1</li>
-              <li class="order__subitem">389.99 <span>$</span> </li>
+              <li class="order__subitem"><span>$</span>389.99</li>
             </ul>
           </li>
           <li class="order__item">
             <ul class="order__sublist">
               <li class="order__subitem">Subtotal</li>
-              <li class="order__subitem highlight">389.99 <span>$</span></li>
+              <li class="order__subitem highlight"><span>$</span>389.99</li>
             </ul>
           </li>
           <li class="order__item">
             <ul class="order__sublist">
               <li class="order__subitem">Total</li>
-              <li class="order__subitem highlight">389.99 <span>$</span></li>
+              <li class="order__subitem highlight"><span>$</span>389.99</li>
             </ul>
           </li>
         </ul>
@@ -720,13 +728,14 @@
         <p class="contacts__address">575 Crescent Ave. Quakertown, PA 18951</p>
       </address>
       <a href="#" class="logo footer__logo">
-        <img src="images/logo.svg" alt="">
+        <img src="images/logo.svg" alt="logo of the website">
       </a>
     </div>
     <div class="footer__bottom d-flex jc-sb ai-c">
       <ul class="social d-flex ai-c">
         <li class="social__item">
           <a href="" class="social__link">
+            <span class="sr-only">Facebook</span>
             <svg class="social__svg">
               <use xlink:href="sprite.svg#facebook"></use>
             </svg>
@@ -734,6 +743,7 @@
         </li>
         <li class="social__item">
           <a href="" class="social__link">
+            <span class="sr-only">Linkedin</span>
             <svg class="social__svg">
               <use xlink:href="sprite.svg#linkedin"></use>
             </svg>
@@ -741,6 +751,7 @@
         </li>
         <li class="social__item">
           <a href="" class="social__link">
+            <span class="sr-only">Instagram</span>
             <svg class="social__svg">
               <use xlink:href="sprite.svg#instagram"></use>
             </svg>

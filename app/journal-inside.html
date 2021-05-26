@@ -423,9 +423,15 @@
             </li>
           </ul>
         </div>
-        <form class="search__form d-flex">
-          <input class="search__input" type="search" placeholder="Search Products">
-          <button class="search__btn" type="submit"></button>
+        <form class="search d-flex jc-sb">
+          <label class="search__label">
+            <span class="sr-only">Search input field</span>
+            <input class="search__input" type="search" placeholder="Search Products">
+          </label>
+          <label class="search__label">
+            <span class="sr-only">Search button</span>
+            <button class="search__btn" type="submit"></button>
+          </label>
         </form>
         <ul class="header__user-cart d-flex jc-sb">
           <li class="user js_drop">
@@ -447,7 +453,7 @@
                 </div>
                 <div class="cart__desc">
                   <p class="cart__title">Black Smart Watch</p>
-                  <p class="cart__price">$44.00</p>
+                  <p class="cart__price"> <span>$</span>44.00</p>
                 </div>
               </div>
               <div class="cart__top d-flex">
@@ -457,7 +463,7 @@
                 </div>
                 <div class="cart__desc">
                   <p class="cart__title">Black Smart Watch</p>
-                  <p class="cart__price">$44.00</p>
+                  <p class="cart__price"><span>$</span>44.00</p>
                 </div>
               </div>
               <div class="cart__top d-flex">
@@ -467,7 +473,7 @@
                 </div>
                 <div class="cart__desc">
                   <p class="cart__title">Black Smart Watch</p>
-                  <p class="cart__price">$44.00</p>
+                  <p class="cart__price"><span>$</span>44.00</p>
                 </div>
               </div>
 
@@ -475,10 +481,10 @@
 
 
               <div class="cart__bottom">
-                <p class="cart__subtotal">Subtotal: <span>$44.00</span></p>
+                <p class="cart__subtotal">Subtotal: <span>$</span>44.00</p>
                 <div class="cart__buttons d-flex jc-sb">
-                  <button class="btn btn--white btn--cart" type="button">View Cart</button>
-                  <button class="btn btn--white btn--cart" type="button">Checkout</button>
+                  <a class="btn btn--white btn--cart" href="#">View Cart</a>
+                  <a class="btn btn--white btn--cart" href="#">Checkout</a>
                 </div>
               </div>
             </div>
@@ -490,126 +496,125 @@
 
 
 </header>
-<div class="breadcrumbs">
+
+<main class="main">
   <div class="container">
-    <h1 class="title breadcrumbs__title">Products</h1>
+    <div class="journal-wrapper">
+      <h1 class="title">Journal</h1>
+      <div class="breadcrumbs">
     <ul class="breadcrumbs__list d-flex">
       <li class="breadcrumbs__item">
         <a class="breadcrumbs__link" href="#">Home</a>
       </li>
       <li class="breadcrumbs__item">
-        <span class="breadcrumbs__link">Products</span>
+        <span class="breadcrumbs__link">Journal</span>
       </li>
     </ul>
-  </div>
 </div>
+      <div class="journal-inside  d-flex">
 
-<main class="main">
-  <div class="container">
-    <div class="journal-inside  d-flex">
-
-      <section class="magazine">
-        <div class="magazine__picture">
-          <img src="images/content/magazine.jpg" alt="" class="magazine__img">
-        </div>
-        <div class="feedback d-flex jc-sb ai-c">
-          <ul class="feedback__list d-flex">
-            <li class="feedback__item">
-              <a href="#" class="feedback__link">Admin</a>
-            </li>
-            <li class="feedback__item">
-              <a href="#" class="feedback__link">Comments (1)</a>
-            </li>
-            <li class="feedback__item">
-              <a href="#" class="feedback__link">Category</a>
-            </li>
-          </ul>
-          <div class="feedback__time">
-            <p>6 months ago</p>
+        <section class="magazine">
+          <div class="magazine__picture">
+            <img src="images/content/magazine.jpg" alt="journal cover image" class="magazine__img">
           </div>
-        </div>
-        <article class="magazine__article">
-          <h2 class="title magazine__title">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          </h2>
-          <div class="magazine__text">
-            <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and
-              demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the
-              pain
-              and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through
-              weakness of will, which is the same as saying through shrinking from toil and pain. These cases are
-              perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and
-              when
-              nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain
-              avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it
-              will
-              frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore
-              always
-              holds in these matters to this principle of selection: he rejects pleasures to secure other greater
-              pleasures.</p>
-          </div>
-          <div class="tags">
-            <ul class="tags__list d-flex">
-              <li class="tags__item">Tag 1</li>
-              <li class="tags__item">Tag 2</li>
-              <li class="tags__item">Tag 3</li>
+          <div class="feedback d-flex jc-sb ai-c">
+            <ul class="feedback__list d-flex">
+              <li class="feedback__item">
+                <a href="#" class="feedback__link">Admin</a>
+              </li>
+              <li class="feedback__item">
+                <a href="#" class="feedback__link">Comments (1)</a>
+              </li>
+              <li class="feedback__item">
+                <a href="#" class="feedback__link">Category</a>
+              </li>
             </ul>
-          </div>
-        </article>
-
-        <div class="comments magazine__comments">
-          <div class="comments__top d-flex ai-c">
-            <p class="comments__name">John Ford</p>
-            <div class="comments__date">
+            <div class="feedback__time">
               <p>6 months ago</p>
             </div>
           </div>
-          <div class="comments__description">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-              into
-              electronic typesetting, remaining essentially unchanged.
-            </p>
-          </div>
-          <a class="comments__reply" href="#">Reply</a>
-        </div>
-        <form class="form">
-          <fieldset class="form__fieldset">
-
-            <legend class="title form__title">Leave a Reply</legend>
-            <div class="form__precocious">
-              Your email address will not be published. Required fields are marked
+          <article class="magazine__article">
+            <h2 class="title magazine__title">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </h2>
+            <div class="magazine__text">
+              <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and
+                demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the
+                pain
+                and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through
+                weakness of will, which is the same as saying through shrinking from toil and pain. These cases are
+                perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and
+                when
+                nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain
+                avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it
+                will
+                frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore
+                always
+                holds in these matters to this principle of selection: he rejects pleasures to secure other greater
+                pleasures.</p>
             </div>
-            <label class="form__label">
-              <span>Name</span>
-              <input class="form__input form__input--medium" type="text" placeholder="Your name here">
-            </label>
-            <label class="form__label">
-              <span>Email</span>
-              <input class="form__input form__input--medium" type="email" placeholder="Your email here">
-            </label>
-            <label class="form__label">
-              <span>Website</span>
-              <input class="form__input form__input--medium" placeholder="Your website here">
-            </label>
-            <label class="form__label">
-              <span>Website</span>
-              <textarea class="form__textarea form__textarea--medium magazine__form-textarea"
-                placeholder="Your comment here"></textarea>
-            </label>
-            <label class="form__box d-flex ai-c">
-              <input class="form__checkbox" type="checkbox">
-              <span class="form__checktext">Save my name, email, website in this browser for the next time I
-                comment.</span>
-            </label>
+            <div class="tags">
+              <ul class="tags__list d-flex">
+                <li class="tags__item">Tag 1</li>
+                <li class="tags__item">Tag 2</li>
+                <li class="tags__item">Tag 3</li>
+              </ul>
+            </div>
+          </article>
 
-            <button class="btn btn--big" type="submit">Post</button>
+          <div class="comments magazine__comments">
+            <div class="comments__top d-flex ai-c">
+              <p class="comments__name">John Ford</p>
+              <div class="comments__date">
+                <p>6 months ago</p>
+              </div>
+            </div>
+            <div class="comments__description">
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into
+                electronic typesetting, remaining essentially unchanged.
+              </p>
+            </div>
+            <a class="comments__reply" href="#">Reply</a>
+          </div>
+          <form class="form">
+            <fieldset class="form__fieldset">
 
-          </fieldset>
-        </form>
+              <legend class="title form__title">Leave a Reply</legend>
+              <div class="form__precocious">
+                Your email address will not be published. Required fields are marked
+              </div>
+              <label class="form__label">
+                <span>Name</span>
+                <input class="form__input form__input--medium" type="text" placeholder="Your name here">
+              </label>
+              <label class="form__label">
+                <span>Email</span>
+                <input class="form__input form__input--medium" type="email" placeholder="Your email here">
+              </label>
+              <label class="form__label">
+                <span>Website</span>
+                <input class="form__input form__input--medium" placeholder="Your website here">
+              </label>
+              <label class="form__label">
+                <span>Website</span>
+                <textarea class="form__textarea form__textarea--medium magazine__form-textarea"
+                  placeholder="Your comment here"></textarea>
+              </label>
+              <label class="form__box d-flex ai-c">
+                <input class="form__checkbox" type="checkbox">
+                <span class="form__checktext">Save my name, email, website in this browser for the next time I
+                  comment.</span>
+              </label>
 
-      </section>
-      <aside class="aside">
+              <button class="btn btn--big" type="submit">Post</button>
+
+            </fieldset>
+          </form>
+
+        </section>
+        <aside class="aside">
   <form class="aside__form d-flex jc-sb" action="">
     <input class="aside__input" type="search" placeholder="Type here to search...">
     <button class="aside__btn" type="submit">
@@ -696,8 +701,9 @@
 
 
 </aside>
-    </div>
+      </div>
 
+    </div>
   </div>
 </main>
 <footer class="footer">
@@ -803,13 +809,14 @@
         <p class="contacts__address">575 Crescent Ave. Quakertown, PA 18951</p>
       </address>
       <a href="#" class="logo footer__logo">
-        <img src="images/logo.svg" alt="">
+        <img src="images/logo.svg" alt="logo of the website">
       </a>
     </div>
     <div class="footer__bottom d-flex jc-sb ai-c">
       <ul class="social d-flex ai-c">
         <li class="social__item">
           <a href="" class="social__link">
+            <span class="sr-only">Facebook</span>
             <svg class="social__svg">
               <use xlink:href="sprite.svg#facebook"></use>
             </svg>
@@ -817,6 +824,7 @@
         </li>
         <li class="social__item">
           <a href="" class="social__link">
+            <span class="sr-only">Linkedin</span>
             <svg class="social__svg">
               <use xlink:href="sprite.svg#linkedin"></use>
             </svg>
@@ -824,6 +832,7 @@
         </li>
         <li class="social__item">
           <a href="" class="social__link">
+            <span class="sr-only">Instagram</span>
             <svg class="social__svg">
               <use xlink:href="sprite.svg#instagram"></use>
             </svg>
@@ -834,6 +843,7 @@
     </div>
   </div>
 </footer>
+
 
 <script src="js/main.min.js"></script>
 </body>

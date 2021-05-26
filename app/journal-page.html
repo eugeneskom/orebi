@@ -423,9 +423,15 @@
             </li>
           </ul>
         </div>
-        <form class="search__form d-flex">
-          <input class="search__input" type="search" placeholder="Search Products">
-          <button class="search__btn" type="submit"></button>
+        <form class="search d-flex jc-sb">
+          <label class="search__label">
+            <span class="sr-only">Search input field</span>
+            <input class="search__input" type="search" placeholder="Search Products">
+          </label>
+          <label class="search__label">
+            <span class="sr-only">Search button</span>
+            <button class="search__btn" type="submit"></button>
+          </label>
         </form>
         <ul class="header__user-cart d-flex jc-sb">
           <li class="user js_drop">
@@ -447,7 +453,7 @@
                 </div>
                 <div class="cart__desc">
                   <p class="cart__title">Black Smart Watch</p>
-                  <p class="cart__price">$44.00</p>
+                  <p class="cart__price"> <span>$</span>44.00</p>
                 </div>
               </div>
               <div class="cart__top d-flex">
@@ -457,7 +463,7 @@
                 </div>
                 <div class="cart__desc">
                   <p class="cart__title">Black Smart Watch</p>
-                  <p class="cart__price">$44.00</p>
+                  <p class="cart__price"><span>$</span>44.00</p>
                 </div>
               </div>
               <div class="cart__top d-flex">
@@ -467,7 +473,7 @@
                 </div>
                 <div class="cart__desc">
                   <p class="cart__title">Black Smart Watch</p>
-                  <p class="cart__price">$44.00</p>
+                  <p class="cart__price"><span>$</span>44.00</p>
                 </div>
               </div>
 
@@ -475,10 +481,10 @@
 
 
               <div class="cart__bottom">
-                <p class="cart__subtotal">Subtotal: <span>$44.00</span></p>
+                <p class="cart__subtotal">Subtotal: <span>$</span>44.00</p>
                 <div class="cart__buttons d-flex jc-sb">
-                  <button class="btn btn--white btn--cart" type="button">View Cart</button>
-                  <button class="btn btn--white btn--cart" type="button">Checkout</button>
+                  <a class="btn btn--white btn--cart" href="#">View Cart</a>
+                  <a class="btn btn--white btn--cart" href="#">Checkout</a>
                 </div>
               </div>
             </div>
@@ -490,9 +496,12 @@
 
 
 </header>
-<div class="breadcrumbs">
+
+<main class="main">
   <div class="container">
-    <h1 class="title breadcrumbs__title">Journal</h1>
+    <div class="journal-page">
+      <h1 class="title">Journal</h1>
+      <div class="breadcrumbs">
     <ul class="breadcrumbs__list d-flex">
       <li class="breadcrumbs__item">
         <a class="breadcrumbs__link" href="#">Home</a>
@@ -501,171 +510,167 @@
         <span class="breadcrumbs__link">Journal</span>
       </li>
     </ul>
-  </div>
 </div>
-<main class="main">
-  <div class="container">
+      <section class="journal d-flex">
+        <div class="journal__content">
+          <ul class="journal__list d-flex jc-sb fw-w">
+            <li class="journal__item">
+              <article class="article">
+                <div class="article__image-box">
+                  <img class="article__img" src="images/journal/1.jpg" alt="article image">
+                </div>
+                <p class="article__category">Category</p>
+                <h2 class="article__heading">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </h2>
+                <div class="article__desc">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua.
+                  </p>
+                </div>
+              </article>
 
-    <section class="journal d-flex">
-      <div class="journal__content">
-        <ul class="journal__list d-flex jc-sb fw-w">
-          <li class="journal__item">
-            <article class="article">
-              <div class="article__image-box">
-                <img class="article__img" src="images/journal/1.jpg" alt="">
-              </div>
-              <p class="article__category">Category</p>
-              <h2 class="article__heading">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              </h2>
-              <div class="article__desc">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                  et
-                  dolore magna aliqua.
-                </p>
-              </div>
-            </article>
+            </li>
 
-          </li>
+            <li class="journal__item">
+              <article class="article">
+                <div class="article__image-box">
+                  <img class="article__img" src="images/journal/2.jpg" alt="article image">
+                </div>
+                <p class="article__category">Category</p>
+                <h2 class="article__heading">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </h2>
+                <div class="article__desc">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua.
+                  </p>
+                </div>
+              </article>
+            </li>
 
-          <li class="journal__item">
-            <article class="article">
-              <div class="article__image-box">
-                <img class="article__img" src="images/journal/2.jpg" alt="">
-              </div>
-              <p class="article__category">Category</p>
-              <h2 class="article__heading">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              </h2>
-              <div class="article__desc">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                  et
-                  dolore magna aliqua.
-                </p>
-              </div>
-            </article>
-          </li>
+            <li class="journal__item">
+              <article class="article">
+                <div class="article__image-box">
+                  <img class="article__img" src="images/journal/3.jpg" alt="article image">
+                </div>
+                <p class="article__category">Category</p>
+                <h2 class="article__heading">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </h2>
+                <div class="article__desc">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua.
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="journal__item">
+              <article class="article">
+                <div class="article__image-box">
+                  <img class="article__img" src="images/journal/1.jpg" alt="article image">
+                </div>
+                <p class="article__category">Category</p>
+                <h2 class="article__heading">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </h2>
+                <div class="article__desc">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua.
+                  </p>
+                </div>
+              </article>
 
-          <li class="journal__item">
-            <article class="article">
-              <div class="article__image-box">
-                <img class="article__img" src="images/journal/3.jpg" alt="">
-              </div>
-              <p class="article__category">Category</p>
-              <h2 class="article__heading">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              </h2>
-              <div class="article__desc">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                  et
-                  dolore magna aliqua.
-                </p>
-              </div>
-            </article>
-          </li>
-          <li class="journal__item">
-            <article class="article">
-              <div class="article__image-box">
-                <img class="article__img" src="images/journal/1.jpg" alt="">
-              </div>
-              <p class="article__category">Category</p>
-              <h2 class="article__heading">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              </h2>
-              <div class="article__desc">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                  et
-                  dolore magna aliqua.
-                </p>
-              </div>
-            </article>
+            </li>
 
-          </li>
+            <li class="journal__item">
+              <article class="article">
+                <div class="article__image-box">
+                  <img class="article__img" src="images/journal/2.jpg" alt="article image">
+                </div>
+                <p class="article__category">Category</p>
+                <h2 class="article__heading">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </h2>
+                <div class="article__desc">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua.
+                  </p>
+                </div>
+              </article>
+            </li>
 
-          <li class="journal__item">
-            <article class="article">
-              <div class="article__image-box">
-                <img class="article__img" src="images/journal/2.jpg" alt="">
-              </div>
-              <p class="article__category">Category</p>
-              <h2 class="article__heading">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              </h2>
-              <div class="article__desc">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                  et
-                  dolore magna aliqua.
-                </p>
-              </div>
-            </article>
-          </li>
+            <li class="journal__item">
+              <article class="article">
+                <div class="article__image-box">
+                  <img class="article__img" src="images/journal/3.jpg" alt="article image">
+                </div>
+                <p class="article__category">Category</p>
+                <h2 class="article__heading">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </h2>
+                <div class="article__desc">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua.
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="journal__item">
+              <article class="article">
+                <div class="article__image-box">
+                  <img class="article__img" src="images/journal/1.jpg" alt="article image">
+                </div>
+                <p class="article__category">Category</p>
+                <h2 class="article__heading">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </h2>
+                <div class="article__desc">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua.
+                  </p>
+                </div>
+              </article>
 
-          <li class="journal__item">
-            <article class="article">
-              <div class="article__image-box">
-                <img class="article__img" src="images/journal/3.jpg" alt="">
-              </div>
-              <p class="article__category">Category</p>
-              <h2 class="article__heading">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              </h2>
-              <div class="article__desc">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                  et
-                  dolore magna aliqua.
-                </p>
-              </div>
-            </article>
-          </li>
-          <li class="journal__item">
-            <article class="article">
-              <div class="article__image-box">
-                <img class="article__img" src="images/journal/1.jpg" alt="">
-              </div>
-              <p class="article__category">Category</p>
-              <h2 class="article__heading">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              </h2>
-              <div class="article__desc">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                  et
-                  dolore magna aliqua.
-                </p>
-              </div>
-            </article>
+            </li>
 
-          </li>
+            <li class="journal__item">
+              <article class="article">
+                <div class="article__image-box">
+                  <img class="article__img" src="images/journal/2.jpg" alt="article image">
+                </div>
+                <p class="article__category">Category</p>
+                <h2 class="article__heading">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </h2>
+                <div class="article__desc">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua.
+                  </p>
+                </div>
+              </article>
+            </li>
+          </ul>
+          <button class="btn">Load More</button>
+        </div>
 
-          <li class="journal__item">
-            <article class="article">
-              <div class="article__image-box">
-                <img class="article__img" src="images/journal/2.jpg" alt="">
-              </div>
-              <p class="article__category">Category</p>
-              <h2 class="article__heading">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              </h2>
-              <div class="article__desc">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                  et
-                  dolore magna aliqua.
-                </p>
-              </div>
-            </article>
-          </li>
-        </ul>
-        <button class="btn">Load More</button>
-      </div>
-
-      <aside class="aside">
+        <aside class="aside">
   <form class="aside__form d-flex jc-sb" action="">
     <input class="aside__input" type="search" placeholder="Type here to search...">
     <button class="aside__btn" type="submit">
@@ -753,11 +758,10 @@
 
 </aside>
 
+      </section>
 
-    </section>
+    </div>
   </div>
-
-
 </main>
 <footer class="footer">
   <div class="container">
@@ -862,13 +866,14 @@
         <p class="contacts__address">575 Crescent Ave. Quakertown, PA 18951</p>
       </address>
       <a href="#" class="logo footer__logo">
-        <img src="images/logo.svg" alt="">
+        <img src="images/logo.svg" alt="logo of the website">
       </a>
     </div>
     <div class="footer__bottom d-flex jc-sb ai-c">
       <ul class="social d-flex ai-c">
         <li class="social__item">
           <a href="" class="social__link">
+            <span class="sr-only">Facebook</span>
             <svg class="social__svg">
               <use xlink:href="sprite.svg#facebook"></use>
             </svg>
@@ -876,6 +881,7 @@
         </li>
         <li class="social__item">
           <a href="" class="social__link">
+            <span class="sr-only">Linkedin</span>
             <svg class="social__svg">
               <use xlink:href="sprite.svg#linkedin"></use>
             </svg>
@@ -883,6 +889,7 @@
         </li>
         <li class="social__item">
           <a href="" class="social__link">
+            <span class="sr-only">Instagram</span>
             <svg class="social__svg">
               <use xlink:href="sprite.svg#instagram"></use>
             </svg>
@@ -893,6 +900,7 @@
     </div>
   </div>
 </footer>
+
 
 <script src="js/main.min.js"></script>
 </body>

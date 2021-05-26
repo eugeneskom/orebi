@@ -144,7 +144,7 @@ $(function () {
   });
 
 
-$('.form__radio').click(function(){
+$('.form__radio').onclick(function(){
   let radioValue = $('.form__radio:checked').val();
   if(radioValue){
     $('.form__checkbox-desc').removeClass('form__checkbox-desc--active')

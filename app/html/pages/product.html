@@ -3,22 +3,24 @@
 @@include('../parts/_header.html')
 <main class="main">
   <div class="container ">
-    @@include('../parts/_breadcrumbs.html')
     <section class="product-inside">
-
+      <h1 class="title">Product</h1>
+      @@include('../parts/_breadcrumbs.html',{
+      "active-page": "Product"
+      })
       <div class="product-gallery">
         <ul class="product-gallery__list grid">
           <li class="product-gallery__item">
-            <img class="product-gallery__img" src="images/products/phone.jpg" alt="">
+            <img class="product-gallery__img" src="images/products/phone.jpg" alt="product image">
           </li>
           <li class="product-gallery__item">
-            <img class="product-gallery__img" src="images/products/phone.jpg" alt="">
+            <img class="product-gallery__img" src="images/products/phone.jpg" alt="product image">
           </li>
           <li class="product-gallery__item">
-            <img class="product-gallery__img" src="images/products/phone.jpg" alt="">
+            <img class="product-gallery__img" src="images/products/phone.jpg" alt="product image">
           </li>
           <li class="product-gallery__item">
-            <img class="product-gallery__img" src="images/products/phone.jpg" alt="">
+            <img class="product-gallery__img" src="images/products/phone.jpg" alt="product image">
           </li>
         </ul>
       </div>
@@ -75,16 +77,20 @@
             </form>
           </li>
           <li class="product-filters__item product-filters__size d-flex ai-c">
-            <select name="" id="" class="select">
-              <option value="S">S</option>
-              <option value="M">M</option>
-              <option value="L">L</option>
-              <option value="XL">XL</option>
-              <option value="XXL">XXL</option>
-            </select>
+            <form class="product-filters__form" action="">
+              <select name="" id="" class="select">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+              </select>
+            </form>
           </li>
           <li class="product-filters__item quantity ">
-            <input class="number" type="number" value="1" min="1">
+            <form class="product-filters__form" action="">
+              <input class="number" type="number" value="1" min="1">
+            </form>
           </li>
         </ul>
       </section>
@@ -167,15 +173,15 @@
             <form class="form">
               <p class="form__caption">Add a Review</p>
               <label class="form__label">
-                <span>Name</span>
+                Name
                 <input class="form__input form__input--medium" type="text" placeholder="Your name here">
               </label>
               <label class="form__label">
-                <span>Email</span>
+                Email
                 <input class="form__input form__input--medium" type="email" placeholder="Your email here">
               </label>
               <label class="form__label">
-                <span>Review</span>
+                Review
                 <textarea class="form__textarea form__textarea--medium" placeholder="Your review here"></textarea>
               </label>
               <button class="btn btn--big" type="submit">Post</button>

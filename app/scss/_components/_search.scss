@@ -1,18 +1,19 @@
 .search {
-  &__form {
 
-    &:hover {
+  &:hover {
 
-      .header__search,
-      .header__search-btn {
-        background-color: $main;
-      }
+    .header__search,
+    .header__search-btn {
+      background-color: $main;
     }
+  }
 
+  &__label {
+    height: 50px;
   }
 
   &__input {
-    width: 550px;
+    min-width: 550px;
     height: 50px;
     border: none;
     outline: transparent;

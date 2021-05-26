@@ -4,9 +4,22 @@
 
 <main class="main">
   <div class="container">
-    @@include('../parts/_breadcrumbs.html')
+    <div class="shop-wrapper">
+      <h1 class="title">Product</h1>
+      @@include('../parts/_breadcrumbs.html',{
+      "active-page": "Product"
+      })
+      <section class="products">
 
-    @@include('../parts/shop/_products.html')
+        <div class="products__inner d-flex jc-sb">
+          @@include('../parts/shop/_filters.html')
+          @@include('../parts/shop/_shop-content.html')
+
+
+        </div>
+
+      </section>
+    </div>
 
 
   </div>

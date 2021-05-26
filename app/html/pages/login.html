@@ -1,11 +1,14 @@
 @@include('../parts/_body-start.html')
 
 @@include('../parts/_header.html')
-@@include('../parts/_breadcrumbs.html')
 
 <main class="main">
   <div class="container">
     <section class="login">
+      <h1 class="title">Login</h1>
+      @@include('../parts/_breadcrumbs.html',{
+      "active-page": "Login"
+      })
       <div class="login__intro">
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
           industry's standard dummy text ever since the.</p>
@@ -14,11 +17,11 @@
         <fieldset class="form__fieldset d-flex fw-w jc-sb">
           <legend class="title form__title">Returning Customer</legend>
           <label class="form__label">
-            <p>Email address</p>
+            Email address
             <input class="form__input form__input--small" type="email" placeholder="company@domain.com">
           </label>
           <label class="form__label">
-            <p>Password</p>
+            Password
             <input class="form__input form__input--small" type="password" placeholder="">
           </label>
         </fieldset>

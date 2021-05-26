@@ -423,9 +423,15 @@
             </li>
           </ul>
         </div>
-        <form class="search__form d-flex">
-          <input class="search__input" type="search" placeholder="Search Products">
-          <button class="search__btn" type="submit"></button>
+        <form class="search d-flex jc-sb">
+          <label class="search__label">
+            <span class="sr-only">Search input field</span>
+            <input class="search__input" type="search" placeholder="Search Products">
+          </label>
+          <label class="search__label">
+            <span class="sr-only">Search button</span>
+            <button class="search__btn" type="submit"></button>
+          </label>
         </form>
         <ul class="header__user-cart d-flex jc-sb">
           <li class="user js_drop">
@@ -447,7 +453,7 @@
                 </div>
                 <div class="cart__desc">
                   <p class="cart__title">Black Smart Watch</p>
-                  <p class="cart__price">$44.00</p>
+                  <p class="cart__price"> <span>$</span>44.00</p>
                 </div>
               </div>
               <div class="cart__top d-flex">
@@ -457,7 +463,7 @@
                 </div>
                 <div class="cart__desc">
                   <p class="cart__title">Black Smart Watch</p>
-                  <p class="cart__price">$44.00</p>
+                  <p class="cart__price"><span>$</span>44.00</p>
                 </div>
               </div>
               <div class="cart__top d-flex">
@@ -467,7 +473,7 @@
                 </div>
                 <div class="cart__desc">
                   <p class="cart__title">Black Smart Watch</p>
-                  <p class="cart__price">$44.00</p>
+                  <p class="cart__price"><span>$</span>44.00</p>
                 </div>
               </div>
 
@@ -475,10 +481,10 @@
 
 
               <div class="cart__bottom">
-                <p class="cart__subtotal">Subtotal: <span>$44.00</span></p>
+                <p class="cart__subtotal">Subtotal: <span>$</span>44.00</p>
                 <div class="cart__buttons d-flex jc-sb">
-                  <button class="btn btn--white btn--cart" type="button">View Cart</button>
-                  <button class="btn btn--white btn--cart" type="button">Checkout</button>
+                  <a class="btn btn--white btn--cart" href="#">View Cart</a>
+                  <a class="btn btn--white btn--cart" href="#">Checkout</a>
                 </div>
               </div>
             </div>
@@ -490,22 +496,20 @@
 
 
 </header>
-<div class="breadcrumbs">
+<main class="main">
   <div class="container">
-    <h1 class="title breadcrumbs__title">Products</h1>
+    <div class="signup">
+      <h1 class="title">Sign Up</h1>
+      <div class="breadcrumbs">
     <ul class="breadcrumbs__list d-flex">
       <li class="breadcrumbs__item">
         <a class="breadcrumbs__link" href="#">Home</a>
       </li>
       <li class="breadcrumbs__item">
-        <span class="breadcrumbs__link">Products</span>
+        <span class="breadcrumbs__link">Sign Up</span>
       </li>
     </ul>
-  </div>
 </div>
-<main class="main">
-  <div class="container">
-    <div class="signup">
       <div class="signup__intro text">
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
           industry's standard dummy text ever since the.</p>
@@ -516,19 +520,19 @@
           <legend class="title form__title">Your Personal Details</legend>
 
           <label class="form__label">
-            <p>First Name</p>
+            First Name
             <input class="form__input form__input--small" type="text" placeholder="First Name">
           </label>
           <label class="form__label">
-            <p>Last Name</p>
+            Last Name
             <input class="form__input form__input--small" type="text" placeholder="Last Name">
           </label>
           <label class="form__label">
-            <p>Email address</p>
+            Email address
             <input class="form__input form__input--small" type="email" placeholder="company@domain.com">
           </label>
           <label class="form__label">
-            <p>Telephone</p>
+            Telephone
             <input class="form__input form__input--small" type="text" placeholder="Your phone number">
           </label>
 
@@ -539,24 +543,24 @@
         <fieldset class="form__fieldset d-flex fw-w jc-sb">
           <legend class="title form__title">New Customer</legend>
           <label class="form__label">
-            <p>Address 1</p>
+            Address 1
             <input class="form__input form__input--small" type="text" placeholder="4279 Zboncak Port Suite 6212">
           </label>
           <label class="form__label">
-            <p>Address 2</p>
+            Address 2
             <input class="form__input form__input--small" type="text" placeholder="—">
           </label>
           <label class="form__label">
-            <p>City</p>
+            City
             <input class="form__input form__input--small" type="text" placeholder="Your city">
           </label>
           <label class="form__label">
-            <p>Post Code</p>
+            Post Code
             <input class="form__input form__input--small" type="text" placeholder="05228">
           </label>
           <div class="form__dropdowns d-flex">
             <label>
-              <p>Country</p>
+              <span>Country</span>
               <select name="" id="" class="shop-content__select-by select-style form__input form__input--small">
                 <option selected="true" disabled="disabled">Please select</option>
                 <option value="USA">USA</option>
@@ -566,7 +570,7 @@
               </select>
             </label>
             <label>
-              <p>Region/State</p>
+              Region/State
               <select name="" id="" class="form__input shop-content__select-show select-style form__input--small">
                 <option selected="true" disabled="disabled" hidden>Please select</option>
                 <option value="Washington DC">Washington DC</option>
@@ -583,11 +587,11 @@
         <fieldset class="form__fieldset d-flex fw-w jc-sb">
           <legend class="title form__title">Your Password</legend>
           <label class="form__label">
-            <p>Password</p>
+            Password
             <input class="form__input form__input--small" type="password" placeholder="Password">
           </label>
           <label class="form__label">
-            <p>Repeat Password</p>
+            Repeat Password
             <input class="form__input form__input--small" type="password" placeholder="Repeat Password">
           </label>
         </fieldset>
@@ -718,13 +722,14 @@
         <p class="contacts__address">575 Crescent Ave. Quakertown, PA 18951</p>
       </address>
       <a href="#" class="logo footer__logo">
-        <img src="images/logo.svg" alt="">
+        <img src="images/logo.svg" alt="logo of the website">
       </a>
     </div>
     <div class="footer__bottom d-flex jc-sb ai-c">
       <ul class="social d-flex ai-c">
         <li class="social__item">
           <a href="" class="social__link">
+            <span class="sr-only">Facebook</span>
             <svg class="social__svg">
               <use xlink:href="sprite.svg#facebook"></use>
             </svg>
@@ -732,6 +737,7 @@
         </li>
         <li class="social__item">
           <a href="" class="social__link">
+            <span class="sr-only">Linkedin</span>
             <svg class="social__svg">
               <use xlink:href="sprite.svg#linkedin"></use>
             </svg>
@@ -739,6 +745,7 @@
         </li>
         <li class="social__item">
           <a href="" class="social__link">
+            <span class="sr-only">Instagram</span>
             <svg class="social__svg">
               <use xlink:href="sprite.svg#instagram"></use>
             </svg>
@@ -749,6 +756,7 @@
     </div>
   </div>
 </footer>
+
 
 <script src="js/main.min.js"></script>
 </body>
