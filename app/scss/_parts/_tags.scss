@@ -7,11 +7,13 @@
     font-size: 14px;
     font-weight: 700;
     color: $light-900;
-    padding: 9px 30px;
-    background-color: $highlight;
-
     &:not(:last-child) {
       margin-right: 20px;
     }
+  }
+  
+  &__link {
+    background-color: $highlight;
+    padding: 9px 30px;
   }
 }

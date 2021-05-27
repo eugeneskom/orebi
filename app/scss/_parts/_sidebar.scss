@@ -1,4 +1,4 @@
-.aside {
+.sidebar {
   max-width: 515px;
 
   &__form {
@@ -9,7 +9,7 @@
     &:hover {
       background-color: $light-400;
 
-      .aside__input::placeholder {
+      .sidebar__input::placeholder {
         color: $highlight;
       }
     }

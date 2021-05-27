@@ -11,16 +11,10 @@
           misspelled the
           word while searching for it. Maybe try a search?</p>
       </div>
-      <form class="search error__form d-flex">
-        <label class="search__label">
-          <span class="sr-only">Search input field</span>
-          <input class="search__input error__input" type="search" placeholder="Search Products">
-        </label>
-        <label class="search__label">
-          <span class="sr-only">Search button</span>
-          <button class="search__btn" type="submit"></button>
-        </label>
-      </form>
+      @@include('../parts/_search-form.html',{
+      'error': "error__form"
+      })
+
       <button class="btn btn--big">Back to Home</button>
     </div>
   </div>

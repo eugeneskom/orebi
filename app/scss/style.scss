@@ -17,7 +17,8 @@
 @import '_components/footer';
 @import '_components/products';
 @import '_components/shop-content';
-@import '_components/breadcrumbs';
+@import '_parts/pagination';
+@import '_parts/breadcrumbs';
 @import '_components/comments';
 @import '_components/product';
 @import '_components/accordion';
@@ -25,8 +26,8 @@
 @import '_components/about';
 @import '_components/contacts';
 @import '_components/journal-page';
-@import '_components/aside';
-@import '_components/tags';
+@import '_parts/sidebar';
+@import '_parts/tags';
 @import '_components/journal-inside';
 @import '_components/login';
 @import '_components/signup';
