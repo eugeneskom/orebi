@@ -9,41 +9,21 @@
     </button>
   </form>
 
-  <div class="sidebar__item">
-    <h2 class="title sidebar__title">Recent Posts</h2>
-    <ul class="sidebar__sublist">
-      <li class="sidebar__subitem">
-        <a class="sidebar__sublink" href="#">Lorem Ipsum is simply <span class="highlight">dummy text of the printing
-            and typesetting.</span></a>
-      </li>
-      <li class="sidebar__subitem">
-        <a class="sidebar__sublink" href="#">Lorem Ipsum is simply <span class="highlight">dummy text of the printing
-            and typesetting.</span></a>
-      </li>
-      <li class="sidebar__subitem">
-        <a class="sidebar__sublink" href="#">Lorem Ipsum is simply <span class="highlight">dummy text of the printing
-            and typesetting.</span></a>
-      </li>
-      <li class="sidebar__subitem">
-        <a class="sidebar__sublink" href="#">Lorem Ipsum is simply <span class="highlight">dummy text of the printing
-            and typesetting.</span></a>
-      </li>
-      <li class="sidebar__subitem">
-        <a class="sidebar__sublink" href="#">Lorem Ipsum is simply <span class="highlight">dummy text of the printing
-            and typesetting.</span></a>
-      </li>
-    </ul>
+
+
+  <div class="sidebar__widget">
+    @@include('../_recent-posts.html')
   </div>
   <div class="sidebar__item">
-    <h2 class="title sidebar__title">Archives</h2>
+    <h3 class="title sidebar__title">Archives</h3>
     <ul class="sidebar__sublist">
       <li class="sidebar__subitem">
         <a class="sidebar__sublink" href="#">May 2019</a>
       </li>
     </ul>
   </div>
-  <div class="sidebar__item">
-    <h2 class="title sidebar__title">Categories</h2>
+  <div class="sidebar__widget">
+    <h3 class="title sidebar__title">Categories</h3>
     <ul class="sidebar__sublist">
       <li class="sidebar__subitem">
         <a class="sidebar__sublink" href="#">Category 1</a>
@@ -62,8 +42,8 @@
       </li>
     </ul>
   </div>
-  <div class="sidebar__item">
-    <h2 class="title sidebar__title">Meta</h2>
+  <div class="sidebar__widget">
+    <h3 class="title sidebar__title">Meta</h3>
     <ul class="sidebar__sublist">
       <li class="sidebar__subitem">
         <a class="sidebar__sublink" href="">Log in</a>
@@ -76,8 +56,10 @@
       </li>
     </ul>
   </div>
-  @@include('../_tags.html')
 
-
+  <div class="sidebar__widget">
+    <h2 class="title title--tags">Tags</h2>
+    @@include('../_tags.html')
+  </div>
 
 </sidebar>

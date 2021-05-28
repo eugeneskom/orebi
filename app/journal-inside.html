@@ -19,19 +19,19 @@
       </a>
       <ul class="menu d-flex">
         <li class="menu__item">
-          <a href="#" class="menu__link">Home</a>
+          <a href="index.html" class="menu__link">Home</a>
         </li>
         <li class="menu__item">
-          <a href="#" class="menu__link">Shop</a>
+          <a href="shop.html" class="menu__link">Shop</a>
         </li>
         <li class="menu__item">
-          <a href="#" class="menu__link">About</a>
+          <a href="about.html" class="menu__link">About</a>
         </li>
         <li class="menu__item">
-          <a href="#" class="menu__link">Contacts</a>
+          <a href="contacts.html" class="menu__link">Contacts</a>
         </li>
         <li class="menu__item">
-          <a href="#" class="menu__link">Journal</a>
+          <a href="journal-page.html" class="menu__link">Journal</a>
         </li>
       </ul>
       <form class="nav-lang">
@@ -551,19 +551,15 @@
                 holds in these matters to this principle of selection: he rejects pleasures to secure other greater
                 pleasures.</p>
             </div>
-            <div class="tags">
-              <ul class="tags__list d-flex">
-                <li class="tags__item">
-                  <a class="tags__link" href="#">Tag 1</a>
-                </li>
-                <li class="tags__item">
-                  <a class="tags__link" href="#">Tag 2</a>
-                </li>
-                <li class="tags__item">
-                  <a class="tags__link" href="#">Tag 3</a>
-                </li>
-              </ul>
-            </div>
+            
+            <div class="aside__item tags">
+  <ul class="tags__list d-flex">
+    <li class="tags__item"><a class="tags__link" href="#">Tag 1</a></li>
+    <li class="tags__item"><a class="tags__link" href="#">Tag 2</a></li>
+    <li class="tags__item"><a class="tags__link" href="#">Tag 3</a></li>
+  </ul>
+</div>
+
           </article>
 
           <div class="comments magazine__comments">
@@ -630,41 +626,45 @@
     </button>
   </form>
 
-  <div class="sidebar__item">
-    <h2 class="title sidebar__title">Recent Posts</h2>
-    <ul class="sidebar__sublist">
-      <li class="sidebar__subitem">
-        <a class="sidebar__sublink" href="#">Lorem Ipsum is simply <span class="highlight">dummy text of the printing
-            and typesetting.</span></a>
-      </li>
-      <li class="sidebar__subitem">
-        <a class="sidebar__sublink" href="#">Lorem Ipsum is simply <span class="highlight">dummy text of the printing
-            and typesetting.</span></a>
-      </li>
-      <li class="sidebar__subitem">
-        <a class="sidebar__sublink" href="#">Lorem Ipsum is simply <span class="highlight">dummy text of the printing
-            and typesetting.</span></a>
-      </li>
-      <li class="sidebar__subitem">
-        <a class="sidebar__sublink" href="#">Lorem Ipsum is simply <span class="highlight">dummy text of the printing
-            and typesetting.</span></a>
-      </li>
-      <li class="sidebar__subitem">
-        <a class="sidebar__sublink" href="#">Lorem Ipsum is simply <span class="highlight">dummy text of the printing
-            and typesetting.</span></a>
-      </li>
-    </ul>
+
+
+  <div class="sidebar__widget">
+    <div class="posts">
+  <h3 class="title posts__title">Recent Posts</h3>
+  <ul class="posts__sublist">
+    <li class="posts__subitem">
+      <a class="posts__sublink" href="#">Lorem Ipsum is simply <span class="highlight">dummy text of the printing
+          and typesetting.</span></a>
+    </li>
+    <li class="posts__subitem">
+      <a class="posts__sublink" href="#">Lorem Ipsum is simply <span class="highlight">dummy text of the printing
+          and typesetting.</span></a>
+    </li>
+    <li class="posts__subitem">
+      <a class="posts__sublink" href="#">Lorem Ipsum is simply <span class="highlight">dummy text of the printing
+          and typesetting.</span></a>
+    </li>
+    <li class="posts__subitem">
+      <a class="posts__sublink" href="#">Lorem Ipsum is simply <span class="highlight">dummy text of the printing
+          and typesetting.</span></a>
+    </li>
+    <li class="posts__subitem">
+      <a class="posts__sublink" href="#">Lorem Ipsum is simply <span class="highlight">dummy text of the printing
+          and typesetting.</span></a>
+    </li>
+  </ul>
+</div>
   </div>
   <div class="sidebar__item">
-    <h2 class="title sidebar__title">Archives</h2>
+    <h3 class="title sidebar__title">Archives</h3>
     <ul class="sidebar__sublist">
       <li class="sidebar__subitem">
         <a class="sidebar__sublink" href="#">May 2019</a>
       </li>
     </ul>
   </div>
-  <div class="sidebar__item">
-    <h2 class="title sidebar__title">Categories</h2>
+  <div class="sidebar__widget">
+    <h3 class="title sidebar__title">Categories</h3>
     <ul class="sidebar__sublist">
       <li class="sidebar__subitem">
         <a class="sidebar__sublink" href="#">Category 1</a>
@@ -683,8 +683,8 @@
       </li>
     </ul>
   </div>
-  <div class="sidebar__item">
-    <h2 class="title sidebar__title">Meta</h2>
+  <div class="sidebar__widget">
+    <h3 class="title sidebar__title">Meta</h3>
     <ul class="sidebar__sublist">
       <li class="sidebar__subitem">
         <a class="sidebar__sublink" href="">Log in</a>
@@ -697,16 +697,17 @@
       </li>
     </ul>
   </div>
-  <div class="aside__item tags">
-  <h2 class="title tags__title">Tags</h2>
+
+  <div class="sidebar__widget">
+    <h2 class="title title--tags">Tags</h2>
+    <div class="aside__item tags">
   <ul class="tags__list d-flex">
     <li class="tags__item"><a class="tags__link" href="#">Tag 1</a></li>
     <li class="tags__item"><a class="tags__link" href="#">Tag 2</a></li>
     <li class="tags__item"><a class="tags__link" href="#">Tag 3</a></li>
   </ul>
 </div>
-
-
+  </div>
 
 </sidebar>
       </div>
