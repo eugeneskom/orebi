@@ -1,9 +1,8 @@
-.accordion .open .accordion__btn:after {
-  content: "";
-  display: none;
-}
-
 .accordion {
+  & .open .accordion__btn:after {
+    content: "";
+    display: none;
+  }
 
   &__btn {
     text-transform: uppercase;
@@ -16,6 +15,7 @@
     outline: none;
     transition: 0.4s;
     background-color: $light-900;
+    border-bottom: 1px solid $light-700;
     position: relative;
     display: block;
 
@@ -47,13 +47,15 @@
     }
   }
 
-  .product-return__accordion:hover {
-    background-color: #ccc;
+  .product-return {
+    &__accordion:hover {
+      background-color: $light-300;
+    }
   }
 
   &__panel {
     padding: 0 18px;
-    background-color: white;
+    background-color: $light-900;
     display: none;
     overflow: hidden;
   }

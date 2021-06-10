@@ -1,10 +1,20 @@
 .header {
-  position: relative;
   z-index: 100;
+
+  @include r(768) {
+    position: relative;
+  }
 
   &__nav {
     padding: 31px 0;
+    align-items: center;
+
+    @include r(768) {
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
   }
+
 
   &__bottom {
     background-color: $light-500;
@@ -13,8 +23,19 @@
 
 
   .nav-lang {
+    @include r(768) {
+      order: 3;
+      display: block;
+      width: 100%;
+    }
+
     &__radio {
       display: none;
+
+      &:checked+span {
+        text-shadow: 1px 0 0 $highlight;
+        transition: transform 0.3s;
+      }
     }
 
     &__label {
@@ -35,21 +56,31 @@
     }
 
   }
-
-  .nav-lang__radio:checked+span {
-    text-shadow: 1px 0 0 $highlight;
-    transition: transform 0.3s;
-  }
-
-
-
-
-
+  
 }
 
 
 .menu {
+
+  @include r(768) {
+    display: inline-block;
+    order: 2;
+    position: absolute;
+    z-index: 101;
+    background-color: #fff;
+    min-width: 0vw;
+    width: 0;
+    min-height: 0vh;
+    height: 0;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    transition: min-min-width 1s, min-min-height 1s, padding 1s;
+  }
+
   &__item {
+
     &:not(:last-child) {
       margin-right: 40px;
     }
@@ -58,10 +89,13 @@
   &__link {
     color: inherit;
     outline: transparent;
+    border-bottom: 1px solid transparent;
     transition: border-bottom 0.3s;
 
     &:focus {
       color: $highlight;
+      border-bottom: 1px solid $highlight;
+
     }
 
     &:hover {
@@ -71,14 +105,99 @@
 
     &:active {
       text-shadow: 1px 0 0 $highlight;
+
     }
   }
 }
+
+
+.menu-icon {
+  order: 3;
+  cursor: pointer;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+  display: none;
+
+  @include r(768) {
+    display: inline-block;
+  }
+
+  .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background 0.2s ease-out;
+    width: 18px;
+
+    &:before,
+    &:after {
+      background: #333;
+      content: '';
+      display: block;
+      height: 100%;
+      position: absolute;
+      transition: all 0.2s ease-out;
+      width: 100%;
+    }
+
+    &:before {
+      top: 5px;
+    }
+
+    &:after {
+      top: -5px;
+    }
+  }
+}
+
+.menu-btn {
+  display: none;
+
+  &:checked~.menu {
+
+    @include r(768) {
+      padding: 20px;
+      min-width: 50vw;
+      min-height: 40vh;
+      transition: min-width 1s, min-height 1s, padding 1s;
+      box-shadow: 3px 3px 7px $dark-600;
+    }
+  }
+
+  &:checked~.menu-icon .navicon {
+    background: transparent;
+  }
+
+  &:checked~.menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+
+  &:checked~.menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+
+  &:checked~.menu-icon:not(.steps) .navicon:before,
+  &:checked~.menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+}
+
+
 
 .dropdown-menu {
   position: relative;
   padding-left: 28px;
   cursor: pointer;
+
+  @include r(768) {
+    display: none;
+  }
+
+  &:hover {
+    color: $highlight;
+  }
 
   &::after,
   &::before {
@@ -146,6 +265,13 @@
     padding: 28px 47px 32px 40px;
     display: none;
 
+
+
+    @include r(950) {
+      flex-wrap: wrap;
+    }
+
+
     ul {
       list-style: none;
       margin: 0;
@@ -156,6 +282,11 @@
   &__categories {
     &:not(:last-child) {
       margin-right: 50px;
+    }
+
+    @include r(950) {
+      width: 30%;
+      margin-bottom: 30px;
     }
   }
 
@@ -233,6 +364,14 @@
   position: relative;
   cursor: pointer;
 
+  @include r(768){
+    margin-right: 20px;
+  }
+  @include r(500){
+    padding-right: 25px;
+    margin-right: 10px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -260,7 +399,6 @@
   }
 
   &__link {
-    display: block;
     background-color: $light-900;
     color: $highlight;
     font-weight: 700;

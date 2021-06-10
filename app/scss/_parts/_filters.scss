@@ -6,6 +6,7 @@
 
   &__item {
     margin-bottom: 53px;
+
     &:not(:last-child) .filters__text {
       padding-bottom: 21px;
     }
@@ -13,6 +14,12 @@
     label {
       border-bottom: 1px solid #d8d8d8;
       cursor: pointer;
+    }
+  }
+  &__label{
+    
+    &:hover{
+      background-color:$dark-200; 
     }
   }
 
@@ -50,6 +57,23 @@
     width: 100%;
     height: 70px;
     padding-top: 20px;
+  }
+  
+
+  &__sublink{
+    display: block;
+    padding: 10px 10px;
+    margin:0 -18px;
+    outline: transparent;
+    &:focus{
+      background-color: $light-300;
+    }
+    &:hover{
+      background-color: $dark-200;
+    }
+    &:active{
+      color: $highlight;
+    }
   }
 
 }

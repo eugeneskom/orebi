@@ -3,13 +3,30 @@
     font-size: 14px;
     font-weight: 700;
     color: $light-900;
+
     &:not(:last-child) {
       margin-right: 20px;
     }
   }
-  
+
   &__link {
     background-color: $highlight;
     padding: 9px 30px;
+
+    &:hover {
+      background-color: $light-700;
+      color: $highlight;
+    }
+
+    &:focus {
+      outline: transparent;
+      background-color: $active;
+      color: $light-900;
+    }
+
+    &:active {
+      background-color: $dark-600;
+      color: $light-900;
+    }
   }
 }

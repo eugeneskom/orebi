@@ -15,24 +15,24 @@
 
   &__item {
     width: 25%;
-  }
-
-  &__product {
-    position: relative;
-    padding-left: 50px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      background-image: url(../images/icons/close-icon.svg);
-      width: 10px;
-      height: 10px;
-      left: 0px;
-      top: 50%;
-      transform: translateY(-50%);
-      cursor: pointer;
+    &--product{
+      position: relative;
+      padding-left: 50px;
+  
+      &::before {
+        content: "";
+        position: absolute;
+        background-image: url(../images/icons/close-icon.svg);
+        width: 10px;
+        height: 10px;
+        left: 0px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+      }
     }
   }
+
 
   &__img {
     max-width: 100px;
@@ -57,10 +57,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-
-  .jq-selectbox__select {
-    width: 100%;
   }
 
   .quantity {

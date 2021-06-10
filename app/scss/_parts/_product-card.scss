@@ -1,0 +1,156 @@
+.product {
+  max-width: 370px;
+
+  &__content {
+    display: none;
+  }
+
+  &.product--list {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid $light-300;
+
+    .product {
+      &__top {
+        max-height: 250px;
+        width: 250px;
+      }
+
+      &__img {
+        width: 100%;
+        height: 100%;
+      }
+
+      &__link {
+        &--compare{
+          display: none;
+        }
+      }
+
+      &__popup {
+        padding: 10px;
+        opacity: 0.9;
+      }
+
+      &__bottom {
+        width: 100%;
+        flex-direction: column;
+        padding: 10px 40px;
+      }
+
+      &__content {
+        display: block;
+      }
+
+      &__text {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &:hover {
+    .product__popup {
+      transform: translateY(0);
+      transition: transform 0.3s;
+    }
+  }
+
+  &__top {
+    position: relative;
+    overflow: hidden;
+    height: 370px;
+  }
+
+  &__new {
+    position: absolute;
+    background-color: $highlight;
+    color: $light-900;
+    top: 20px;
+    left: 20px;
+    padding: 9px 30px;
+    font-size: 14px;
+    line-height: 1.3;
+  }
+
+  &__img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__popup {
+    position: absolute;
+    padding: 25px 30px;
+    bottom: 0;
+    width: 100%;
+    text-align: right;
+    background-color: $light-900;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+
+  }
+
+  &__link {
+    position: relative;
+    padding-right: 30px;
+    transition: color 0.3s, text-shadow 0.3s;
+    background-color: transparent;
+    border: none;
+    outline: transparent;
+    cursor: pointer;
+
+
+    &:hover {
+      color: $highlight;
+      text-shadow: 1px 0 0 $highlight;
+      transition: color 0.3s, text-shadow 0.3s;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 8px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 12px;
+
+    }
+
+    &--wish::after {
+      width: 14px;
+      background-image: url(../images/icons/heart.svg);
+    }
+
+    &--compare::after {
+      width: 12px;
+      background-image: url(../images/icons/compare.svg);
+    }
+
+    &--cart::after {
+      width: 13px;
+      background-image: url(../images/icons/cart.svg);
+    }
+  }
+
+  &__bottom {
+    background-color: $light-900;
+    padding-top: 20px;
+  }
+
+  &__desc {
+    color: $dark-500;
+    @include text-clamp(1);
+  }
+
+  &__name {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.3;
+    margin-bottom: 15px;
+    color: $highlight;
+    @include text-clamp(1);
+  }
+
+}

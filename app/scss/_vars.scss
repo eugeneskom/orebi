@@ -1,28 +1,21 @@
 $main: #6d6d6d;
 $light-900: #ffffff;
 $light-700:#f0f0f0;
+$light-600:#d0cbcb;
 $light-500: #F5F5F3;
 $light-400:#e8e8e8;
+$light-300:#cccccc;
 $highlight: #262626;
-$dark-300: #F7F8F9;
+$active:#482929;
+$dark-1000: #000000;
+$dark-900: #3c3737;
+$dark-800:#777788;
+$dark-750: #726e6e;
+$dark-700:#2b2b2b;
+$dark-600: #4f4c4c;
 $dark-500: #767676;
+$dark-450:#8d8282;
 $dark-400: #979797;
 $dark-300: #d8d8d8;
-
-@mixin line-clamp($font-size,
-  $line-height,
-  $lines-to-show) {
-  @if unitless($line-height)==false {
-    $line-height: create-unitless-line-height($font-size, $line-height);
-  }
-
-  display: block; // Fallback for non-webkit browsers
-  display: -webkit-box;
-  font-size: $font-size;
-  height: ($font-size * $line-height * $lines-to-show); // Fallback for non-webkit browsers
-  line-height: $line-height;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: $lines-to-show;
-}
+$dark-200: #F7F8F9;
+$selected: #aaa9a9;

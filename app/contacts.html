@@ -13,10 +13,14 @@
 
 <header class="header">
   <div class="container">
-    <nav class="header__nav d-flex jc-sb ai-c">
+    <nav class="header__nav d-flex jc-sb">
       <a class="logo" href="#">
         <img src="images/logo.svg" alt="logo of the webpage" width="65" height="15">
       </a>
+      <input class="menu-btn" type="checkbox" id="menu-btn">
+      <label class="menu-icon" for="menu-btn">
+        <span class="navicon"></span>
+      </label>
       <ul class="menu d-flex">
         <li class="menu__item">
           <a href="index.html" class="menu__link">Home</a>
@@ -51,7 +55,7 @@
 
   <div class="header__bottom">
     <div class="container">
-      <div class="header__inner d-flex jc-sb ai-c">
+      <div class="header__inner d-flex jc-sb ai-c fw-w">
         <div class="dropdown-menu js_drop">
           Shop by Category
           <ul class="dropdown-menu__list dropdown">
@@ -423,16 +427,20 @@
             </li>
           </ul>
         </div>
-        <form class="search d-flex jc-sb">
-          <label class="search__label">
-            <span class="sr-only">Search input field</span>
-            <input class="search__input" type="search" placeholder="Search Products">
-          </label>
-          <label class="search__label">
-            <span class="sr-only">Search button</span>
-            <button class="search__btn" type="submit"></button>
-          </label>
-        </form>
+        
+        <form class="search @@small-form @@big-form @@error d-flex jc-sb ai-c">
+  <label class="search__label">
+    <span class="sr-only">Search input field</span>
+    <input class="search__input @@small-input @@big-input" type="search" placeholder="Search Products">
+  </label>
+  <button class="search__btn" type="submit">
+    <svg class="search__icon">
+      <use xlink:href="sprite.svg#search"></use>
+    </svg>
+    <span class="sr-only">Search button</span>
+  </button>
+</form>
+
         <ul class="header__user-cart d-flex jc-sb">
           <li class="user js_drop">
             <ul class="user__list dropdown">
@@ -499,21 +507,21 @@
 <main class="main">
   <div class="container">
 
-    <section class="contacts">
-      <h1 class="title">Contacts</h1>
+    <section class="contact">
+      <h1 class="title">contact</h1>
       <div class="breadcrumbs">
     <ul class="breadcrumbs__list d-flex">
       <li class="breadcrumbs__item">
         <a class="breadcrumbs__link" href="#">Home</a>
       </li>
       <li class="breadcrumbs__item">
-        <span class="breadcrumbs__link">Contacts</span>
+        <span class="breadcrumbs__link">contact</span>
       </li>
     </ul>
 </div>
-      <form class="form contacts__form">
+      <form class="form contact__form">
         <filedset class="form__fieldset">
-          <legend class="title contacts__heading">Fill up a Form</legend>
+          <legend class="title contact__heading">Fill up a Form</legend>
 
           <label class="form__label">
             Name
@@ -540,10 +548,10 @@
             <div class="accordion__panel">
               <address class="map__address">
                 575 Crescent Ave. Quakertown, PA 18951
+                <a class="map__contact" href="tel:43253312523">+432 533 12 523</a>
+                <a class="map__contact" href="mailto:info@domain.com">info@domain.com</a>
+                <p class="map__schedule">Mon - Fri: 9am - 6pm</p>
               </address>
-              <a class="map__contacts" href="tel:43253312523">+432 533 12 523</a>
-              <a class="map__contacts" href="mailto:info@domain.com">info@domain.com</a>
-              <p class="map__schedule">Mon - Fri: 9am - 6pm</p>
             </div>
           </li>
           <li class="map__item">
@@ -551,10 +559,10 @@
             <div class="accordion__panel">
               <address class="map__address">
                 575 Crescent Ave. Quakertown, PA 18951
+                <a class="map__contact" href="tel:43253312523">+432 533 12 523</a>
+                <a class="map__contact" href="mailto:info@domain.com">info@domain.com</a>
+                <p class="map__schedule">Mon - Fri: 9am - 6pm</p>
               </address>
-              <a class="map__contacts" href="tel:43253312523">+432 533 12 523</a>
-              <a class="map__contacts" href="mailto:info@domain.com">info@domain.com</a>
-              <p class="map__schedule">Mon - Fri: 9am - 6pm</p>
             </div>
           </li>
           <li class="map__item">
@@ -562,10 +570,10 @@
             <div class="accordion__panel">
               <address class="map__address">
                 575 Crescent Ave. Quakertown, PA 18951
+                <a class="map__contact" href="tel:43253312523">+432 533 12 523</a>
+                <a class="map__contact" href="mailto:info@domain.com">info@domain.com</a>
+                <p class="map__schedule">Mon - Fri: 9am - 6pm</p>
               </address>
-              <a class="map__contacts" href="tel:43253312523">+432 533 12 523</a>
-              <a class="map__contacts" href="mailto:info@domain.com">info@domain.com</a>
-              <p class="map__schedule">Mon - Fri: 9am - 6pm</p>
             </div>
           </li>
         </ul>

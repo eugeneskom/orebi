@@ -13,10 +13,14 @@
 
 <header class="header">
   <div class="container">
-    <nav class="header__nav d-flex jc-sb ai-c">
+    <nav class="header__nav d-flex jc-sb">
       <a class="logo" href="#">
         <img src="images/logo.svg" alt="logo of the webpage" width="65" height="15">
       </a>
+      <input class="menu-btn" type="checkbox" id="menu-btn">
+      <label class="menu-icon" for="menu-btn">
+        <span class="navicon"></span>
+      </label>
       <ul class="menu d-flex">
         <li class="menu__item">
           <a href="index.html" class="menu__link">Home</a>
@@ -51,7 +55,7 @@
 
   <div class="header__bottom">
     <div class="container">
-      <div class="header__inner d-flex jc-sb ai-c">
+      <div class="header__inner d-flex jc-sb ai-c fw-w">
         <div class="dropdown-menu js_drop">
           Shop by Category
           <ul class="dropdown-menu__list dropdown">
@@ -423,16 +427,20 @@
             </li>
           </ul>
         </div>
-        <form class="search d-flex jc-sb">
-          <label class="search__label">
-            <span class="sr-only">Search input field</span>
-            <input class="search__input" type="search" placeholder="Search Products">
-          </label>
-          <label class="search__label">
-            <span class="sr-only">Search button</span>
-            <button class="search__btn" type="submit"></button>
-          </label>
-        </form>
+        
+        <form class="search @@small-form @@big-form @@error d-flex jc-sb ai-c">
+  <label class="search__label">
+    <span class="sr-only">Search input field</span>
+    <input class="search__input @@small-input @@big-input" type="search" placeholder="Search Products">
+  </label>
+  <button class="search__btn" type="submit">
+    <svg class="search__icon">
+      <use xlink:href="sprite.svg#search"></use>
+    </svg>
+    <span class="sr-only">Search button</span>
+  </button>
+</form>
+
         <ul class="header__user-cart d-flex jc-sb">
           <li class="user js_drop">
             <ul class="user__list dropdown">
@@ -541,15 +549,15 @@
         </div>
 
         <div class="tab  is-active tab-2">
-          <p class="tab__caption">
+          <span class="tab__caption">
             1 review for Product
-          </p>
+          </span>
           <div class="comments">
             <div class="comments__top d-flex ai-c">
               <p class="comments__name">John Ford</p>
               <div class="comments__rate"></div>
               <div class="comments__date">
-                <p>6 months ago</p>
+                <time>6 months ago</time>
               </div>
             </div>
             <div class="tab__description">
@@ -565,9 +573,9 @@
         </div>
 
         <div class="tab tab-3">
-          <p class="tab__caption">
+          <span class="tab__caption">
             Donwloads
-          </p>
+          </span>
           <div class="tab__description">
             
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A ut eos repudiandae sequi dolorum minus
@@ -577,9 +585,9 @@
         </div>
 
         <div class="tab tab-4">
-          <p class="tab__caption">
+          <span class="tab__caption">
             Addresses
-          </p>
+          </span>
           <div class="tab__description">
             
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A ut eos repudiandae sequi dolorum minus
@@ -589,9 +597,9 @@
         </div>
 
         <div class="tab tab-5">
-          <p class="tab__caption">
+          <span class="tab__caption">
             Account details
-          </p>
+          </span>
           <div class="tab__description">
             
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A ut eos repudiandae sequi dolorum minus
@@ -601,9 +609,9 @@
         </div>
 
         <div class="tab tab-6">
-          <p class="tab__caption">
+          <span class="tab__caption">
             Logout
-          </p>
+          </span>
           <div class="tab__description">
             
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A ut eos repudiandae sequi dolorum minus

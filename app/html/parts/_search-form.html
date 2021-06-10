@@ -1,9 +1,12 @@
-<form class="search @@error d-flex">
+<form class="search @@small-form @@big-form @@error d-flex jc-sb ai-c">
   <label class="search__label">
     <span class="sr-only">Search input field</span>
-    <input class="search__input error__input" type="search" placeholder="Search Products">
+    <input class="search__input @@small-input @@big-input" type="search" placeholder="Search Products">
   </label>
   <button class="search__btn" type="submit">
+    <svg class="search__icon">
+      <use xlink:href="sprite.svg#search"></use>
+    </svg>
     <span class="sr-only">Search button</span>
   </button>
 </form>

@@ -13,10 +13,14 @@
 
 <header class="header">
   <div class="container">
-    <nav class="header__nav d-flex jc-sb ai-c">
+    <nav class="header__nav d-flex jc-sb">
       <a class="logo" href="#">
         <img src="images/logo.svg" alt="logo of the webpage" width="65" height="15">
       </a>
+      <input class="menu-btn" type="checkbox" id="menu-btn">
+      <label class="menu-icon" for="menu-btn">
+        <span class="navicon"></span>
+      </label>
       <ul class="menu d-flex">
         <li class="menu__item">
           <a href="index.html" class="menu__link">Home</a>
@@ -51,7 +55,7 @@
 
   <div class="header__bottom">
     <div class="container">
-      <div class="header__inner d-flex jc-sb ai-c">
+      <div class="header__inner d-flex jc-sb ai-c fw-w">
         <div class="dropdown-menu js_drop">
           Shop by Category
           <ul class="dropdown-menu__list dropdown">
@@ -423,16 +427,20 @@
             </li>
           </ul>
         </div>
-        <form class="search d-flex jc-sb">
-          <label class="search__label">
-            <span class="sr-only">Search input field</span>
-            <input class="search__input" type="search" placeholder="Search Products">
-          </label>
-          <label class="search__label">
-            <span class="sr-only">Search button</span>
-            <button class="search__btn" type="submit"></button>
-          </label>
-        </form>
+        
+        <form class="search @@small-form @@big-form @@error d-flex jc-sb ai-c">
+  <label class="search__label">
+    <span class="sr-only">Search input field</span>
+    <input class="search__input @@small-input @@big-input" type="search" placeholder="Search Products">
+  </label>
+  <button class="search__btn" type="submit">
+    <svg class="search__icon">
+      <use xlink:href="sprite.svg#search"></use>
+    </svg>
+    <span class="sr-only">Search button</span>
+  </button>
+</form>
+
         <ul class="header__user-cart d-flex jc-sb">
           <li class="user js_drop">
             <ul class="user__list dropdown">
@@ -521,12 +529,19 @@
     </div>
     <form class="accordion filters-category__form" action="#">
       <label class="filters__label d-flex fd-col">
+        <span class="sr-only">Click to open sub menu</span>
         <input class="filters__input filters-category__input" type="checkbox">
         <span class="accordion__btn filters__text">TV & Video</span>
-        <ul class="accordion__panel">
-          <li class="accordion__item">Smart TV</li>
-          <li class="accordion__item">Stupid TV</li>
-          <li class="accordion__item">Baclajan TV</li>
+        <ul class="accordion__panel filters__sublist">
+          <li class="accordion__item filters__subitem">
+            <a class="filters__sublink" href="#">Smart TV</a> 
+          </li>
+          <li class="accordion__item filters__subitem">
+            <a class="filters__sublink" href="#">Stupid TV</a> 
+          </li>
+          <li class="accordion__item filters__subitem">
+            <a class="filters__sublink" href="#">Baclajan TV</a> 
+          </li>
         </ul>
 
 
@@ -537,12 +552,19 @@
 
       </label>
       <label class="filters__label d-flex fd-col">
+        <span class="sr-only">Click to open sub menu</span>
         <input class="filters__input filters-category__input" type="checkbox">
         <span class="accordion__btn filters__text">Camera & Photo</span>
-        <ul class="accordion__panel">
-          <li class="accordion__item">Smart TV</li>
-          <li class="accordion__item">Stupid TV</li>
-          <li class="accordion__item">Baclajan TV</li>
+        <ul class="accordion__panel filters__sublist">
+          <li class="accordion__item filters__subitem">
+            <a class="filters__sublink" href="#">Smart TV</a> 
+          </li>
+          <li class="accordion__item filters__subitem">
+            <a class="filters__sublink" href="#">Stupid TV</a> 
+          </li>
+          <li class="accordion__item filters__subitem">
+            <a class="filters__sublink" href="#">Baclajan TV</a> 
+          </li>
         </ul>
 
       </label>
@@ -567,19 +589,19 @@
         <input class="filters__input filters-color__input" type="checkbox">
         <span class="filters__text filters-color__text filters-color__text--black">Black</span>
       </label>
-      <label class="filters-color__label d-flex jc-sb">
+      <label class="filters__label filters-color__label d-flex jc-sb">
         <input class="filters__input filters-color__input" type="checkbox">
         <span class="filters__text filters-color__text  filters-color__text--pink">Pink</span>
       </label>
-      <label class="filters-color__label d-flex jc-sb">
+      <label class="filters__label filters-color__label d-flex jc-sb">
         <input class="filters__input filters-color__input" type="checkbox">
         <span class="filters__text filters-color__text filters-color__text--green">Green</span>
       </label>
-      <label class="filters-color__label d-flex jc-sb">
+      <label class="filters__label filters-color__label d-flex jc-sb">
         <input class="filters__input filters-color__input" type="checkbox">
         <span class="filters__text filters-color__text filters-color__text--gray">Gray</span>
       </label>
-      <label class="filters-color__label d-flex jc-sb">
+      <label class="filters__label filters-color__label d-flex jc-sb">
         <input class="filters__input filters-color__input" type="checkbox">
         <span class="filters__text filters-color__text filters-color__text--turquoise">Еurquoise</span>
       </label>

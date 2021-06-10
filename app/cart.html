@@ -13,10 +13,14 @@
 
 <header class="header">
   <div class="container">
-    <nav class="header__nav d-flex jc-sb ai-c">
+    <nav class="header__nav d-flex jc-sb">
       <a class="logo" href="#">
         <img src="images/logo.svg" alt="logo of the webpage" width="65" height="15">
       </a>
+      <input class="menu-btn" type="checkbox" id="menu-btn">
+      <label class="menu-icon" for="menu-btn">
+        <span class="navicon"></span>
+      </label>
       <ul class="menu d-flex">
         <li class="menu__item">
           <a href="index.html" class="menu__link">Home</a>
@@ -51,7 +55,7 @@
 
   <div class="header__bottom">
     <div class="container">
-      <div class="header__inner d-flex jc-sb ai-c">
+      <div class="header__inner d-flex jc-sb ai-c fw-w">
         <div class="dropdown-menu js_drop">
           Shop by Category
           <ul class="dropdown-menu__list dropdown">
@@ -423,16 +427,20 @@
             </li>
           </ul>
         </div>
-        <form class="search d-flex jc-sb">
-          <label class="search__label">
-            <span class="sr-only">Search input field</span>
-            <input class="search__input" type="search" placeholder="Search Products">
-          </label>
-          <label class="search__label">
-            <span class="sr-only">Search button</span>
-            <button class="search__btn" type="submit"></button>
-          </label>
-        </form>
+        
+        <form class="search @@small-form @@big-form @@error d-flex jc-sb ai-c">
+  <label class="search__label">
+    <span class="sr-only">Search input field</span>
+    <input class="search__input @@small-input @@big-input" type="search" placeholder="Search Products">
+  </label>
+  <button class="search__btn" type="submit">
+    <svg class="search__icon">
+      <use xlink:href="sprite.svg#search"></use>
+    </svg>
+    <span class="sr-only">Search button</span>
+  </button>
+</form>
+
         <ul class="header__user-cart d-flex jc-sb">
           <li class="user js_drop">
             <ul class="user__list dropdown">
@@ -519,32 +527,35 @@
           <li class="cart-inside__item">Quantity</li>
           <li class="cart-inside__item">Total</li>
         </ul>
-        <ul class="cart-inside__inner d-flex ai-c">
-          <li class="cart-inside__item cart-inside__product d-flex ai-c">
+        <div class="cart-inside__inner d-flex ai-c">
+          <div class="cart-inside__item cart-inside__item--product d-flex ai-c">
             <img class="cart-inside__img" src="images/content/black-smart-w.jpg" alt="picture of the goods">
             <p class="cart-inside__product-name">Product name</p>
-          </li>
-          <li class="cart-inside__item">
-            <p><span>$</span>44.00</p>
-          </li>
-          <li class="cart-inside__item quantity">
-            <input class="number" type="number" value="1" min="1">
-          </li>
-          <li class="cart-inside__item">
-            <p><span>$</span>44.00</p>
-          </li>
-        </ul>
-        <div class="cart-inside__bottom d-flex ai-c">
-          <div class="cart-inside__size">
-            <select name="" id="" class="select">
-              <option selected="true" disabled="disabled">size</option>
-              <option value="S">s</option>
-              <option value="M">m</option>
-              <option value="L">l</option>
-              <option value="XL">xl</option>
-              <option value="XXL">xxl</option>
-            </select>
           </div>
+          <div class="cart-inside__item">
+            <p><span>$</span>44.00</p>
+          </div>
+          <div class="cart-inside__item quantity">
+            <input class="number" type="number" value="1" min="1">
+          </div>
+          <div class="cart-inside__item">
+            <p><span>$</span>44.00</p>
+          </div>
+        </div>
+        <div class="cart-inside__bottom d-flex ai-c">
+          <form class="cart-inside__size">
+            <label>
+              <span class="sr-only">Select size</span>
+              <select name="" id="" class="select">
+                <option selected="true" disabled="disabled">size</option>
+                <option value="S">s</option>
+                <option value="M">m</option>
+                <option value="L">l</option>
+                <option value="XL">xl</option>
+                <option value="XXL">xxl</option>
+              </select>
+            </label>
+          </form>
           <div class="cart-inside__coupon">
             <a class="cart-inside__link" href="#">Apply coupon</a>
           </div>
@@ -562,7 +573,9 @@
           <li class="cart-total__item highlight">Total</li>
           <li class="cart-total__item highlight"><span>$</span>389.99 </li>
         </ul>
-        <button class="btn btn--big cart-total__btn d-flex" type="submit">Proceed to Checkout</button>
+        <form action="">
+          <button class="btn btn--big cart-total__btn d-flex" type="submit">Proceed to Checkout</button>
+        </form>
       </div>
     </div>
   </section>

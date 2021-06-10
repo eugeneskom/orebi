@@ -26,7 +26,7 @@
   }
 
   &__desc {
-    color: rgba(255, 255, 255, 0.7048);
+    color: $light-900;
     margin-bottom: 50px;
     @include text-clamp(2);
   }

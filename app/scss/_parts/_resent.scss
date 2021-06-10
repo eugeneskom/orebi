@@ -7,7 +7,6 @@
   &__subitem {
     border-bottom: 1px solid $light-700;
     position: relative;
-    padding: 20px 0 20px 19px;
 
     &::before {
       content: "";
@@ -19,6 +18,23 @@
       top: 50%;
       left: 0;
       transform: translateY(-50%);
+    }
+  }
+
+  &__sublink {
+    display: block;
+    padding: 20px 0 20px 19px;
+
+    &:focus {
+      text-shadow: 1px 0 0 $highlight;
+    }
+
+    &:hover {
+      background-color: $light-500;
+    }
+
+    &:active {
+      color: $highlight;
     }
   }
 }

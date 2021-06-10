@@ -30,8 +30,8 @@ $(function () {
     slidesToScroll: 1,
     verticalSwiping: true,
     arrows: false,
-    autoplay: true,
-    autoplaySpeed: 1500,
+    // autoplay: true,
+    // autoplaySpeed: 1500,
 
   });
   $('.new__slider').slick({

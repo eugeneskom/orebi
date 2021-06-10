@@ -2,10 +2,10 @@
   padding: 0 0 136px;
 
   &__item {
-    &:not(:last-child) .breadcrumbs__link {
+    &:not(:last-child) {
       padding-right: 12px;
       position: relative;
-
+      z-index: -1;
       &::after {
         content: ">";
         position: absolute;
@@ -19,7 +19,18 @@
     }
   }
 
-  &__title {
-    margin-bottom: 11px;
+  a.breadcrumbs__link {
+    &:focus {
+      text-shadow: 1px 0 0 $highlight;
+    }
+
+    &:hover {
+      border-bottom: 1px solid $highlight;
+    }
+
+    &:active {
+      color: $highlight;
+    }
   }
+
 }

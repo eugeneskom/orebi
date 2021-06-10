@@ -1,0 +1,48 @@
+.commitments {
+  padding: 28px 0;
+  border: 1px solid $light-700;
+
+  &__inner {
+    @include r(768) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__item {
+    position: relative;
+    padding-left: 30px;
+
+    @include r(768) {
+      align-items: center;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 4px;
+      height: 20px;
+    }
+
+    &--warranty::before {
+      background-image: url("../images/icons/warranty.svg");
+      width: 14px;
+      left: 7px;
+    }
+
+    &--van::before {
+      background-image: url("../images/icons/van.svg");
+      width: 25px;
+    }
+
+    &--return::before {
+      background-image: url("../images/icons/return.svg");
+      width: 20px;
+    }
+  }
+}

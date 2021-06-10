@@ -1,0 +1,47 @@
+.tabs {
+  &__nav {
+    margin-bottom: 42px;
+  }
+
+  &__link {
+    font-size: 20px;
+    line-height: 1.5;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: transparent;
+
+    &:not(:last-child) {
+      margin-right: 62px;
+    }
+
+    &.is-active {
+      text-shadow: 1px 0 0 $highlight;
+      color: $highlight;
+    }
+  }
+
+  .tab {
+    display: none;
+
+    &.is-active {
+      display: block;
+    }
+  }
+}
+
+.tab {
+  border-top: 1px solid $light-700;
+
+  &__caption {
+    font-size: 14px;
+    line-height: 2.1;
+    margin-bottom: 16px;
+  }
+
+  &__description {
+    padding-bottom: 30px;
+    margin-bottom: 53px;
+    border-bottom: 1px solid $light-700;
+  }
+}

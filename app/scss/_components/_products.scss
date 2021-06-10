@@ -1,10 +1,14 @@
 .shop-wrapper {
   padding: 124px 0 140px;
-  // thgis product file will be split in 2 parts, filters and products.
-  //shop-wrapper is the class they are going to share
+
 }
 
 .products {
+  &__inner {
+    .product {
+      margin-bottom: 40px;
+    }
+  }
 
   .accordion {
 
@@ -26,13 +30,4 @@
     }
   }
 
-  &__inner {
-    .product {
-      margin-bottom: 40px;
-    }
-  }
-
 }
-
-
-
