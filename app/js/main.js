@@ -32,13 +32,34 @@ $(function () {
     arrows: false,
     // autoplay: true,
     // autoplaySpeed: 1500,
-
   });
+
   $('.new__slider').slick({
     dots: false,
     slidesToShow: 4,
     slidesToScroll: 1,
     arrows: true,
+    responsive: [
+      {
+        breakpoint: 1530,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+        }
+      }
+      ,
+      {
+        breakpoint: 780,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
   });
 
 
@@ -144,13 +165,13 @@ $(function () {
   });
 
 
-$('.form__radio').onclick(function(){
-  let radioValue = $('.form__radio:checked').val();
-  if(radioValue){
-    $('.form__checkbox-desc').removeClass('form__checkbox-desc--active')
-    $(this).parent().next('.form__checkbox-desc').addClass('form__checkbox-desc--active');
-  }
-});
+  $('.form__radio').onclick(function () {
+    let radioValue = $('.form__radio:checked').val();
+    if (radioValue) {
+      $('.form__checkbox-desc').removeClass('form__checkbox-desc--active')
+      $(this).parent().next('.form__checkbox-desc').addClass('form__checkbox-desc--active');
+    }
+  });
 
 
 

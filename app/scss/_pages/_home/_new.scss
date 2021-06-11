@@ -43,4 +43,10 @@
       border: none;
     }
   }
+
+  .product {
+    &__new {
+      display: none;
+    }
+  }
 }

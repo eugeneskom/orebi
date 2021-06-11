@@ -2,6 +2,10 @@
   padding: 61px 407px 60px 0;
   position: relative;
 
+  @include r(950) {
+    padding: 40px 0;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -18,16 +22,31 @@
     margin-left: auto;
     max-width: 511px;
     z-index: 1;
+
+    @include r(950) {
+      max-width: 100%;
+      padding: 0;
+      margin: 0 auto;
+    }
   }
 
   &__name {
     color: $light-900;
     margin-bottom: 38px;
+
+    @include r(950) {
+      margin-bottom: 20px;
+    }
   }
 
   &__desc {
     color: $light-900;
     margin-bottom: 50px;
     @include text-clamp(2);
+
+    @include r(950) {
+      margin-bottom: 20px;
+    }
   }
+
 }

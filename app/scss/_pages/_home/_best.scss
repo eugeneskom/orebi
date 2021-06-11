@@ -1,3 +1,18 @@
 .best {
-  padding: 123px 0 130px;
+  padding: 123px 0 80px;
+
+  &__product {
+    margin-bottom: 50px;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  .product {
+    &__new {
+      display: none;
+    }
+  }
+  
 }
