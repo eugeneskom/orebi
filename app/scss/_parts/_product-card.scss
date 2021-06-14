@@ -1,8 +1,19 @@
 .product {
   max-width: 370px;
-  @include r(780){
+
+  @include r(1300) {
     margin: 0 auto;
   }
+
+  @include r(950) {
+    max-width: 300px;
+
+  }
+
+  @include r(780) {
+    margin: 0 auto;
+  }
+
   &__content {
     display: none;
   }
@@ -26,7 +37,7 @@
       }
 
       &__link {
-        &--compare{
+        &--compare {
           display: none;
         }
       }
@@ -63,6 +74,10 @@
     position: relative;
     overflow: hidden;
     height: 370px;
+
+    @include r(1300) {
+      height: 300px;
+    }
   }
 
   &__new {

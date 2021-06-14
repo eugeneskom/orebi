@@ -1,10 +1,8 @@
-.best {
-  padding: 123px 0 80px;
-
-  @include r(950) {
-    padding: 50px 0 30px;
+.special {
+  padding: 128px 0 118px;
+  @include r(950){
+    padding: 60px 0 50px;
   }
-
   &__list {
     @include r(1300) {
       flex-wrap: wrap;
@@ -14,7 +12,9 @@
   }
 
   &__product {
-    margin-bottom: 50px;
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
 
     @include r(1300) {
       width: 49%;
@@ -32,11 +32,4 @@
       }
     }
   }
-
-  .product {
-    &__new {
-      display: none;
-    }
-  }
-
 }

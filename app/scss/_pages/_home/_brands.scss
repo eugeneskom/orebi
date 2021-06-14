@@ -1,9 +1,24 @@
 .brands {
   padding-bottom: 127px;
+  
+  &__list{
+    margin: 0 auto;
+    @include r(1631){
+      max-width: 1276px;
+    }
+    @include r(1300){
+      max-width: 957px;
+    }
+    @include r(993){
+      max-width: 638px;
+    }
+    @include r(675){
+      max-width: 319px;
+    }
+  }
 
   &__item {
     margin-bottom: 1px;
-
     &:hover {
       .brands__img {
         transform: rotateY(180deg);
