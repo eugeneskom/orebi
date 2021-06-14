@@ -1,35 +1,18 @@
 .best {
   padding: 123px 0 80px;
 
-  @include r(950) {
+  @include r(992) {
     padding: 50px 0 30px;
   }
 
-  &__list {
-    @include r(1300) {
-      flex-wrap: wrap;
-      max-width: 850px;
-      margin: 0 auto;
-    }
-  }
 
   &__product {
     margin-bottom: 50px;
 
-    @include r(1300) {
-      width: 49%;
-    }
-
-    @include r(768) {
-      width: 100%;
-    }
 
     &:not(:last-child) {
       margin-right: 10px;
 
-      @include r(1300) {
-        margin-right: 0;
-      }
     }
   }
 

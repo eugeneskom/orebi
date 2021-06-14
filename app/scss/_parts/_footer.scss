@@ -7,6 +7,16 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 
+    @include r(1200) {
+      grid-template-columns: 50% 50%;
+      row-gap: 40px;
+    }
+
+    @include r(768) {
+      grid-template-columns: 100%;
+    }
+
+
   }
 
   &__heading {
@@ -17,8 +27,39 @@
     color: $highlight;
   }
 
+  &__list {
+    @include r(576) {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    @include r(576) {
+      text-align: center;
+
+      &:not(:last-child) {
+        margin-bottom: 25px;
+      }
+    }
+  }
+
   &__logo {
     margin: 0 auto;
+
+    @include r(1200) {
+      margin: 0;
+    }
+
+    @include r(576) {
+      margin: 0 auto;
+
+    }
+  }
+
+  &__bottom{
+    @include r(576){
+      flex-direction: column;
+    }
   }
 }
 
@@ -52,6 +93,14 @@
   font-style: normal;
   padding-left: 145px;
 
+  @include r(1200) {
+    padding-left: 0;
+  }
+
+  @include r(576) {
+    text-align: center;
+  }
+
   &__link {
     display: block;
     font-weight: 700;
@@ -83,7 +132,9 @@
 }
 
 .social {
-
+  @include r(576){
+    margin-bottom: 20px;
+  }
   &__item {
     margin-right: 27px;
     width: 16px;

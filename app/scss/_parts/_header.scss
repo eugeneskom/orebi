@@ -1,6 +1,7 @@
 .header {
   z-index: 100;
-
+  position: relative;
+  
   @include r(768) {
     position: relative;
   }
@@ -184,8 +185,6 @@
   }
 }
 
-
-
 .dropdown-menu {
   position: relative;
   padding-left: 28px;
@@ -264,8 +263,6 @@
     background-color: $light-900;
     padding: 28px 47px 32px 40px;
     display: none;
-
-
 
     @include r(950) {
       flex-wrap: wrap;

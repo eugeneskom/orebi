@@ -1,14 +1,12 @@
 .special {
   padding: 128px 0 118px;
-  @include r(950){
+
+  @include r(992) {
     padding: 60px 0 50px;
   }
+
   &__list {
-    @include r(1300) {
-      flex-wrap: wrap;
-      max-width: 850px;
-      margin: 0 auto;
-    }
+    justify-content: center;
   }
 
   &__product {
@@ -16,20 +14,9 @@
       margin-right: 5px;
     }
 
-    @include r(1300) {
-      width: 49%;
-    }
-
-    @include r(768) {
-      width: 100%;
-    }
 
     &:not(:last-child) {
       margin-right: 10px;
-
-      @include r(1300) {
-        margin-right: 0;
-      }
     }
   }
 }

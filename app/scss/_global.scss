@@ -39,7 +39,9 @@ body {
   color: $highlight;
   text-transform: capitalize;
   @include text-clamp(3);
-
+  @include r(768){
+    font-size: 30px;
+  }
   &--main {
     margin-bottom: 48px;
     @include r(1300){
