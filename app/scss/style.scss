@@ -6,7 +6,7 @@
 @import 'global';
 @import '_parts/header';
 @import '_parts/search';
-@import '_components/intro';
+@import '_pages/_home/intro';
 @import '_parts/commitments';
 @import '_parts/unit';
 @import '_pages/_home/sale';
@@ -22,8 +22,8 @@
 @import '_components/products';
 @import '_jq/selectbox';
 @import '_jq/number';
-@import '_parts/filters';
-@import '_components/shop-content';
+@import '_pages/_shop/filters';
+@import '_pages/_shop/shop-content';
 @import '_parts/pagination';
 @import '_parts/breadcrumbs';
 @import '_components/comments';

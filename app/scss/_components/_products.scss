@@ -8,6 +8,22 @@
     .product {
       margin-bottom: 40px;
     }
+
+    @include r(1200) {
+      display: block;
+    }
+  }
+
+  &__filter-btn {
+    background-color: transparent;
+    border: none;
+    outline: transparent;
+  }
+
+  &__svg {
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
   }
 
   .accordion {

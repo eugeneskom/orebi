@@ -2,7 +2,10 @@
   max-width: 372px;
   width: 100%;
   margin-right: 39px;
-
+  @include r(1200){
+    max-width: 100%;
+    display: none;
+  }
 
   &__item {
     margin-bottom: 53px;

@@ -1,6 +1,6 @@
 .shop-content {
   width: 100%;
-
+  
   &__filter {
     margin-bottom: 60px;
   }
@@ -37,6 +37,12 @@
 
   &__select-show {
     width: 140px;
+  }
+}
+
+.shop-products{
+  @include r(1200){
+    justify-content: space-around;
   }
 }
 

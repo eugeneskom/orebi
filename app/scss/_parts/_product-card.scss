@@ -5,10 +5,9 @@
     margin: 0 auto;
   }
 
-  @include r(950) {
-    max-width: 300px;
-
-  }
+  // @include r(950) {
+  //   max-width: 300px;
+  // }
 
   @include r(780) {
     margin: 0 auto;
@@ -75,9 +74,9 @@
     overflow: hidden;
     height: 370px;
 
-    @include r(1300) {
-      height: 300px;
-    }
+    // @include r(1300) {
+    //   height: 300px;
+    // }
   }
 
   &__new {
