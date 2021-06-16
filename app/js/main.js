@@ -23,6 +23,11 @@ $(function () {
     });
 
   }
+
+  $('.products__filter-btn').on('click', function () {
+    $('.filters').slideToggle();
+  })
+
   $('.intro__list').slick({
     dots: true,
     vertical: true,
