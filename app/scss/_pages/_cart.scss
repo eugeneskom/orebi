@@ -15,10 +15,11 @@
 
   &__item {
     width: 25%;
-    &--product{
+
+    &--product {
       position: relative;
       padding-left: 50px;
-  
+
       &::before {
         content: "";
         position: absolute;

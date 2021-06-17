@@ -3,121 +3,124 @@
 @@include('../parts/_header.html')
 
 <main class="main">
-<div class="container">
-  <section class="myaccount">
-    <h1 class="title">My Account</h1>
+  <div class="container">
+    <section class="myaccount">
+      <h1 class="title">My Account</h1>
       @@include('../parts/_breadcrumbs.html',{
       "active-page": "My Account"
       })
-    <div class="tabs d-flex">
-      <div class="tabs__nav d-flex fd-col">
-        <button class="tabs__link" data-tab-name="tab-1">
-          Dashboard
-        </button>
-        <button class="tabs__link is-active" data-tab-name="tab-2">
-          Others
-        </button>
-        <button class="tabs__link" data-tab-name="tab-3">
-          Donwloads
-        </button>
-        <button class="tabs__link" data-tab-name="tab-4">
-          Addresses
-        </button>
-        <button class="tabs__link" data-tab-name="tab-5">
-          Account details
-        </button>
-        <button class="tabs__link" data-tab-name="tab-6">
-          Logout
-        </button>
-      </div>
-      <div class="tabs__content">
-        <div class="tab tab-1">
-          <div class="tab__description">
-            <p>Hello <a class="link" href="#">admin</a> (not <a class="link" href="#">admin</a>? <a class="link" href="#">Log out</a> )</p>
-            <p>From your account dashboard you can view your <a class="link" href="#">recent orders</a> , manage your <a class="link" href="#">shipping and billing addresses</a> , and <a href="#">edit your password and account details.</a></p>
-          </div>
+      <div class="tabs d-flex">
+        <div class="tabs__nav d-flex fd-col">
+          <button class="tabs__link" data-tab-name="tab-1">
+            Dashboard
+          </button>
+          <button class="tabs__link is-active" data-tab-name="tab-2">
+            Others
+          </button>
+          <button class="tabs__link" data-tab-name="tab-3">
+            Donwloads
+          </button>
+          <button class="tabs__link" data-tab-name="tab-4">
+            Addresses
+          </button>
+          <button class="tabs__link" data-tab-name="tab-5">
+            Account details
+          </button>
+          <button class="tabs__link" data-tab-name="tab-6">
+            Logout
+          </button>
         </div>
+        <div class="tabs__content">
+          <div class="tab tab-1">
+            <div class="tab__description">
+              <p>Hello <a class="link" href="#">admin</a> (not <a class="link" href="#">admin</a>? <a class="link"
+                  href="#">Log out</a> )</p>
+              <p>From your account dashboard you can view your <a class="link" href="#">recent orders</a> , manage your
+                <a class="link" href="#">shipping and billing addresses</a> , and <a href="#">edit your password and
+                  account details.</a></p>
+            </div>
+          </div>
 
-        <div class="tab  is-active tab-2">
-          <span class="tab__caption">
-            1 review for Product
-          </span>
-          <div class="comments">
-            <div class="comments__top d-flex ai-c">
-              <p class="comments__name">John Ford</p>
-              <div class="comments__rate"></div>
-              <div class="comments__date">
-                <time>6 months ago</time>
+          <div class="tab  is-active tab-2">
+            <span class="tab__caption">
+              1 review for Product
+            </span>
+            <div class="comments">
+              <div class="comments__top d-flex ai-c">
+                <p class="comments__name">John Ford</p>
+                <div class="comments__rate"></div>
+                <div class="comments__date">
+                  <time>6 months ago</time>
+                </div>
+              </div>
+              <div class="tab__description">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                  scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                  into
+                  electronic typesetting, remaining essentially unchanged.
+                </p>
               </div>
             </div>
+
+          </div>
+
+          <div class="tab tab-3">
+            <span class="tab__caption">
+              Donwloads
+            </span>
             <div class="tab__description">
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-                into
-                electronic typesetting, remaining essentially unchanged.
-              </p>
+
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A ut eos repudiandae sequi dolorum minus
+                delectus
+                reprehenderit possimus dicta labore?</p>
             </div>
           </div>
-         
+
+          <div class="tab tab-4">
+            <span class="tab__caption">
+              Addresses
+            </span>
+            <div class="tab__description">
+
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A ut eos repudiandae sequi dolorum minus
+                delectus
+                reprehenderit possimus dicta labore?</p>
+            </div>
+          </div>
+
+          <div class="tab tab-5">
+            <span class="tab__caption">
+              Account details
+            </span>
+            <div class="tab__description">
+
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A ut eos repudiandae sequi dolorum minus
+                delectus
+                reprehenderit possimus dicta labore?</p>
+            </div>
+          </div>
+
+          <div class="tab tab-6">
+            <span class="tab__caption">
+              Logout
+            </span>
+            <div class="tab__description">
+
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A ut eos repudiandae sequi dolorum minus
+                delectus
+                reprehenderit possimus dicta labore?</p>
+            </div>
+          </div>
+
         </div>
 
-        <div class="tab tab-3">
-          <span class="tab__caption">
-            Donwloads
-          </span>
-          <div class="tab__description">
-            
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A ut eos repudiandae sequi dolorum minus
-              delectus
-              reprehenderit possimus dicta labore?</p>
-          </div>
-        </div>
 
-        <div class="tab tab-4">
-          <span class="tab__caption">
-            Addresses
-          </span>
-          <div class="tab__description">
-            
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A ut eos repudiandae sequi dolorum minus
-              delectus
-              reprehenderit possimus dicta labore?</p>
-          </div>
-        </div>
 
-        <div class="tab tab-5">
-          <span class="tab__caption">
-            Account details
-          </span>
-          <div class="tab__description">
-            
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A ut eos repudiandae sequi dolorum minus
-              delectus
-              reprehenderit possimus dicta labore?</p>
-          </div>
-        </div>
-
-        <div class="tab tab-6">
-          <span class="tab__caption">
-            Logout
-          </span>
-          <div class="tab__description">
-            
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A ut eos repudiandae sequi dolorum minus
-              delectus
-              reprehenderit possimus dicta labore?</p>
-          </div>
-        </div>
 
       </div>
-
-
-
-
-    </div>
-  </section>
-</div>
+    </section>
+  </div>
 </main>
 @@include('../parts/_footer.html')
 

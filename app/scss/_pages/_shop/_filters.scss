@@ -2,7 +2,8 @@
   max-width: 372px;
   width: 100%;
   margin-right: 39px;
-  @include r(1200){
+
+  @include r(1200) {
     max-width: 100%;
     display: none;
   }
@@ -19,10 +20,11 @@
       cursor: pointer;
     }
   }
-  &__label{
-    
-    &:hover{
-      background-color:$dark-200; 
+
+  &__label {
+
+    &:hover {
+      background-color: $dark-200;
     }
   }
 
@@ -61,20 +63,23 @@
     height: 70px;
     padding-top: 20px;
   }
-  
 
-  &__sublink{
+
+  &__sublink {
     display: block;
     padding: 10px 10px;
-    margin:0 -18px;
+    margin: 0 -18px;
     outline: transparent;
-    &:focus{
+
+    &:focus {
       background-color: $light-300;
     }
-    &:hover{
+
+    &:hover {
       background-color: $dark-200;
     }
-    &:active{
+
+    &:active {
       color: $highlight;
     }
   }

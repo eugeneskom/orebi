@@ -169,7 +169,7 @@
     color: $highlight;
     @include text-clamp(1);
 
-    @include r(768){
+    @include r(768) {
       font-size: 18px;
       margin-bottom: 5px;
     }

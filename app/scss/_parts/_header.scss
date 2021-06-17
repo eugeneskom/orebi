@@ -1,7 +1,7 @@
 .header {
   z-index: 100;
   position: relative;
-  
+
   @include r(768) {
     position: relative;
   }
@@ -57,7 +57,7 @@
     }
 
   }
-  
+
 }
 
 
@@ -361,10 +361,11 @@
   position: relative;
   cursor: pointer;
 
-  @include r(768){
+  @include r(768) {
     margin-right: 20px;
   }
-  @include r(500){
+
+  @include r(500) {
     padding-right: 25px;
     margin-right: 10px;
   }

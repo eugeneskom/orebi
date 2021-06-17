@@ -56,8 +56,8 @@
     }
   }
 
-  &__bottom{
-    @include r(576){
+  &__bottom {
+    @include r(576) {
       flex-direction: column;
     }
   }
@@ -132,9 +132,10 @@
 }
 
 .social {
-  @include r(576){
+  @include r(576) {
     margin-bottom: 20px;
   }
+
   &__item {
     margin-right: 27px;
     width: 16px;

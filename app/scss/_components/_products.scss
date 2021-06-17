@@ -1,5 +1,3 @@
-
-
 .products {
   &__inner {
     .product {
@@ -24,11 +22,11 @@
     bottom: 50px;
     z-index: 5;
 
-    @include r(1200){
+    @include r(1200) {
       display: block;
     }
   }
-  
+
   &__btn-svg {
     width: 100%;
     height: 100%;
