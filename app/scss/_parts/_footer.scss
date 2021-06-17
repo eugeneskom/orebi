@@ -94,6 +94,10 @@
   padding-left: 145px;
 
   @include r(1200) {
+    padding-left: 80px;
+  }
+
+  @include r(768) {
     padding-left: 0;
   }
 
