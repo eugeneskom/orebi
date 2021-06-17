@@ -77,7 +77,6 @@
       &:not(:last-child) {
         margin-bottom: -5px;
       }
-
     }
 
     button {
@@ -104,8 +103,6 @@
     .slick-active {
       button {
         background-color: $highlight;
-
-
       }
     }
   }
