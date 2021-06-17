@@ -1,6 +1,14 @@
 .pagination {
   padding: 50px 0 0;
+  @include r(576){
+    flex-direction: column;
+  }
 
+  &__list{
+    @include r(576){
+      margin-bottom: 15px;
+    }
+  }
   &__item {
     &:not(:last-child) {
       margin-right: 15px;
@@ -12,7 +20,9 @@
     line-height: 1.3;
     padding: 9px 15px;
     border: 1px solid $light-700;
-
+    @include r(576){
+      padding: 4px 7px;
+    }
     &--active {
       color: $light-900;
       background-color: $highlight;
