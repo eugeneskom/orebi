@@ -55,6 +55,9 @@
 
   &__input {
     margin-bottom: 23px;
+    @include r(576){
+      margin-bottom: 10px;
+    }
   }
 
   &__input,
@@ -64,7 +67,7 @@
     outline: transparent;
     border-bottom: 1px solid $light-700;
     outline: transparent;
-
+    width: 100%;
     &::placeholder {
       font-weight: 400;
       color: $dark-500;
@@ -94,15 +97,15 @@
     }
 
     &--small {
-      min-width: 508px;
+      max-width: 508px;
     }
 
     &--medium {
-      min-width: 780px;
+      max-width: 780px;
     }
 
     &--large {
-      min-width: 1055px;
+      max-width: 1055px;
     }
   }
 
@@ -110,6 +113,10 @@
     resize: none;
     height: 104px;
     margin-bottom: 30px;
+    @include r(576){
+      height: 60px;
+      margin-bottom: 10px;
+    }
   }
 
   &__box {

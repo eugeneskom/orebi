@@ -1,7 +1,9 @@
 .sidebar {
-  min-width: 515px;
+  max-width: 515px;
   width: 100%;
-
+  @include r(1200){
+    max-width: 450px;
+  }
   &__form {
     padding-bottom: 17px;
     border-bottom: 1px solid $light-700;
@@ -17,7 +19,7 @@
   }
 
   &__input {
-    min-width: 491px;
+    max-width: 491px;
     height: 18px;
     border: none;
     outline: transparent;

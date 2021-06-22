@@ -4,12 +4,38 @@
   &__item {
     max-width: 510px;
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 26px;
+
+    &:not(:last-child) {
+      margin-right: 32px;
+
+      @include r(1200) {
+        margin-right: 2px;
+      }
+
+      @include r(768) {
+        margin-right: 0;
+      }
+    }
 
     &:hover {
       .article__img {
         transform: scale(1.2);
         transition: transform 0.3s;
+      }
+    }
+
+    &--main {
+      &:not(:last-child) {
+        margin-right: 35px;
+
+        @include r(1200) {
+          margin-right: 2px;
+        }
+
+        @include r(768) {
+          margin-right: 0;
+        }
       }
     }
   }

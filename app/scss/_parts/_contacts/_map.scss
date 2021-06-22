@@ -1,0 +1,55 @@
+.map {
+  position: relative;
+
+  &__api {
+    width: 100%;
+    height: 572px;
+    @include r(992){
+      height: 500px;
+    }
+    @include r(576){
+      height: 420px;
+    }
+  }
+
+  &__list {
+    width: 450px;
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    @include r(992){
+      top: 20px;
+      left: 5px;
+    }
+    @include r(576){
+      width: 250px;
+    }
+  }
+
+  &__address {
+    font-style: normal;
+  }
+
+  &__address,
+  &__contacts {
+    margin-bottom: 11px;
+    @include r(576){
+      margin-bottom: 0;
+    }
+  }
+
+  &__contacts {
+    display: block;
+  }
+
+  .accordion {
+    text-transform: capitalize;
+    font-weight: 700;
+    min-height: 82px;
+
+    &__panel {
+      padding-bottom: 25px;
+      font-weight: 400;
+    }
+  }
+}
