@@ -1,11 +1,11 @@
 .breadcrumbs {
   padding: 0 0 136px;
 
-  @include r(992) {
+  @include r($r-lg) {
     padding: 0 0 80px;
   }
 
-  @include r(576) {
+  @include r($r-sm) {
     padding: 0 0 40px;
   }
 

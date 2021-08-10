@@ -7,7 +7,7 @@
     font-size: 39px;
     @include text-clamp(1);
 
-    @include r(500) {
+    @include r($r-sm) {
       font-size: 30px;
       margin-bottom: 20px;
     }
@@ -18,7 +18,7 @@
     margin-bottom: 49px;
     @include text-clamp(2);
 
-    @include r(500) {
+    @include r($r-sm) {
       margin-bottom: 20px;
     }
 
@@ -26,8 +26,10 @@
       font-size: 40px;
       color: $light-900;
       vertical-align: middle;
-      @include r(500) {
+
+      @include r($r-sm) {
         font-size: 30px;
-      }}
+      }
+    }
   }
 }

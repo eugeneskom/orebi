@@ -1,4 +1,42 @@
 .new {
+
+  &__slider {
+
+    @include r($r-xl) {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    @include r($r-md) {
+      max-width: 370px;
+    }
+  }
+
+  &__product {
+    max-width: 370px;
+  }
+
+  .slick-slide {
+    max-width: 370px;
+    margin: 0 auto;
+
+    @include r($r-xl) {
+      margin: 0 27px;
+    }
+
+    @include r($r-md) {
+      margin: 0;
+    }
+  }
+
+  .slick-list {
+    margin: 0 -27px;
+
+    @include r($r-md) {
+      margin: 0;
+    }
+  }
+
   .slick-arrow {
     border: none;
     outline: transparent;
@@ -26,6 +64,10 @@
     transform: translateY(-50%);
     background-image: url(../images/icons/arrow-next.svg);
     right: 30px;
+
+    @include r($r-xl) {
+      right: 0;
+    }
   }
 
   .slick-prev.slick-arrow,
@@ -43,6 +85,8 @@
       border: none;
     }
   }
+
+
 
   .product {
     &__new {

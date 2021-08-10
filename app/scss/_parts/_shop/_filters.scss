@@ -3,7 +3,7 @@
   width: 100%;
   margin-right: 39px;
 
-  @include r(1200) {
+  @include r($r-xl) {
     max-width: 100%;
     display: none;
   }
@@ -15,8 +15,8 @@
       padding-bottom: 21px;
     }
 
-    label {
-      border-bottom: 1px solid #d8d8d8;
+    .filters__label {
+      border-bottom: 1px solid $dark-300;
       cursor: pointer;
     }
   }

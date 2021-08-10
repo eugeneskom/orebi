@@ -1,43 +1,60 @@
 $(function () {
+
   $('.select-style, .select, .number').styler();
+
+  //////////////////////////////////////////////////////////////
+
+  $('.intro__list').slick({
+    dots: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    // autoplay: true,
+  });
 
   let $slider = $('.intro__list');
 
   if ($slider.length) {
-    var currentSlide;
-    var sliderCounter = document.createElement('div');
+
+    let dots = document.querySelectorAll('.intro__list .slick-dots li');
+    let currentSlide;
+    let sliderCounter = document.createElement('div');
     sliderCounter.classList.add('slider__counter');
 
-    var updateSliderCounter = function (slick, currentIndex) {
+    let updateSliderCounter = function (slick, currentIndex) {
       currentSlide = slick.slickCurrentSlide() + 1;
       $(sliderCounter).text('0' + currentSlide)
     };
 
     $slider.on('init', function (event, slick) {
-      $slider.append(sliderCounter);
+
+      for (let i = 0; i < dots.length; i++) {
+        if (dots[i].classList.contains('slick-active')) { 
+          dots[i].append(1);
+        } 
+      }
       updateSliderCounter(slick);
     });
 
     $slider.on('afterChange', function (event, slick, currentSlide) {
+      for (let i = 0; i < dots.length; i++) {
+        if (dots[i].classList.contains('slick-active')) {
+          dots[i].append(sliderCounter);
+        } 
+      }
       updateSliderCounter(slick, currentSlide);
     });
-
   }
+
+ //////////////////////////////////////////////////////////////
+
+
 
   $('.products__filter-btn').on('click', function () {
     $('.filters').slideToggle();
   })
 
-  $('.intro__list').slick({
-    dots: true,
-    vertical: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    verticalSwiping: true,
-    arrows: false,
-    // autoplay: true,
-    // autoplaySpeed: 1500,
-  });
+  /////////////////////////////////////////////////////////////
 
   $('.new__slider').slick({
     dots: false,
@@ -59,7 +76,7 @@ $(function () {
       }
       ,
       {
-        breakpoint: 780,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
         }
@@ -67,20 +84,37 @@ $(function () {
     ]
   });
 
+  // dropdown 
+  let jsDrop = document.querySelectorAll('.js_drop');
 
-  $('.js_drop').on('click', function () {
-    $(this).toggleClass('active');
-    $(this).children().toggleClass('active');
-  });
-
-  $(document).on("click", function (event) {
-    if (!$(event.target).closest(".js_drop").length) {
-      $(event.target).find('.dropdown').removeClass('active');
-      $(event.target).find('.js_drop').removeClass('active');// for animating X
-
+  document.addEventListener('click', (e) => {
+    for (let i = 0; i < jsDrop.length; i++) {
+      jsDrop[i].classList.remove('active');
+      jsDrop[i].children[0].classList.remove('active');
     }
-  });
+    if (e.target.classList.contains('js_drop')) {
+      e.target.classList.toggle('active');
+      e.target.children[0].classList.toggle('active');
+    }
+  })
 
+
+  ///////////////////////////////////////////////////////////////////////
+
+  // $('.js_drop').on('click', function () {
+  //   $(this).toggleClass('active');
+  //   $(this).children().toggleClass('active');
+  // });
+
+
+  // $(document).on("click", function (event) {
+  //   if (!$(event.target).closest(".js_drop").length) {
+  //     $(event.target).find('.dropdown').removeClass('active');
+  //     $(event.target).find('.js_drop').removeClass('active');// for animating X
+
+  //   }
+  // });
+  //////////////////////////////////////////////////////////////////////////
 
   $('.shop-content__btn').on('click', function () {
     $('.shop-content__btn').removeClass('shop-content__btn--active');
@@ -181,10 +215,21 @@ $(function () {
 
 
 
+  // mmenu plugin for caterogy's menu
 
 
-
-
+  // document.addEventListener(
+  //   "DOMContentLoaded", () => {
+  //     new Mmenu(".dropdown-menu", {
+  //       // options
+  //     }, {
+  //       // configuration
+  //       classNames: {
+  //         selected: "active"
+  //       }
+  //     });
+  //   }
+  // );
 
 
 

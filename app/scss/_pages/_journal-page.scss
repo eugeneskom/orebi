@@ -1,5 +1,13 @@
 
-
 .journal-page {
   padding-top: 124px;
+  @include r($r-lg){
+    padding-top: 60px;
+  }
+}
+.journal{
+  @include r($r-lg){
+    display: block;
+    padding-bottom: 60px;
+  }
 }

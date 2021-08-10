@@ -5,15 +5,34 @@
     padding: 50px 0 30px;
   }
 
+  &__list {
+    @include r($r-xl) {
+      flex-wrap: wrap;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+  }
 
   &__product {
     margin-bottom: 50px;
-
-
     &:not(:last-child) {
-      margin-right: 10px;
+      margin-right: 40px;
 
+      @include r($r-xl) {
+        margin-right: 0;
+      }
+      
     }
+
+    &:nth-child(odd) {
+      @include r($r-xl) {
+        margin-right: 10px;
+      }
+      @include r($r-md){
+        margin-right: 0;
+      }
+    }
+
   }
 
   .product {
@@ -21,5 +40,4 @@
       display: none;
     }
   }
-
 }

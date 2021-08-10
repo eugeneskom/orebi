@@ -1,12 +1,12 @@
 .pagination {
   padding: 50px 0 0;
 
-  @include r(576) {
+  @include r($r-sm) {
     flex-direction: column;
   }
 
   &__list {
-    @include r(576) {
+    @include r($r-sm) {
       margin-bottom: 15px;
     }
   }
@@ -23,7 +23,7 @@
     padding: 9px 15px;
     border: 1px solid $light-700;
 
-    @include r(576) {
+    @include r($r-sm) {
       padding: 4px 7px;
     }
 

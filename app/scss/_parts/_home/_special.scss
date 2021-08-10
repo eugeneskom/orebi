@@ -1,22 +1,43 @@
 .special {
   padding: 128px 0 118px;
 
-  @include r(992) {
+  @include r($r-lg) {
     padding: 60px 0 50px;
   }
 
   &__list {
     justify-content: center;
+
+    @include r($r-xl) {
+      flex-wrap: wrap;
+      max-width: 750px;
+      margin: 0 auto;
+    }
   }
 
   &__product {
-    &:not(:last-child) {
-      margin-right: 5px;
-    }
-
 
     &:not(:last-child) {
-      margin-right: 10px;
+      margin-right: 40px;
+
+      @include r($r-xl) {
+        margin-right: 0;
+      }
+
+      @include r($r-md) {
+        margin-bottom: 50px;
+      }
     }
+
+    &:nth-child(odd) {
+      @include r($r-xl) {
+        margin-right: 10px;
+      }
+
+      @include r($r-md) {
+        margin-right: 0;
+      }
+    }
+
   }
 }

@@ -7,12 +7,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 
-    @include r(1200) {
+    @include r($r-xl) {
       grid-template-columns: 50% 50%;
       row-gap: 40px;
     }
 
-    @include r(768) {
+    @include r($r-md) {
       grid-template-columns: 100%;
     }
 
@@ -28,13 +28,13 @@
   }
 
   &__list {
-    @include r(576) {
+    @include r($r-sm) {
       flex-direction: column;
     }
   }
 
   &__item {
-    @include r(576) {
+    @include r($r-sm) {
       text-align: center;
 
       &:not(:last-child) {
@@ -46,18 +46,18 @@
   &__logo {
     margin: 0 auto;
 
-    @include r(1200) {
+    @include r($r-xl) {
       margin: 0;
     }
 
-    @include r(576) {
+    @include r($r-sm) {
       margin: 0 auto;
 
     }
   }
 
   &__bottom {
-    @include r(576) {
+    @include r($r-sm) {
       flex-direction: column;
     }
   }
@@ -93,15 +93,15 @@
   font-style: normal;
   padding-left: 145px;
 
-  @include r(1200) {
+  @include r($r-xl) {
     padding-left: 80px;
   }
 
-  @include r(768) {
+  @include r($r-md) {
     padding-left: 0;
   }
 
-  @include r(576) {
+  @include r($r-sm) {
     text-align: center;
   }
 
@@ -136,7 +136,7 @@
 }
 
 .social {
-  @include r(576) {
+  @include r($r-sm) {
     margin-bottom: 20px;
   }
 

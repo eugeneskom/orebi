@@ -55,7 +55,8 @@
 
   &__input {
     margin-bottom: 23px;
-    @include r(576){
+
+    @include r($r-sm) {
       margin-bottom: 10px;
     }
   }
@@ -68,6 +69,7 @@
     border-bottom: 1px solid $light-700;
     outline: transparent;
     width: 100%;
+
     &::placeholder {
       font-weight: 400;
       color: $dark-500;
@@ -113,7 +115,8 @@
     resize: none;
     height: 104px;
     margin-bottom: 30px;
-    @include r(576){
+
+    @include r($r-sm) {
       height: 60px;
       margin-bottom: 10px;
     }

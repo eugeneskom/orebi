@@ -101,17 +101,21 @@
     }
 
     .slick-active {
+      
       button {
         background-color: $highlight;
       }
     }
   }
+  li.slick-active{
+    position: relative;
+  }
 
   .slider__counter {
     position: absolute;
-    top: 42%;
-    left: 150px;
-    transform: translateY(-50%);
+    top: 0; //42%
+    left: -20px; //150px
+    // transform: translateY(-50%);
     z-index: 1;
     font-size: 14px;
     color: $highlight;

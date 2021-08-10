@@ -1,18 +1,18 @@
 .about {
   padding: 124px 0 131px;
 
-  @include r(992) {
+  @include r($r-lg) {
     padding: 70px 0 70px;
   }
 
-  @include r(768) {
+  @include r($r-md) {
     padding: 50px 0 50px;
   }
 
   &__list {
     margin-bottom: 128px;
 
-    @include r(992) {
+    @include r($r-lg) {
       flex-direction: column;
       align-items: center;
       margin-bottom: 60px;
@@ -27,7 +27,7 @@
     &:not(:last-child) {
       margin-right: 40px;
 
-      @include r(992) {
+      @include r($r-lg) {
         margin: 0 0 40px 0;
       }
     }
@@ -55,7 +55,7 @@
     z-index: 1;
     max-height: 76px;
 
-    @include r(768) {
+    @include r($r-md) {
       max-height: 55px;
       min-width: 200px;
       bottom: 20px;
@@ -69,7 +69,7 @@
     color: $highlight;
     margin-bottom: 118px;
 
-    @include r(992) {
+    @include r($r-lg) {
       font-size: 30px;
       margin-bottom: 60px;
     }
@@ -84,7 +84,7 @@
   }
 
   &__columns {
-    @include r(992) {
+    @include r($r-lg) {
       flex-direction: column;
     }
   }
@@ -93,7 +93,7 @@
     &:not(:last-child) {
       margin-right: 40px;
 
-      @include r(992) {
+      @include r($r-lg) {
         margin: 0 0 40px 0;
       }
     }

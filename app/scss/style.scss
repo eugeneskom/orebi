@@ -16,7 +16,7 @@
 @import '_parts/_home/best-seller';
 @import '_parts/_home/special';
 @import '_parts/_home/brands';
-@import '_parts/journal-card';
+@import '_parts/_journal/journal-card';
 @import '_parts/footer';
 @import '_components/products';
 @import '_jq/selectbox';
@@ -34,8 +34,8 @@
 @import '_pages/contacts';
 @import '_parts/_contacts/map';
 @import '_pages/journal-page';
-@import '_parts/resent.scss';
-@import '_parts/sidebar';
+@import '_parts/recent.scss';
+@import '_parts/_journal/sidebar';
 @import '_parts/tags';
 @import '_pages/journal-inside';
 @import '_pages/login';

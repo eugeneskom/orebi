@@ -1,11 +1,11 @@
 .shop-wrapper {
   padding: 124px 0 140px;
 
-  @include r(992) {
+  @include r($r-lg) {
     padding: 70px 0 75px;
   }
 
-  @include r(576) {
+  @include r($r-sm) {
     padding: 35px 0 40px;
   }
 }
@@ -16,7 +16,7 @@
   &__filter {
     margin-bottom: 60px;
 
-    @include r(768) {
+    @include r($r-md) {
       flex-direction: column;
     }
   }
@@ -26,7 +26,7 @@
   }
 
   &__form {
-    @include r(576) {
+    @include r($r-sm) {
       flex-direction: column;
     }
   }
@@ -60,7 +60,7 @@
     min-width: 240px;
     margin-right: 40px;
 
-    @include r(576) {
+    @include r($r-sm) {
       margin: 0 0 10px 0;
       min-width: 200px;
     }
@@ -72,7 +72,7 @@
 }
 
 .shop-products {
-  @include r(1200) {
+  @include r($r-xl) {
     justify-content: space-around;
   }
 }
