@@ -74,6 +74,7 @@
     }
 
     li {
+
       &:not(:last-child) {
         margin-bottom: -5px;
       }
@@ -101,21 +102,29 @@
     }
 
     .slick-active {
-      
+      .slider__counter {
+        display: block;
+      }
+
       button {
         background-color: $highlight;
       }
     }
+
+    .slider__counter {
+        display: none;
+    }
   }
-  li.slick-active{
+
+  li.slick-active {
     position: relative;
   }
 
   .slider__counter {
     position: absolute;
-    top: 0; //42%
-    left: -20px; //150px
-    // transform: translateY(-50%);
+    top: 50%;
+    left: -25px;
+    transform: translateY(-50%);
     z-index: 1;
     font-size: 14px;
     color: $highlight;

@@ -4,49 +4,31 @@ $(function () {
 
   //////////////////////////////////////////////////////////////
 
-  $('.intro__list').slick({
-    dots: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    // autoplay: true,
-  });
+  function updateSliderCounter(dots) {
+    for (let i = 0; i < dots.length; i++) {
+      dots[i].insertAdjacentHTML('beforeend', `<span class="slider__counter">0${i + 1}</span>`);
+    }
+  }
 
   let $slider = $('.intro__list');
 
   if ($slider.length) {
 
-    let dots = document.querySelectorAll('.intro__list .slick-dots li');
-    let currentSlide;
-    let sliderCounter = document.createElement('div');
-    sliderCounter.classList.add('slider__counter');
-
-    let updateSliderCounter = function (slick, currentIndex) {
-      currentSlide = slick.slickCurrentSlide() + 1;
-      $(sliderCounter).text('0' + currentSlide)
-    };
-
-    $slider.on('init', function (event, slick) {
-
-      for (let i = 0; i < dots.length; i++) {
-        if (dots[i].classList.contains('slick-active')) { 
-          dots[i].append(1);
-        } 
-      }
-      updateSliderCounter(slick);
+    $('.intro__list').slick({
+      dots: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      // autoplay: true,
     });
 
-    $slider.on('afterChange', function (event, slick, currentSlide) {
-      for (let i = 0; i < dots.length; i++) {
-        if (dots[i].classList.contains('slick-active')) {
-          dots[i].append(sliderCounter);
-        } 
-      }
-      updateSliderCounter(slick, currentSlide);
-    });
+    let $dots = document.querySelectorAll('.intro__list .slick-dots li');
+
+    updateSliderCounter($dots);
+
   }
 
- //////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////
 
 
 
@@ -84,36 +66,31 @@ $(function () {
     ]
   });
 
-  // dropdown 
+
+
+
+
+  ///////////////////////////////////////////////////////////////////////
   let jsDrop = document.querySelectorAll('.js_drop');
 
   document.addEventListener('click', (e) => {
     for (let i = 0; i < jsDrop.length; i++) {
-      jsDrop[i].classList.remove('active');
-      jsDrop[i].children[0].classList.remove('active');
-    }
-    if (e.target.classList.contains('js_drop')) {
-      e.target.classList.toggle('active');
-      e.target.children[0].classList.toggle('active');
+      if (e.target.classList.contains('js_drop')) {
+        if (jsDrop[i] == e.target) {
+          jsDrop[i].classList.toggle('active');
+          jsDrop[i].children[0].classList.toggle('active');
+        } else {
+          jsDrop[i].classList.remove('active');
+          jsDrop[i].children[0].classList.remove('active');
+        }
+      } else {
+        if (!e.target.closest('.js_drop')) {
+          jsDrop[i].classList.remove('active');
+          jsDrop[i].children[0].classList.remove('active');
+        }
+      }
     }
   })
-
-
-  ///////////////////////////////////////////////////////////////////////
-
-  // $('.js_drop').on('click', function () {
-  //   $(this).toggleClass('active');
-  //   $(this).children().toggleClass('active');
-  // });
-
-
-  // $(document).on("click", function (event) {
-  //   if (!$(event.target).closest(".js_drop").length) {
-  //     $(event.target).find('.dropdown').removeClass('active');
-  //     $(event.target).find('.js_drop').removeClass('active');// for animating X
-
-  //   }
-  // });
   //////////////////////////////////////////////////////////////////////////
 
   $('.shop-content__btn').on('click', function () {
@@ -215,26 +192,7 @@ $(function () {
 
 
 
-  // mmenu plugin for caterogy's menu
-
-
-  // document.addEventListener(
-  //   "DOMContentLoaded", () => {
-  //     new Mmenu(".dropdown-menu", {
-  //       // options
-  //     }, {
-  //       // configuration
-  //       classNames: {
-  //         selected: "active"
-  //       }
-  //     });
-  //   }
-  // );
-
-
-
-
-
+  $("#my-menu").mmenu();
 
 
 
