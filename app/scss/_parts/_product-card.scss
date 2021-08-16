@@ -95,6 +95,11 @@
     transform: translateY(100%);
     transition: transform 0.3s;
 
+    @include r($r-md) {
+      transform: translateY(0);
+      background-color: rgba($light-900, 0.8);
+    }
+
   }
 
   &__link {

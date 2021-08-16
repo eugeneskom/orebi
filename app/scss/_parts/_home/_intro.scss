@@ -28,7 +28,7 @@
     align-items: flex-start;
     justify-content: center;
 
-    @include r(768) {
+    @include r($r-md) {
       padding-left: 30px;
     }
   }
@@ -37,7 +37,7 @@
     margin-bottom: 33px;
     font-size: 49px;
 
-    @include r(768) {
+    @include r($r-md) {
       font-size: 40px;
     }
   }
@@ -51,7 +51,7 @@
       color: $highlight;
       vertical-align: middle;
 
-      @include r(768) {
+      @include r($r-md) {
         font-size: 25px;
       }
     }
@@ -69,7 +69,7 @@
     transform: translateY(-50%);
     left: 175px;
 
-    @include r(768) {
+    @include r($r-md) {
       left: 25px;
     }
 
@@ -130,7 +130,7 @@
     color: $highlight;
     pointer-events: none;
 
-    @include r(768) {
+    @include r($r-md) {
       left: 5px;
     }
   }

@@ -1,7 +1,7 @@
 .brands {
   padding-bottom: 127px;
 
-  @include r(992) {
+  @include r($r-lg) {
     padding-bottom: 60px;
   }
 

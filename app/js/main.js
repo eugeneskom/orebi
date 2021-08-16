@@ -1,6 +1,9 @@
+
+
 $(function () {
 
   $('.select-style, .select, .number').styler();
+
 
   //////////////////////////////////////////////////////////////
 
@@ -34,6 +37,7 @@ $(function () {
 
   $('.products__filter-btn').on('click', function () {
     $('.filters').slideToggle();
+
   })
 
   /////////////////////////////////////////////////////////////
@@ -153,51 +157,91 @@ $(function () {
 
   //accordion opening single panel at a time
 
-  $(function () {
-    var Accordion = function (el, multiple) {
-      this.el = el || {};
-      this.multiple = multiple || false;
+  var Accordion = function (el, multiple) {
+    this.el = el || {};
+    this.multiple = multiple || false;
 
-      // Variables privadas
-      var links = this.el.find('.accordion__btn');
-      // Evento
-      links.on('click', { el: this.el, multiple: this.multiple }, this.dropdown)
+
+
+    // Variables privadas
+    var links = this.el.find('.accordion__btn');
+    // Evento
+    links.on('click', { el: this.el, multiple: this.multiple }, this.dropdown)
+  }
+
+  Accordion.prototype.dropdown = function (e) {
+    var $el = e.data.el;
+    $this = $(this),
+      $next = $this.next();
+    $next.slideToggle();
+    $this.parent().toggleClass('open');
+
+
+    if (!e.data.multiple) {
+      $el.find('.accordion__panel').not($next).slideUp().parent().removeClass('open');
+    };
+  }
+
+  var accordion = new Accordion($('.accordion'), false);
+
+  //Animating onchange of input on checkout page
+
+  let formRadio = document.querySelectorAll('.form__radio');
+  for (let i = 0; i < formRadio.length; i++) {
+    formRadio[i].onchange = () => {
+      let formDesc = document.querySelectorAll('.form__checkbox-desc');
+      for (let k = 0; k < formDesc.length; k++) {
+        formDesc[k].classList.remove('form__checkbox-desc--active');
+      }
+      formRadio[i].parentNode.nextElementSibling.classList.add('form__checkbox-desc--active')
     }
 
-    Accordion.prototype.dropdown = function (e) {
-      var $el = e.data.el;
-      $this = $(this),
-        $next = $this.next();
+  }
 
-      $next.slideToggle();
-      $this.parent().toggleClass('open');
+  // The end of Animating onchange of input on checkout page
 
-      if (!e.data.multiple) {
-        $el.find('.accordion__panel').not($next).slideUp().parent().removeClass('open');
-      };
+
+  // mmenu start
+
+  // $('#my-menu').mmenu();
+  // let API = $("#my-menu").data("mmenu");
+  // $("#menu-button").onclick(function(){
+  //   API.open();
+  // })
+
+  //mmenu end
+
+
+
+
+  let dropList = document.querySelector('.dropdown-menu__list');
+  let dropBtns = document.querySelectorAll('.dropdown-menu__group');
+  let dropInsideBtn = document.querySelectorAll('.dropdown-menu__heading');
+
+
+  dropList.addEventListener('click', (e) => {
+    for (let i = 0; i < dropBtns.length; i++) {
+      if (e.target.classList.contains('dropdown-menu__group')) {
+        if (dropBtns[i] == e.target) {
+          dropBtns[i].nextElementSibling.classList.toggle('active-mobile');
+        } else {
+          dropBtns[i].nextElementSibling.classList.remove('active-mobile');
+        }
+      } else {
+        if (!e.target.closest('dropdown-menu__group')) {
+          dropBtns[i].classList.remove('active-mobile');
+        }
+      }
+
+      if (e.target.classList.contains('dropdown-menu__heading')) {
+        if(dropInsideBtn[i] == e.target){
+          dropInsideBtn[i].nextElementSibling.classList.toggle('active-mobile')
+        }else{
+          dropInsideBtn[i].nextElementSibling.classList.remove('active-mobile');
+        }
+      }
     }
-
-    var accordion = new Accordion($('.accordion'), false);
-  });
+  })
 
 
-  $('.form__radio').onclick(function () {
-    let radioValue = $('.form__radio:checked').val();
-    if (radioValue) {
-      $('.form__checkbox-desc').removeClass('form__checkbox-desc--active')
-      $(this).parent().next('.form__checkbox-desc').addClass('form__checkbox-desc--active');
-    }
-  });
-
-
-
-
-  $("#my-menu").mmenu();
-
-
-
-
-
-
-
-});
+}); // page loaded

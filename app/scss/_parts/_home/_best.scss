@@ -1,7 +1,7 @@
 .best {
   padding: 123px 0 80px;
 
-  @include r(992) {
+  @include r($r-lg) {
     padding: 50px 0 30px;
   }
 

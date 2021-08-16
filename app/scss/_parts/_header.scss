@@ -153,14 +153,29 @@
   }
 }
 
+.menu {
+  @include r($r-md) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__item {
+      padding: 10px 0 10px 0;
+      margin: 0 !important;
+    }
+  }
+}
+
 .menu-btn {
   display: none;
 
   &:checked~.menu {
+    transition: min-width 1s, min-height 1s, padding 1s;
 
     @include r($r-md) {
       padding: 20px;
-      min-width: 50vw;
+      min-width: 80vw;
       min-height: 40vh;
       transition: min-width 1s, min-height 1s, padding 1s;
       box-shadow: 3px 3px 7px $dark-600;
@@ -184,6 +199,8 @@
     top: 0;
   }
 }
+
+
 
 .dropdown-menu {
   position: relative;
@@ -238,12 +255,10 @@
   &__list {
     position: absolute;
     top: 50px;
-    display: none;
     left: 0;
+    display: none;
 
-    &--active {
-      display: block;
-    }
+    &.active {}
 
 
   }
@@ -251,9 +266,21 @@
   &__item {
     position: relative;
 
+    @include r($r-md) {
+      width: 93vw;
+    }
+
+    //
+    //
     &:hover {
       .dropdown-menu__submenu {
-        display: flex;
+        @include rmin($r-md) {
+          display: flex;
+        }
+
+        @include r($r-md) {
+          // display: none;
+        }
       }
     }
   }
@@ -270,29 +297,70 @@
       flex-wrap: wrap;
     }
 
+    // 
+    @include r($r-md) {
+      position: relative;
+      padding: 10px;
+      right: 0;
+
+      &.active-mobile {
+        display: flex;
+        padding: 0; // trying to do submenues appear on click
+      }
+    }
+
+    // 
 
     ul {
       list-style: none;
       margin: 0;
       padding: 0;
+      display: none; // trying to do submenues appear on click
+
+      &.active-mobile {
+        display: block;
+        padding: 20px;
+      }
     }
+
+
   }
 
   &__categories {
     &:not(:last-child) {
       margin-right: 50px;
+
+      @include r($r-md) {
+        margin-right: 0;
+      }
     }
 
     @include r($r-lg) {
       width: 30%;
       margin-bottom: 30px;
     }
+
+    @include r($r-md) {
+      //      width: 50%;
+      width: 100%;
+      margin: 0;
+
+      &:hover {
+        background-color: $light-300;
+      }
+    }
   }
 
   &__heading {
+    display: block;
     margin-bottom: 21px;
     font-weight: 700;
     line-height: 1.25;
+    padding: 20px;
+
+    @include r($r-md) {
+      margin-bottom: 0;
+    }
   }
 
   &__group {
@@ -304,6 +372,12 @@
     transition: padding 0.3s, color 0.3s;
     position: relative;
 
+    //
+    @include r($r-md) {
+      width: 100%;
+    }
+
+    //
     &:not(:last-child) {
       border-bottom: 1px solid #2d2d2d;
     }
@@ -353,6 +427,7 @@
 
 }
 
+
 .user {
   width: 13px;
   height: 15px;
@@ -367,7 +442,7 @@
     margin-right: 20px;
   }
 
-  @include r(500) {
+  @include r($r-sm) {
     padding-right: 25px;
     margin-right: 10px;
   }

@@ -2,7 +2,7 @@
   padding: 61px 407px 60px 0;
   position: relative;
 
-  @include r(992) {
+  @include r($r-lg) {
     padding: 40px 0;
   }
 
@@ -22,7 +22,7 @@
     max-width: 511px;
     z-index: 1;
 
-    @include r(992) {
+    @include r($r-lg) {
       max-width: 100%;
       padding: 0;
       margin: 0 auto;
@@ -33,7 +33,7 @@
     color: $light-900;
     margin-bottom: 38px;
 
-    @include r(992) {
+    @include r($r-lg) {
       margin-bottom: 20px;
     }
   }
@@ -43,7 +43,7 @@
     margin-bottom: 50px;
     @include text-clamp(2);
 
-    @include r(992) {
+    @include r($r-lg) {
       margin-bottom: 20px;
     }
   }

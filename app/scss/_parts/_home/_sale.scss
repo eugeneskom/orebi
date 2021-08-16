@@ -2,12 +2,12 @@
   padding: 140px 0 128px;
   color: $light-900;
 
-  @include r(992) {
+  @include r($r-lg) {
     padding: 70px 0;
   }
 
   &__inner {
-    @include r(992) {
+    @include r($r-lg) {
       flex-direction: column;
     }
   }
@@ -20,14 +20,14 @@
     flex-direction: column;
     justify-content: space-between;
 
-    @include r(992) {
+    @include r($r-lg) {
       max-width: 100%;
     }
 
     &:first-child {
       margin-right: 40px;
 
-      @include r(992) {
+      @include r($r-lg) {
         margin-right: 0;
       }
     }
@@ -38,7 +38,7 @@
     padding: 50px;
     max-width: 100%;
 
-    @include r(576) {
+    @include r($r-sm) {
       padding: 20px;
     }
   }
@@ -46,7 +46,7 @@
   &__big {
     height: 100%;
 
-    @include r(992) {
+    @include r($r-lg) {
       margin-bottom: 40px;
     }
   }
