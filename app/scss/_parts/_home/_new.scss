@@ -17,6 +17,7 @@
   }
 
   .slick-slide {
+    overflow: hidden;
     max-width: 370px;
     margin: 0 auto;
 
@@ -27,6 +28,12 @@
     @include r($r-md) {
       margin: 0;
     }
+    &.slick-active{
+      &:not(:last-child){
+        margin-right: 45px;
+      }
+    }
+   
   }
 
   .slick-list {

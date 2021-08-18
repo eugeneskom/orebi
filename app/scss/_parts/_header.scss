@@ -258,10 +258,10 @@
     left: 0;
     display: none;
 
-    &.active {}
-
 
   }
+
+
 
   &__item {
     position: relative;
@@ -270,8 +270,7 @@
       width: 93vw;
     }
 
-    //
-    //
+  
     &:hover {
       .dropdown-menu__submenu {
         @include rmin($r-md) {
@@ -279,7 +278,7 @@
         }
 
         @include r($r-md) {
-          // display: none;
+          display: none;
         }
       }
     }
@@ -287,46 +286,55 @@
 
   &__submenu {
     position: absolute;
-    right: -584px;
+    left: 100%;
     top: 0;
     background-color: $light-900;
     padding: 28px 47px 32px 40px;
+    justify-content: space-between;
+    min-width: 570px;
     display: none;
 
     @include r($r-lg) {
       flex-wrap: wrap;
     }
 
-    // 
     @include r($r-md) {
       position: relative;
       padding: 10px;
       right: 0;
+      left: 0;
 
       &.active-mobile {
-        display: flex;
-        padding: 0; // trying to do submenues appear on click
+        display: flex !important;
+        padding: 0;
       }
     }
 
-    // 
 
     ul {
       list-style: none;
       margin: 0;
       padding: 0;
-      display: none; // trying to do submenues appear on click
+
+      @include r($r-md){
+        display: none;
+      }
+
 
       &.active-mobile {
         display: block;
-        padding: 20px;
+        padding: 10px 20px;
+       
       }
     }
 
 
   }
 
+
+
   &__categories {
+
     &:not(:last-child) {
       margin-right: 50px;
 
@@ -341,25 +349,27 @@
     }
 
     @include r($r-md) {
-      //      width: 50%;
       width: 100%;
       margin: 0;
 
-      &:hover {
-        background-color: $light-300;
-      }
+      // &:hover {
+      //   background-color: $light-300;
+      // }
     }
   }
 
   &__heading {
-    display: block;
     margin-bottom: 21px;
     font-weight: 700;
     line-height: 1.25;
-    padding: 20px;
-
+    
     @include r($r-md) {
       margin-bottom: 0;
+      display: block;
+      padding: 20px;
+      &:hover {
+        background-color: $light-300;
+      }
     }
   }
 
@@ -372,12 +382,10 @@
     transition: padding 0.3s, color 0.3s;
     position: relative;
 
-    //
     @include r($r-md) {
       width: 100%;
     }
 
-    //
     &:not(:last-child) {
       border-bottom: 1px solid #2d2d2d;
     }
@@ -403,6 +411,7 @@
   &__link {
     color: $dark-500;
     transition: text-shadow 0.3s, color 0.3s, border-bottom 0.3s;
+    font-size: 14px;
 
     &:hover {
       color: $highlight;

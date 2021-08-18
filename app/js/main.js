@@ -47,13 +47,9 @@ $(function () {
     slidesToShow: 4,
     slidesToScroll: 1,
     arrows: true,
+    infinite: false,
     responsive: [
-      {
-        breakpoint: 1530,
-        settings: {
-          slidesToShow: 3,
-        }
-      },
+
       {
         breakpoint: 1200,
         settings: {
@@ -201,25 +197,17 @@ $(function () {
   // The end of Animating onchange of input on checkout page
 
 
-  // mmenu start
-
-  // $('#my-menu').mmenu();
-  // let API = $("#my-menu").data("mmenu");
-  // $("#menu-button").onclick(function(){
-  //   API.open();
-  // })
-
-  //mmenu end
-
 
 
 
   let dropList = document.querySelector('.dropdown-menu__list');
   let dropBtns = document.querySelectorAll('.dropdown-menu__group');
   let dropInsideBtn = document.querySelectorAll('.dropdown-menu__heading');
+  console.log(dropInsideBtn.length);
 
 
   dropList.addEventListener('click', (e) => {
+    e.preventDefault();
     for (let i = 0; i < dropBtns.length; i++) {
       if (e.target.classList.contains('dropdown-menu__group')) {
         if (dropBtns[i] == e.target) {
@@ -234,14 +222,36 @@ $(function () {
       }
 
       if (e.target.classList.contains('dropdown-menu__heading')) {
-        if(dropInsideBtn[i] == e.target){
+        if (dropInsideBtn[i] == e.target) {
           dropInsideBtn[i].nextElementSibling.classList.toggle('active-mobile')
-        }else{
+        } else {
           dropInsideBtn[i].nextElementSibling.classList.remove('active-mobile');
+        }
+      } else {
+        if (!e.target.closest('dropdown-menu__heading')) {
+          dropInsideBtn[i].classList.remove('active-mobile')
         }
       }
     }
   })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }); // page loaded

@@ -11,7 +11,7 @@
 
   &__item {
     margin-bottom: 1px;
-
+    min-width: 319px;
     &:hover {
       .brands__img {
         transform: rotateY(180deg);
