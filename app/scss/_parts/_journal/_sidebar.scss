@@ -1,13 +1,9 @@
 .sidebar {
-  max-width: 515px;
-
-  @include r($r-xl) {
-    max-width: 400px;
-  }
+  flex-basis: 515px;
 
   @include r($r-lg) {
     order: 0;
-    width: 100%;
+    flex-basis: 100%;
   }
 
   &__form {
@@ -34,7 +30,22 @@
   }
 
   &__widget {
-    margin-bottom: 53px;
+    &:not(:last-child) {
+      margin-bottom: 53px;
+    }
+
+    @include r($r-lg) {
+      .tags {
+        &__list {
+          flex-wrap: wrap;
+        }
+
+        &__item {
+          margin-bottom: 30px;
+        }
+      }
+    }
+
   }
 
   &__subitem {

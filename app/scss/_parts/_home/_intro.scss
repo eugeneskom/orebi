@@ -1,10 +1,15 @@
 .intro {
 
   &__item {
-    height: 598px;
+    max-height: 598px;
+    height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+
+    @include r($r-md) {
+      max-height: 400px;
+    }
 
     &::after {
       content: "";
@@ -30,6 +35,8 @@
 
     @include r($r-md) {
       padding-left: 30px;
+      max-height: 400px;
+
     }
   }
 
@@ -112,7 +119,7 @@
     }
 
     .slider__counter {
-        display: none;
+      display: none;
     }
   }
 

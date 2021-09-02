@@ -12,10 +12,14 @@
 
   &__fieldset {
     border: none;
-    min-width: 1055px;
+    max-width: 1055px;
     padding: 0;
     color: $highlight;
     font-weight: 700;
+
+    @include r($r-md) {
+      display: block;
+    }
   }
 
   &__caption {
@@ -44,6 +48,23 @@
     margin-bottom: 38px;
   }
 
+  &__group {
+    @include r($r-sm) {
+      display: block;
+    }
+
+    .form__label {
+
+      &:first-child {
+        margin-right: 39px;
+
+        @include r($r-sm) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
   &__entries {
     padding-top: 4px;
     margin-bottom: 5px;
@@ -51,6 +72,13 @@
 
   &__label {
     display: block;
+    flex: 1 1 0;
+
+    &:not(:last-child) {
+      margin-right: 39px;
+      
+    }
+
   }
 
   &__input {
@@ -100,6 +128,9 @@
 
     &--small {
       max-width: 508px;
+      @include r($r-md){
+        margin:0 0 40px;
+      }
     }
 
     &--medium {

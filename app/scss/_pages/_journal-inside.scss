@@ -1,28 +1,130 @@
 .journal-wrapper {
   padding: 124px 0 140px;
+
+  @include r($r-lg) {
+    padding: 80px 0 90px;
+  }
+}
+
+.journal-inside{
+  @include r($r-lg){
+    flex-direction: column;
+  }
+}
+
+.journal {
+  
+  padding-bottom: 140px;
+  @include r($r-md) {
+    display: block;
+    padding-bottom: 70px;
+  }
+
+
+  &__content {
+    margin-right: 35px;
+    flex-basis: 1055px;
+
+    @include r($r-lg) {
+      padding-bottom: 60px;
+    }
+
+    @include r($r-md) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__list {
+    justify-content: space-between;
+    @include r($r-md) {
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    max-width: 510px;
+    width: 100%;
+    margin-bottom: 26px;
+
+
+
+
+    &:hover {
+      .article__img {
+        transform: scale(1.2);
+        transition: transform 0.3s;
+      }
+    }
+
+    &--main {
+
+      flex-basis: calc((100% - 4.6%) / 3);
+
+      @include r($r-md) {
+        flex-basis: 100%;
+        margin: 0 auto 35px;
+      }
+
+    }
+
+    &--secondary {
+      flex-basis: calc((100% - 3%) / 2);
+
+      @include r($r-lg) {
+        flex-basis: 100%;
+        margin-bottom: 45px;
+      }
+
+    }
+  }
+
 }
 
 .magazine {
   margin-right: 37px;
+  flex-basis: 65%;
+
+  @include r($r-lg){
+    margin: 0 0 50px;
+  }
 
   &__picture {
     margin-bottom: 56px;
+
+    @include r($r-lg) {
+      margin-bottom: 30px;
+    }
   }
 
   &__article {
     margin-bottom: 127px;
+
+    @include r($r-lg) {
+      margin-bottom: 70px;
+    }
   }
 
   &__title {
     margin-bottom: 33px;
+
   }
 
   &__text {
     margin-bottom: 48px;
+
+    @include r($r-lg) {
+      font-size: 14px;
+    }
   }
 
   &__comments {
     margin-bottom: 122px;
+
+    @include r($r-lg) {
+      margin-bottom: 70px;
+    }
   }
 
   &__form-caption {
@@ -36,6 +138,10 @@
 
 .feedback {
   margin-bottom: 44px;
+
+  @include r($r-lg) {
+    margin-bottom: 30px;
+  }
 
   &__item {
     padding-right: 18px;

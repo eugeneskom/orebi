@@ -22,7 +22,7 @@ $(function () {
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: false,
-      // autoplay: true,
+      autoplay: true,
     });
 
     let $dots = document.querySelectorAll('.intro__list .slick-dots li');
@@ -92,7 +92,63 @@ $(function () {
     }
   })
   //////////////////////////////////////////////////////////////////////////
+  let dropList = document.querySelector('.dropdown-menu__list');
+  let dropBtns = document.querySelectorAll('.dropdown-menu__group');
+  let dropInsideBtn = document.querySelectorAll('.dropdown-menu__heading');
+  let submenu = document.querySelectorAll('.dropdown-menu__submenu');
 
+
+  // Closing submenu items when menu is closed
+  document.addEventListener('click', (e) => {
+    for (let i = 0; i < dropBtns.length; i++) {
+      if (!dropList.classList.contains('active')) {
+        dropBtns[i].nextElementSibling.classList.remove('active-mobile');
+      }
+    }
+    for (let i = 0; i < submenu.length; i++) {
+      if (!submenu[i].classList.contains("active-mobile")) {
+        for (let k = 0; k < submenu[i].children.length; k++) {
+          submenu[i].children[k].querySelector('.dropdown-menu__sublist').classList.remove('active-mobile');
+        }
+      }
+    }
+
+  })
+
+  dropList.addEventListener('click', (e) => {
+    e.preventDefault();
+    for (let i = 0; i < dropBtns.length; i++) {
+
+      if (e.target.classList.contains('dropdown-menu__group')) {
+        if (dropBtns[i] == e.target) {
+          dropBtns[i].nextElementSibling.classList.toggle('active-mobile');
+        } else {
+          dropBtns[i].nextElementSibling.classList.remove('active-mobile');
+        }
+      } else {
+        if (!e.target.closest('dropdown-menu__group')) {
+          dropBtns[i].classList.remove('active-mobile');
+        }
+      }
+    }
+
+    for (let i = 0; i < dropInsideBtn.length; i++) {
+      if (e.target.classList.contains('dropdown-menu__heading')) {
+        if (dropInsideBtn[i] == e.target) {
+          dropInsideBtn[i].nextElementSibling.classList.toggle('active-mobile')
+        } else {
+          dropInsideBtn[i].nextElementSibling.classList.remove('active-mobile');
+        }
+      } else {
+        if (!e.target.closest('dropdown-menu__heading')) {
+          dropInsideBtn[i].classList.remove('active-mobile')
+        }
+      }
+    }
+  })
+
+
+  //////////////////////////////////////////////////////////////
   $('.shop-content__btn').on('click', function () {
     $('.shop-content__btn').removeClass('shop-content__btn--active');
     $(this).addClass('shop-content__btn--active');
@@ -100,9 +156,12 @@ $(function () {
 
   $('.button-list').on('click', function () {
     $('.product').addClass('product--list');
+    $('.shop-products').addClass('shop-products--list');
   });
   $('.button-grid').on('click', function () {
     $('.product').removeClass('product--list');
+    $('.shop-products').removeClass('shop-products--list');
+
   });
 
 
@@ -199,41 +258,6 @@ $(function () {
 
 
 
-
-  let dropList = document.querySelector('.dropdown-menu__list');
-  let dropBtns = document.querySelectorAll('.dropdown-menu__group');
-  let dropInsideBtn = document.querySelectorAll('.dropdown-menu__heading');
-  console.log(dropInsideBtn.length);
-
-
-  dropList.addEventListener('click', (e) => {
-    e.preventDefault();
-    for (let i = 0; i < dropBtns.length; i++) {
-      if (e.target.classList.contains('dropdown-menu__group')) {
-        if (dropBtns[i] == e.target) {
-          dropBtns[i].nextElementSibling.classList.toggle('active-mobile');
-        } else {
-          dropBtns[i].nextElementSibling.classList.remove('active-mobile');
-        }
-      } else {
-        if (!e.target.closest('dropdown-menu__group')) {
-          dropBtns[i].classList.remove('active-mobile');
-        }
-      }
-
-      if (e.target.classList.contains('dropdown-menu__heading')) {
-        if (dropInsideBtn[i] == e.target) {
-          dropInsideBtn[i].nextElementSibling.classList.toggle('active-mobile')
-        } else {
-          dropInsideBtn[i].nextElementSibling.classList.remove('active-mobile');
-        }
-      } else {
-        if (!e.target.closest('dropdown-menu__heading')) {
-          dropInsideBtn[i].classList.remove('active-mobile')
-        }
-      }
-    }
-  })
 
 
 

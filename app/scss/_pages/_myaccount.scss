@@ -1,9 +1,20 @@
 .myaccount {
   padding: 124px 0 140px;
-
+  @include r($r-lg){
+    padding: 60px 0 70px;
+  }
+  @include r($r-md){
+    padding: 40px 0 50px;
+  }
   .tabs {
+    @include r($r-md){
+      flex-direction: column;
+    }
     &__nav {
       margin: 0 39px 0 0;
+      @include r($r-md){
+        margin: 0 0 40px 0;
+      }
     }
 
     &__link {
@@ -25,7 +36,9 @@
 
     &__description {
       border: transparent;
-
+      @include r($r-md){
+        margin-bottom: 0;
+      }
       a {
         color: $highlight;
       }

@@ -6,31 +6,26 @@
   }
 
   &__list {
-    @include r($r-xl) {
-      flex-wrap: wrap;
-      max-width: 760px;
-      margin: 0 auto;
+    justify-content: space-between;
+
+    @include r($r-lg) {
+      justify-content: space-around;
     }
   }
 
   &__product {
     margin-bottom: 50px;
-    &:not(:last-child) {
-      margin-right: 40px;
+    flex-basis: calc((100% - 7.5%) / 4);
 
-      @include r($r-xl) {
-        margin-right: 0;
-      }
-      
+    @include r($r-lg) {
+      flex-basis: calc((100% - 12%) / 2);
     }
 
-    &:nth-child(odd) {
-      @include r($r-xl) {
-        margin-right: 10px;
-      }
-      @include r($r-md){
-        margin-right: 0;
-      }
+    @include r($r-md) {
+      flex-basis: 370px;
+      
+      margin-bottom: 45px;
+      
     }
 
   }

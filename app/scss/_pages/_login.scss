@@ -1,6 +1,14 @@
 .login {
   padding: 124px 0 140px;
 
+  @include r($r-lg) {
+    padding: 90px 0 100px;
+  }
+
+  @include r($r-md) {
+    padding: 50px 0 60px;
+  }
+
   &__intro {
     max-width: 644px;
   }

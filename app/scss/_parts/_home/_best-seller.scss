@@ -1,7 +1,9 @@
 .best-seller {
   padding: 61px 407px 60px 0;
   position: relative;
-
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
   @include r($r-lg) {
     padding: 40px 0;
   }

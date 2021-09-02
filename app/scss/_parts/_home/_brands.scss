@@ -7,11 +7,22 @@
 
   &__list {
     justify-content: center;
+    @include r($r-md){
+      // justify-content: start;
+    }
   }
 
   &__item {
     margin-bottom: 1px;
-    min-width: 319px;
+    flex-basis: calc((100% - 4px) / 5);
+    @include r($r-md){
+      flex-basis: 320px;
+      height: 320px;
+    }
+    
+    &:not(:last-child){
+      margin-right: 1px;
+    }
     &:hover {
       .brands__img {
         transform: rotateY(180deg);
@@ -28,12 +39,11 @@
   }
 
   &__img {
-    max-width: 319px;
     width: 100%;
-    height: 320px;
+    max-height: 320px;
+    height: 100%;
     object-fit: cover;
     transition: transform 0.9s;
     backface-visibility: visible;
-
   }
 }

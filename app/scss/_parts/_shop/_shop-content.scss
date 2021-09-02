@@ -72,9 +72,19 @@
 }
 
 .shop-products {
+
   @include r($r-xl) {
     justify-content: space-around;
   }
+
+  &--list{
+    flex-direction: column;
+  }
+
+  &__item{
+    flex: 0 1 calc(33.3% - 2.25%);
+  }
+
 }
 
 .test-input {
@@ -88,3 +98,4 @@
     height: 100%;
   }
 }
+

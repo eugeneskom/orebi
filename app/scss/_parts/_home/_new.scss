@@ -73,7 +73,10 @@
     right: 30px;
 
     @include r($r-xl) {
-      right: 0;
+      right: 18px;
+    }
+    @include r($r-md){
+      right: 45px;
     }
   }
 

@@ -6,10 +6,22 @@
   margin-bottom: 79px;
 
   &__list {
-    grid-row-gap: 40px;
-    grid-column-gap: 40px;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
+    justify-content: space-between;
+    margin-bottom: -2.5%;
+
+    @include r($r-md) {
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    max-height: 780px;
+    flex-basis: calc(97.5% / 2);
+    margin-bottom: 2.5%;
+
+    @include r($r-md) {
+      flex-basis: 80%;
+    }
   }
 
   &__img {
@@ -160,6 +172,16 @@
 
 .product-buttons {
   margin-bottom: 30px;
+
+  @include r($r-sm) {
+    margin: 0 auto;
+
+    .btn {
+      display: block;
+      width: calc(90vw);
+      margin-bottom: 30px;
+    }
+  }
 }
 
 

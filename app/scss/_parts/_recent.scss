@@ -7,6 +7,9 @@
   &__subitem {
     border-bottom: 1px solid $light-700;
     position: relative;
+    @include r($r-lg){
+      font-size: 14px;
+    }
 
     &::before {
       content: "";
