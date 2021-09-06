@@ -26,7 +26,7 @@ function fileInclude() {
       prefix: '@@',
       basepath: '@file'
     }))
-    .pipe(dest('app'))
+    .pipe(dest('dist'))
     .pipe(browserSync.stream());
 }
 
